@@ -5,3 +5,7 @@
 .primary-button {
   @apply bg-[#015F26] text-white
 }
+
+.primary-text {
+  @apply text-[#015F26]
+}

@@ -8,17 +8,18 @@ type ButtonProps = {
   className?: string,
   variant?: ButtonVariant,
   type?: HTMLButtonElement;
+  paddingSize?: string
 };
 
 const Button = (props: ButtonProps) => {
-  const { children, className, variant, type } = props;
+  const { children, className, variant, type, paddingSize} = props;
   
 
   return (
     <button
       type={type ? 'button' : type}
       className={clsx(
-        'px-6 py-4',
+        paddingSize ? paddingSize : 'px-6 py-4',
         variant === 'primary-button' ? "primary-button" : "secondary-button",
         className
       )}>{children}</button>
