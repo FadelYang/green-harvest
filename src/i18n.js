@@ -2,7 +2,7 @@ import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
 import Backend from 'i18next-http-backend';
 import LanguageDetector from 'i18next-browser-languagedetector';
-import Cookies from 'js-cookie';
+import Cookies from 'js-cookie'
 
 const languageDetector = new LanguageDetector();
 languageDetector.addDetector({
