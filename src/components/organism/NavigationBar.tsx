@@ -1,7 +1,6 @@
 import navBarLogo from "/img/navbar-logo.png";
 import englishFlag from "/img/english-flag.svg";
 import Button from "../atoms/Button";
-import { PropsWithChildren } from "react";
 
 const NavigationBar = (props: any) => {
   const { t } = props;
@@ -11,7 +10,7 @@ const NavigationBar = (props: any) => {
       {/* Right Content */}
       <div className="flex gap-8 items-center">
         <div>
-          <img src={navBarLogo} alt="" />
+          <img src={navBarLogo} alt="" className='h-[54px] w-[72px]'/>
         </div>
         <div className="flex gap-2 py-2 px-4 border border-slate-200 rounded-xl">
           <img src={englishFlag} alt="" />
