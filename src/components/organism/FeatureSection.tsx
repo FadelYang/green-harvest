@@ -92,9 +92,9 @@ const FeatureSection = () => {
             </div>
             {/* second section */}
             <div className="">
-              <div className="flex gap-[72px]">
-                <div className="flex flex-col justify-center gap-4 ps-[100px]">
-                  <p className="text-black text-[32px] font-medium w-[609px]">
+              <div className="flex justify-between gap-[72px]">
+                <div className="flex flex-col justify-center items gap-4 ps-[100px]">
+                  <p className="text-black text-[32px] font-medium max-w-[609px]">
                     High Quality with Low MOQ Requirements
                   </p>
                   <div className="max-w-[773px]">
@@ -106,8 +106,8 @@ const FeatureSection = () => {
                     </p>
                   </div>
                 </div>
-                <div>
-                  <img src={featureExperience3} alt="" className="pr-12" />
+                <div className=''>
+                  <img src={featureExperience3} alt="" className="" />
                 </div>
               </div>
               <div className="absolute -mt-64 right-0 w-[100px] h-[408px] bg-yellow-500 opacity-80"></div>
