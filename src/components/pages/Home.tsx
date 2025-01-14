@@ -1,6 +1,7 @@
 
 import FeatureSection from '../organism/FeatureSection';
 import HeroSection from '../organism/HeroSection';
+import ProductSection from '../organism/ProductSection';
 import MainTemplate from "../templates/MainTemplate";
 
 
@@ -10,6 +11,7 @@ const Home = () => {
       <main className="">
         <HeroSection />
         <FeatureSection />
+        <ProductSection />
       </main>
     </MainTemplate>
   );

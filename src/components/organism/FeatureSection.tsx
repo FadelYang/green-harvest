@@ -30,7 +30,7 @@ const certificationLogos = [
 const FeatureSection = () => {
   return (
     <>
-      <div className="pt-36 pb-24 flex flex-col gap-[50px]">
+      <div className="pt-36 flex flex-col gap-[50px]">
         <div className="px-24">
           <div className="flex flex-col gap-10">
             <HeaderSection
