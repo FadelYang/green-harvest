@@ -9,7 +9,7 @@ const MainTemplate = (props: PropsWithChildren) => {
 
   return (
     // temporary like this
-    <div className="max-h-[1440px] flex flex-col justify-between h-screen">
+    <div className="max-w-[1444px] mx-auto">
       <NavigationBar t={t} />
       <div className="main flex-grow">{children}</div>
       <Footer t={t}/>

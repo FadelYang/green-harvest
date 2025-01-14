@@ -106,11 +106,13 @@ const FeatureSection = () => {
                     </p>
                   </div>
                 </div>
-                <div className=''>
-                  <img src={featureExperience3} alt="" className="" />
+                <div className="">
+                  <img src={featureExperience3} alt="" className="pr-12" />
                 </div>
               </div>
-              <div className="absolute -mt-64 right-0 w-[100px] h-[408px] bg-yellow-500 opacity-80"></div>
+              <div className="relative">
+                <div className="absolute right-0 -mt-64 w-[100px] h-[408px] bg-yellow-500 opacity-80"></div>
+              </div>
             </div>
           </div>
           <div className="flex justify-center">

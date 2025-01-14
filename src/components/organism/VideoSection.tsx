@@ -1,11 +1,11 @@
 import Button from "../atoms/Button";
 import arrowRight from "/img/arrowRight.svg";
-import video from "/video/video.mp4"
+import video from "/video/video.mp4";
 
 const VideoSection = () => {
   return (
     <>
-      <div className="flex flex-col gap-10 px-24 py-36">
+      <div className="flex flex-col gap-10 pl-24 py-36">
         <div className="flex justify-between">
           <p className="text-[40px] font-medium leading-[50px] w-[611px]">
             We are committed to being the best partner for your brand's growth.
@@ -28,11 +28,13 @@ const VideoSection = () => {
             </div>
           </div>
         </div>
-        <div className='w-full h-full'>
-          <video width='100%' controls>
-            <source src={video} type='video/mp4'/>
+        <div className="w-full h-full pr-24">
+          <video width="100%" controls>
+            <source src={video} type="video/mp4" />
           </video>
-          <div className='bg-yellow-500 opacity-80 w-[524px] h-[100px] absolute -mt-14 -z-10 right-0'></div>
+        </div>
+        <div className="relative">
+          <div className="absolute right-0 -mt-24 -z-10 w-[524px] h-[100px] bg-yellow-500 opacity-80"></div>
         </div>
       </div>
     </>
