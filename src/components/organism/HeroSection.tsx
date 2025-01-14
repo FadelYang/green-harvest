@@ -1,4 +1,5 @@
 import Button from "../atoms/Button";
+import HeaderSection from "../atoms/HeaderSection";
 import HeroExpertiseItemCard from "../molecules/HeroExpertiseItemCard";
 import HeroMaklonExpertiseCardList from "../molecules/HeroMaklonExpertiseCardList";
 import arrowRight from "/img/arrowRight.svg";
@@ -50,15 +51,11 @@ const HeroSection = () => {
         {/* expertise section container */}
         <div className="px-24 mt-4 flex flex-col gap-10">
           <div className="flex flex-col gap-8">
-            <div>
-              <h1 className="text-slate-500 text-base font-semibold leading-6 tracking-[0.64px]">
-                OUR MAKLON EXPERTISE
-              </h1>
-              <h2 className="text-slate-800 text-[40px] w-[1027px] leading-[50px]">
-                We are not just producing your products, but also helping you
-                build your product from scratch
-              </h2>
-            </div>
+            <HeaderSection
+              title="OUR MAKLON EXPERTISE"
+              subTitle="We are not just producing your products, but also helping you
+                build your product from scratch"
+            />
             <div>
               <HeroMaklonExpertiseCardList />
             </div>
