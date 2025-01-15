@@ -6,7 +6,7 @@ const VideoSection = () => {
   return (
     <>
       <div className="flex flex-col gap-10 pl-24 py-36">
-        <div className="flex justify-between">
+        <div className="flex justify-between pr-24">
           <p className="text-[40px] font-medium leading-[50px] w-[611px]">
             We are committed to being the best partner for your brand's growth.
           </p>
