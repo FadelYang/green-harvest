@@ -1,5 +1,6 @@
 import FeatureSection from "../organism/FeatureSection";
 import HeroSection from "../organism/HeroSection";
+import InsightHubSection from '../organism/InsightHubSection';
 import ManufacturingProcessSection from "../organism/ManufacturingProcessSection";
 import ProductAvailableSection from '../organism/ProductAvailableSection';
 import ProductSection from "../organism/ProductSection";
@@ -17,6 +18,7 @@ const Home = () => {
       <ManufacturingProcessSection />
       <SuccessStorySection />
       <ProductAvailableSection />
+      <InsightHubSection />
     </MainTemplate>
   );
 };
