@@ -54,8 +54,8 @@ const FeatureSection = () => {
                 </p>
               </div>
               <div className="grid grid-cols-5 min-w-[675px] gap-5">
-                {certificationLogos.map((certificationLogo) => (
-                  <img src={certificationLogo} alt="" />
+                {certificationLogos.map((certificationLogo, index) => (
+                  <img src={certificationLogo} alt="" key={index} />
                 ))}
               </div>
             </div>

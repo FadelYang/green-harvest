@@ -18,10 +18,11 @@ const HeroExpertiseItemCard = (props: HeroExpertiseItemCardProps) => {
     <div
       className={clsx("p-4 flex flex-col bg-white mt-1 shadow-2xl", className)}
     >
-      {heroExpertiseItemProps.map((item) => (
+      {heroExpertiseItemProps.map((item, index) => (
         <HeroExpertiseItem
           totalNumber={item.totalNumber}
           category={item.category}
+          key={index}
         />
       ))}
     </div>
