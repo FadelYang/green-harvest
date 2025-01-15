@@ -37,7 +37,7 @@ const HeroSection = () => {
         </div>
         {/* image container */}
         <div className="-mt-[150px]">
-          <div className="px-14">
+          <div className="pl-14">
             <div className="relative w-screen max-w-none h-[400px] overflow-hidden p-4">
               <img
                 src={heroImage}
