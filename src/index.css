@@ -9,3 +9,11 @@
 .primary-text {
   @apply text-[#015F26]
 }
+
+.product-available-select-button {
+  @apply hover:text-primary hover:bg-[#EBFFF3] rounded-xl w-[269px] text-start hover:font-semibold text-[18px]
+}
+
+.product-availabel-select-button-selected {
+  @apply text-primary bg-[#EBFFF3] rounded-xl w-[269px] font-semibold
+}
