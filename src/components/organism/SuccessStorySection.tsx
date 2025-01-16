@@ -1,5 +1,6 @@
-import Button from '../atoms/Button';
+import Button from "../atoms/Button";
 import arrowRight from "/img/arrowRight.svg";
+import Arrow from "../atoms/Arrow";
 
 const SuccessStorySection = () => {
   return (
@@ -14,32 +15,32 @@ const SuccessStorySection = () => {
           <div className="flex gap-8">
             <div className="w-[417px]">
               <p className="text-2xl font-normal leading-[34px]">
-                For the past 20 years, we collaborate with many partner. Here
+                For the past 20 years, we <br /> collaborate with many partner. Here
                 are some of our success story
               </p>
             </div>
             <div className="flex gap-4 items-end">
-              <div>
-                <img src={arrowRight} alt="" className="rotate-180" />
-              </div>
-              <div>
-                <img src={arrowRight} alt="" />
-              </div>
+              <Button className='bg-[#F1F5F9] rounded-full rotate-180' paddingSize='p-2'>
+                <Arrow hexColor='#1E293B'/>
+              </Button>
+              <Button className='bg-[#F1F5F9] rounded-full' paddingSize='p-2'>
+                <Arrow hexColor='#1E293B'/>
+              </Button>
             </div>
           </div>
         </div>
         <div className="flex justify-center pl-24">This is come content</div>
-          <div className="flex justify-center gap-4">
-            <div>
-              <Button variant="primary-button">Consult Now!</Button>
-            </div>
-            <div>
-              <Button
-                paddingSize="px-6 py-4"
-                className="flex gap-3 primary-text font-medium text-base border-b border-[#015F26]"
-              >
-                View More Our Expertise <img src={arrowRight} alt="" />
-              </Button>
+        <div className="flex justify-center gap-4">
+          <div>
+            <Button variant="primary-button">Consult Now!</Button>
+          </div>
+          <div>
+            <Button
+              paddingSize="px-6 py-4"
+              className="flex gap-3 primary-text font-medium text-base border-b border-[#015F26]"
+            >
+              View More Our Expertise <img src={arrowRight} alt="" />
+            </Button>
           </div>
         </div>
       </div>
