@@ -2,18 +2,31 @@
 @tailwind components;
 @tailwind utilities;
 
+/* add the code bellow */
+@layer utilities {
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .no-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+}
+
 .primary-button {
-  @apply bg-[#015F26] text-white
+  @apply bg-[#015F26] text-white;
 }
 
 .primary-text {
-  @apply text-[#015F26]
+  @apply text-[#015F26];
 }
 
 .product-available-select-button {
-  @apply hover:text-primary hover:bg-[#EBFFF3] rounded-xl w-[269px] text-start hover:font-semibold text-[18px]
+  @apply hover:text-primary hover:bg-[#EBFFF3] rounded-xl w-[269px] text-start hover:font-semibold text-[18px];
 }
 
 .product-availabel-select-button-selected {
-  @apply text-primary bg-[#EBFFF3] rounded-xl w-[269px] font-semibold
+  @apply text-primary bg-[#EBFFF3] rounded-xl w-[269px] font-semibold;
 }
