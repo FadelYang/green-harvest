@@ -1,4 +1,5 @@
 import Button from '../atoms/Button';
+import ManufacturingProcessList from '../molecules/ManufacturingProcessList';
 
 const ManufacturingProcessSection = () => {
   return (
@@ -13,8 +14,8 @@ const ManufacturingProcessSection = () => {
             <Button variant='primary-button'>Consult Now!</Button>
           </div>
         </div>
-        <div className='flex justify-center'>
-          This is some content
+        <div className=''>
+          <ManufacturingProcessList />
         </div>
       </div>
     </>

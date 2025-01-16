@@ -10,7 +10,7 @@ import product3Close from "/img/product-3-close.png";
 import Button from "../atoms/Button";
 
 const ProductSection = () => {
-  const [activeProduct, setActiveProduct] = useState<number>(2);
+  const [activeProduct, setActiveProduct] = useState<number>(1);
 
   const products = [
     {
