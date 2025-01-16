@@ -5,19 +5,21 @@ import arrowRight from "/img/arrowRight.svg";
 const InsightHubSection = () => {
   return (
     <>
-      <div className="flex flex-col py-36 gap-9 max-w-[1444px] mx-auto">
-        <div className="px-24 flex justify-between items-center">
-          <h1 className="text-slate-800 text-[40px] font-medium leading-[48px]">
-            Insight Hub
-          </h1>
-          <div>
-            <Button
-              paddingSize="px-6 py-4"
-              className="flex gap-3 primary-text font-medium text-base border-b border-[#015F26]"
-            >
-              View More Article{" "}
-              <img src={arrowRight} alt="" className="-rotate-45" />
-            </Button>
+      <div className="flex flex-col py-36 gap-9">
+        <div>
+          <div className="px-24 flex justify-between items-center max-w-[1444px] mx-auto">
+            <h1 className="text-slate-800 text-[40px] font-medium leading-[48px]">
+              Insight Hub
+            </h1>
+            <div>
+              <Button
+                paddingSize="px-6 py-4"
+                className="flex gap-3 primary-text font-medium text-base border-b border-[#015F26]"
+              >
+                View More Article{" "}
+                <img src={arrowRight} alt="" className="-rotate-45" />
+              </Button>
+            </div>
           </div>
         </div>
         {/* Article section */}
