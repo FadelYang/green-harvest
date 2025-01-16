@@ -5,7 +5,7 @@ import video from "/video/video.mp4";
 const VideoSection = () => {
   return (
     <>
-      <div className="flex flex-col gap-10 pl-24 py-36">
+      <div className="flex flex-col gap-10 pl-24 py-36 bg-[#EBFFF3]">
         <div className="flex justify-between pr-24">
           <p className="text-[40px] font-medium leading-[50px] w-[611px]">
             We are committed to being the best partner for your brand's growth.
@@ -28,13 +28,13 @@ const VideoSection = () => {
             </div>
           </div>
         </div>
-        <div className="w-full h-full pr-24">
+        <div className="w-full h-full pr-24 z-20">
           <video width="100%" controls>
             <source src={video} type="video/mp4" />
           </video>
         </div>
         <div className="relative">
-          <div className="absolute right-0 -mt-24 -z-10 w-[524px] h-[100px] bg-yellow-500 opacity-80"></div>
+          <div className="absolute right-0 -mt-24 z-10 w-[524px] h-[100px] bg-yellow-500 opacity-80"></div>
         </div>
       </div>
     </>
