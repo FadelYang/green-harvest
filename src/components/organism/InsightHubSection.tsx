@@ -5,7 +5,7 @@ import arrowRight from "/img/arrowRight.svg";
 const InsightHubSection = () => {
   return (
     <>
-      <div className="flex flex-col py-36 gap-9">
+      <div className="flex flex-col py-36 gap-9 max-w-[1444px] mx-auto">
         <div className="px-24 flex justify-between items-center">
           <h1 className="text-slate-800 text-[40px] font-medium leading-[48px]">
             Insight Hub

@@ -4,7 +4,7 @@ import arrowRight from "/img/arrowRight.svg";
 const SuccessStorySection = () => {
   return (
     <>
-      <div className="flex flex-col gap-10 py-36">
+      <div className="flex flex-col gap-10 py-36 max-w-[1444px] mx-auto">
         <div className="flex px-24 justify-between">
           <div className="w-[355px]">
             <p className="text-slate-800 font-medium text-[40px] leading-[50px]">

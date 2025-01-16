@@ -63,7 +63,7 @@ const ProductAvailableSection = () => {
 
   return (
     <>
-      <div className="px-24 py-36 flex flex-col gap-[72px]">
+      <div className="px-24 py-36 flex flex-col gap-[72px] max-w-[1444px] mx-auto">
         <h1 className="text-center text-[40px] font-medium leading-[50px]">
           Tailored Products Available at Harvest Group
         </h1>

@@ -54,7 +54,7 @@ const ProductSection = () => {
 
   return (
     <>
-      <div className="flex flex-col gap-10 py-36 px-24 text-center">
+      <div className="flex flex-col gap-10 py-36 px-24 text-center max-w-[1444px] mx-auto">
         <h1 className="text-[40px] font-medium leading-[50px] text-slate-800">
           Greenlife Harvest Group Product Maklon Category
         </h1>
@@ -64,7 +64,7 @@ const ProductSection = () => {
             <div
               key={product.id}
               onMouseEnter={() => setActiveProduct(product.id)}
-              onMouseLeave={() => setActiveProduct(2)}
+              onMouseLeave={() => setActiveProduct(1)}
             >
               {/* Product Image */}
               <div className="relative">

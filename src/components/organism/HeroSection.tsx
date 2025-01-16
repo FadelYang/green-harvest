@@ -9,7 +9,7 @@ const HeroSection = () => {
   return (
     <>
       {/* Hero */}
-      <section className="pt-[72px] pb-[54px] overflow-hidden">
+      <section className="pt-[72px] pb-[54px] overflow-hidden max-w-[1444px] mx-auto">
         {/* main hero content */}
         <div className="flex justify-between px-24 z-10">
           <div className="flex flex-col gap-8 max-w-[731px]">

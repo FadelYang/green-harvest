@@ -4,7 +4,7 @@ import ManufacturingProcessList from '../molecules/ManufacturingProcessList';
 const ManufacturingProcessSection = () => {
   return (
     <>
-      <div className="flex flex-col gap-10 py-36 px-24">
+      <div className="flex flex-col gap-10 py-36 px-24 max-w-[1444px] mx-auto">
         <div className='flex justify-between items-center'>
           <div className='flex flex-col gap-2'>
             <p className='text-slate-500 text-base font-semibold leading-[26px] uppercase'>PROCESS</p>

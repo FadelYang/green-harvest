@@ -4,7 +4,7 @@ import lastBannerImage from "/img/last-banner-image.png";
 const LastBannerSection = () => {
   return (
     <>
-      <div className="flex justify-center px-24 py-36 overflow-hidden">
+      <div className="flex justify-center px-24 py-36 overflow-hidden max-w-[1444px] mx-auto">
         <div className="bg-primary p-10 flex">
           <div className="flex flex-col gap-8 z-10 min-w-[600px]">
             <p className="text-white  font-medium text-[32px]">
@@ -22,8 +22,9 @@ const LastBannerSection = () => {
           <div className="flex items-end -m-10">
             <img src={lastBannerImage} alt="" className="z-10 w-[1160px]" />
           </div>
-          <div className='absolute right-16 -mt-9'>
+          <div className='relative'>
             <svg
+            className='absolute -right-44 -mt-9'
               xmlns="http://www.w3.org/2000/svg"
               width="509"
               height="295"
