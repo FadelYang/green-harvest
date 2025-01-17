@@ -1,4 +1,7 @@
-import productHerbalImage1 from "product-herbal-1.png";
+import productHerbalImage1 from "/img/product-herbal-1.png";
+import productDetailHerbalImage from "/img/product-detail-herbal.png";
+import productDetailDrinkImage from "/img/product-detail-drink.png";
+import productDetailCosmeticImage from "/img/product-detail-cosmetic.png";
 
 type Product = {
   productId: number;
@@ -7,7 +10,14 @@ type Product = {
   productDescription: string;
 };
 
+type Hero = {
+  heading: string;
+  subHeading: string;
+  heroImage: string;
+};
+
 type Category = {
+  hero: Hero;
   categoryId: number;
   categoryName: string;
   products: Product[];
@@ -15,6 +25,12 @@ type Category = {
 
 const productsByCategory: Record<string, Category> = {
   herbal: {
+    hero: {
+      heading: "Private Label Herbal Product Maklon BPOM Certified",
+      subHeading:
+        "All-in-One Solutions for Your Herbal Brand. As Indonesia's largest herbal manufacturer, we have developed hundreds of prominent brand products. Launch your herbal business with confidence, ensuring compliance with BPOM and Halal MUI standards—all under your own brand.",
+      heroImage: productDetailHerbalImage,
+    },
     categoryId: 1,
     categoryName: "Herbal",
     products: [
@@ -42,6 +58,12 @@ const productsByCategory: Record<string, Category> = {
     ],
   },
   drink: {
+    hero: {
+      heading: "Private Label Powder Drink Product Maklon BPOM Certified",
+      subHeading:
+        "Your Partner in Powder Drink Manufacturing. As Indonesia’s leading beverage maklon, we specialize in producing a wide range of premium powder drink products, including protein shakes, meal replacements, and collagen drinks. Launch your brand with confidence, ensuring your products meet BPOM and Halal MUI standards—customized under your label from start to finish.",
+      heroImage: productDetailDrinkImage,
+    },
     categoryId: 2,
     categoryName: "Drink",
     products: [
@@ -89,13 +111,53 @@ const productsByCategory: Record<string, Category> = {
       },
     ],
   },
+  cosmetic: {
+    hero: {
+      heading: "Private Label Cosmetics Product Maklon BPOM Certified",
+      subHeading:
+        "Complete Solutions for Your Cosmetics Brand. As a trusted cosmetics manufacturer in Indonesia, we offer full-service development of premium cosmetic products, including skincare, decorative cosmetics, and personal care items. Launch your brand with ease, ensuring compliance with BPOM and Halal MUI standards—all customized under your unique label.",
+      heroImage: productDetailCosmeticImage,
+    },
+    categoryId: 3,
+    categoryName: "Herbal",
+    products: [
+      {
+        productId: 10,
+        productThumbnailImage: productHerbalImage1,
+        productName: "Internal Medicine Liquid",
+        productDescription:
+          "Herbal manufacturing such as Propolis, Stamina Honey, Fertility, Slimming, Stomach Honey, Children's Honey, Tolak Angin, Date Palm Extract and other products.",
+      },
+      {
+        productId: 11,
+        productThumbnailImage: productHerbalImage1,
+        productName: "External Medicine Liquid",
+        productDescription:
+          "Herbal manufacturing such as Propolis, Stamina Honey, Fertility, Slimming, Stomach Honey, Children's Honey, Tolak Angin, Date Palm Extract and other products.",
+      },
+      {
+        productId: 12,
+        productThumbnailImage: productHerbalImage1,
+        productName: "Capsule Containing Extract Product.",
+        productDescription:
+          "Maklon products Spirulina Capsules, ASI boosters, Collagen Capsules, Ginger Extract Capsules, Binahong Extract Capsules, Ginseng Extract Capsules, Turmeric Extract Capsules etc.",
+      },
+    ],
+  },
 };
 
-const getProductByCategory = (category: string): Category | undefined => {
+const getProductByCategory = (category: string): Category | null => {
   return productsByCategory[category] || undefined;
 };
 
+const getDetailProductPageContentByCategory = (
+  category: string
+) => {
+  return productsByCategory[category].hero || null;
+};
+
+
 export default {
-  productsByCategory,
   getProductByCategory,
+  getDetailProductPageContentByCategory
 };
