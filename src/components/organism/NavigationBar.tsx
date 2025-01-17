@@ -8,7 +8,7 @@ const NavigationBar = (props: any) => {
 
   return (
     <div className="px-24 py-6">
-      <div className="max-w-[1440px] flex mx-auto justify-between items-center">
+      <div className="flex justify-between items-center max-w-[1440px] mx-auto px-0 2xl:px-24">
         {/* Right Content */}
         <div className="flex gap-8 items-center">
           <div>

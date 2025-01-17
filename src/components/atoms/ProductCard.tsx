@@ -10,7 +10,7 @@ const ProductCard = (props: ProductCardProps) => {
 
   return (
     <>
-      <div className='flex flex-col 2xl:max-w-[392px] xl:max-w-[392px] max-w-[360px] max-h-[438px] shadow-lg'>
+      <div className='flex flex-col 2xl:max-w-[392px] xl:max-w-[365px] max-w-[360px] max-h-[438px] shadow-lg'>
         <img src={thumbnailImage} alt="" />
         <div className='flex flex-col gap-2 p-4'>
           <h1 className='text-slate-800 text-2xl leading-[34px] font-semibold'>{title}</h1>

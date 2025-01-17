@@ -90,7 +90,12 @@ const ProductSection = () => {
                         </p>
                         <div className="flex gap-2">
                           <Button
-                          onClick={() => navigate(`products/${product.openText.buttonHref}`)}
+                            onClick={() => {
+                              navigate(
+                                `/products/${product.openText.buttonHref}`
+                              );
+                              window.scrollTo(0, 0);
+                            }}
                             paddingSize="px-0 py-4"
                             className="flex gap-3 font-medium text-base border-b border-white"
                           >
