@@ -1,8 +1,8 @@
 import { Route, Routes } from "react-router-dom";
+
 import Home from "./components/pages/Home";
 import Service from './components/pages/Service';
 import ProductHerbal from './components/pages/ProductHerbal';
-import ProductSection from './components/organism/ProductSection';
 import ProductDrink from './components/pages/ProductDrink';
 import ProductCosmetic from './components/pages/ProductCosmetic';
 import About from './components/pages/About';

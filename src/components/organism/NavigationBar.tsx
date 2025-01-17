@@ -1,17 +1,20 @@
 import navBarLogo from "/img/navbar-logo.png";
 import englishFlag from "/img/english-flag.svg";
 import Button from "../atoms/Button";
+import { Link } from "react-router-dom";
 
 const NavigationBar = (props: any) => {
   const { t } = props;
 
   return (
-    <div className="px-24 py-6 mx-auto max-w-[1444px]">
+    <div className="px-24 py-6">
       <div className="max-w-[1440px] flex mx-auto justify-between items-center">
         {/* Right Content */}
         <div className="flex gap-8 items-center">
           <div>
-            <img src={navBarLogo} alt="" className="h-[54px] w-[72px]" />
+            <Link to={'/'}>
+              <img src={navBarLogo} alt="" className="h-[54px] w-[72px]" />
+            </Link>
           </div>
           <div className="flex gap-2 py-2 px-4 border border-slate-200 rounded-xl">
             <img src={englishFlag} alt="" />
@@ -23,7 +26,7 @@ const NavigationBar = (props: any) => {
         <div className="flex gap-6 items-center">
           <ul className="flex text-base text-slate-800 gap-6">
             <li>
-              <a href="#">{t("navbar.ourExpertise")}</a>
+              <Link to={'/service'}>{t("navbar.ourExpertise")}</Link>
             </li>
             <li>
               <a href="#">{t("navbar.valuedClients")}</a>

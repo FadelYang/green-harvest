@@ -9,9 +9,14 @@ const MainTemplate = (props: PropsWithChildren) => {
 
   return (
     // temporary like this
-    <div className="mx-auto">
-      <NavigationBar t={t} />
-      <div className="main flex-grow mx-auto">{children}</div>
+    <div className="flex flex-col min-h-screen">
+      {/* Navigation Bar */}
+      <NavigationBar t={t}/>
+
+      {/* Main Content */}
+      <main className="flex-grow">{children}</main>
+
+      {/* Footer */}
       <Footer t={t}/>
     </div>
   );
