@@ -20,6 +20,7 @@ type Category = {
   hero: Hero;
   categoryId: number;
   categoryName: string;
+  listSectionHeading: string;
   products: Product[];
 };
 
@@ -33,6 +34,7 @@ const productsByCategory: Record<string, Category> = {
     },
     categoryId: 1,
     categoryName: "Herbal",
+    listSectionHeading: "Which Herbal Products Can Be Makloned At Harvest Group?",
     products: [
       {
         productId: 1,
@@ -66,6 +68,7 @@ const productsByCategory: Record<string, Category> = {
     },
     categoryId: 2,
     categoryName: "Drink",
+    listSectionHeading: "Which Powder Drink Products Can Be Makloned At Harvest Group?",
     products: [
       {
         productId: 4,
@@ -120,6 +123,7 @@ const productsByCategory: Record<string, Category> = {
     },
     categoryId: 3,
     categoryName: "Herbal",
+    listSectionHeading: "Which Cosmetic Products Can Be Makloned At Harvest Group?",
     products: [
       {
         productId: 10,

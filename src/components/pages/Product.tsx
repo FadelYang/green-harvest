@@ -1,6 +1,7 @@
 import { useParams } from "react-router-dom";
 import MainTemplate from "../templates/MainTemplate";
 import ProductPageHeader from "../organism/ProductPageHeader";
+import ProductCardList from '../molecules/ProductCardList';
 
 const Product = () => {
   const { category } = useParams<{ category?: string }>() || null;
@@ -14,6 +15,7 @@ const Product = () => {
     <>
       <MainTemplate>
         <ProductPageHeader category={category} />
+        <ProductCardList category={category}/>
       </MainTemplate>
     </>
   );
