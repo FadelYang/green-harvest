@@ -1,6 +1,8 @@
 import Button from "../atoms/Button";
 import arrowRight from "/img/arrowRight.svg";
 import Arrow from "../atoms/Arrow";
+import SuccessStoryArticleList from '../molecules/SuccessStoryArticleList';
+
 
 const SuccessStorySection = () => {
   return (
@@ -29,7 +31,9 @@ const SuccessStorySection = () => {
             </div>
           </div>
         </div>
-        <div className="flex justify-center pl-24">This is come content</div>
+        <div className="flex pl-24">
+          <SuccessStoryArticleList />
+        </div>
         <div className="flex justify-center gap-4">
           <div>
             <Button variant="primary-button">Consult Now!</Button>
