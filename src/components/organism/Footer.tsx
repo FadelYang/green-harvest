@@ -10,7 +10,7 @@ const Footer = (props: any) => {
   const { t } = props;
 
   return (
-    <div className="bg-black py-[72px] mx-auto">
+    <div className="bg-black py-[72px]  -mb-6">
       <div className=" text-white px-24 mx-auto max-w-[1444px]">
         <div className="flex gap-24">
           {/* First column */}
