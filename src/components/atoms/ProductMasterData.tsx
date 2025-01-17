@@ -1,4 +1,15 @@
 import productHerbalImage1 from "/img/product-herbal-1.png";
+import productHerbalImage2 from "/img/product-herbal-2.png";
+import productHerbalImage3 from "/img/product-herbal-3.png";
+import productCosmeticImage1 from "/img/product-cosmetic-1.png";
+import productCosmeticImage2 from "/img/product-cosmetic-2.png";
+import productCosmeticImage3 from "/img/product-cosmetic-3.png";
+import producDrinkImage1 from "/img/product-drink-1.png";
+import producDrinkImage2 from "/img/product-drink-2.png";
+import producDrinkImage3 from "/img/product-drink-3.png";
+import producDrinkImage4 from "/img/product-drink-4.png";
+import producDrinkImage5 from "/img/product-drink-5.png";
+import producDrinkImage6 from "/img/product-drink-6.png";
 import productDetailHerbalImage from "/img/product-detail-herbal.png";
 import productDetailDrinkImage from "/img/product-detail-drink.png";
 import productDetailCosmeticImage from "/img/product-detail-cosmetic.png";
@@ -34,7 +45,8 @@ const productsByCategory: Record<string, Category> = {
     },
     categoryId: 1,
     categoryName: "Herbal",
-    listSectionHeading: "Which Herbal Products Can Be Makloned At Harvest Group?",
+    listSectionHeading:
+      "Which Herbal Products Can Be Makloned At Harvest Group?",
     products: [
       {
         productId: 1,
@@ -45,14 +57,14 @@ const productsByCategory: Record<string, Category> = {
       },
       {
         productId: 2,
-        productThumbnailImage: productHerbalImage1,
+        productThumbnailImage: productHerbalImage2,
         productName: "External Medicine Liquid",
         productDescription:
           "Herbal manufacturing such as Propolis, Stamina Honey, Fertility, Slimming, Stomach Honey, Children's Honey, Tolak Angin, Date Palm Extract and other products.",
       },
       {
         productId: 3,
-        productThumbnailImage: productHerbalImage1,
+        productThumbnailImage: productHerbalImage3,
         productName: "Capsule Containing Extract Product.",
         productDescription:
           "Maklon products Spirulina Capsules, ASI boosters, Collagen Capsules, Ginger Extract Capsules, Binahong Extract Capsules, Ginseng Extract Capsules, Turmeric Extract Capsules etc.",
@@ -68,46 +80,47 @@ const productsByCategory: Record<string, Category> = {
     },
     categoryId: 2,
     categoryName: "Drink",
-    listSectionHeading: "Which Powder Drink Products Can Be Makloned At Harvest Group?",
+    listSectionHeading:
+      "Which Powder Drink Products Can Be Makloned At Harvest Group?",
     products: [
       {
         productId: 4,
-        productThumbnailImage: productHerbalImage1,
+        productThumbnailImage: producDrinkImage1,
         productName: "Collagen Drink",
         productDescription:
           "Collagen drinks with antioxidants tighten skin, reduce wrinkles, and regenerate skin cells.",
       },
       {
         productId: 5,
-        productThumbnailImage: productHerbalImage1,
+        productThumbnailImage: producDrinkImage2,
         productName: "Meal Replacement",
         productDescription:
           "Diet meal replacement drinks like Added Oat, Fiber, Malt, Soy Protein Isolate, etc.",
       },
       {
         productId: 6,
-        productThumbnailImage: productHerbalImage1,
+        productThumbnailImage: producDrinkImage3,
         productName: "Colostrum Milk Powder",
         productDescription:
           "Colostrum milk powder with almond flavor: anti-aging, slimming, and boosts immunity.",
       },
       {
         productId: 7,
-        productThumbnailImage: productHerbalImage1,
+        productThumbnailImage: producDrinkImage4,
         productName: "Fitness Supplement",
         productDescription:
           "Maklon fitness supplement drinks like whey protein and milk for athletes and workouts to maximize muscle growth.",
       },
       {
         productId: 8,
-        productThumbnailImage: productHerbalImage1,
+        productThumbnailImage: producDrinkImage5,
         productName: "Fiber Drink",
         productDescription:
           "A fiber-rich drink blend with natural fruit extracts for promoting weight loss, digestive health, and overall health concern.",
       },
       {
         productId: 9,
-        productThumbnailImage: productHerbalImage1,
+        productThumbnailImage: producDrinkImage6,
         productName: "Adult Stamina",
         productDescription:
           "Adult Stamina drinks, including Stamina Drink and Coffee Stamina, are made from natural herbal extracts to effectively boost men's stamina.",
@@ -123,25 +136,26 @@ const productsByCategory: Record<string, Category> = {
     },
     categoryId: 3,
     categoryName: "Herbal",
-    listSectionHeading: "Which Cosmetic Products Can Be Makloned At Harvest Group?",
+    listSectionHeading:
+      "Which Cosmetic Products Can Be Makloned At Harvest Group?",
     products: [
       {
         productId: 10,
-        productThumbnailImage: productHerbalImage1,
+        productThumbnailImage: productCosmeticImage1,
         productName: "Internal Medicine Liquid",
         productDescription:
           "Herbal manufacturing such as Propolis, Stamina Honey, Fertility, Slimming, Stomach Honey, Children's Honey, Tolak Angin, Date Palm Extract and other products.",
       },
       {
         productId: 11,
-        productThumbnailImage: productHerbalImage1,
+        productThumbnailImage: productCosmeticImage2,
         productName: "External Medicine Liquid",
         productDescription:
           "Herbal manufacturing such as Propolis, Stamina Honey, Fertility, Slimming, Stomach Honey, Children's Honey, Tolak Angin, Date Palm Extract and other products.",
       },
       {
         productId: 12,
-        productThumbnailImage: productHerbalImage1,
+        productThumbnailImage: productCosmeticImage3,
         productName: "Capsule Containing Extract Product.",
         productDescription:
           "Maklon products Spirulina Capsules, ASI boosters, Collagen Capsules, Ginger Extract Capsules, Binahong Extract Capsules, Ginseng Extract Capsules, Turmeric Extract Capsules etc.",
@@ -154,14 +168,11 @@ const getProductByCategory = (category: string): Category | null => {
   return productsByCategory[category] || undefined;
 };
 
-const getDetailProductPageContentByCategory = (
-  category: string
-) => {
+const getDetailProductPageContentByCategory = (category: string) => {
   return productsByCategory[category].hero || null;
 };
 
-
 export default {
   getProductByCategory,
-  getDetailProductPageContentByCategory
+  getDetailProductPageContentByCategory,
 };
