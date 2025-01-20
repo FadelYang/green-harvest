@@ -23,7 +23,7 @@ const SuccessStoryArticleList = () => {
   ];
 
   return (
-    <div className="flex overflow-x-auto max-w-full no-scrollbar pb-36 gap-6">
+    <div className="flex overflow-x-auto max-w-full no-scrollbar gap-6">
       {successStoryArticles.map((item) => (
         <SuccessStoryArticleCard
           key={item.id} // Use unique keys for React components
