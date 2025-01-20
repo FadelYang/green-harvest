@@ -3,22 +3,22 @@ import malaysiaFlag from "/img/malaysia-flag.svg";
 import indonesiaContactImage1 from "/img/indonesia-contact-image.png";
 import malaysiaContactImage1 from "/img/malaysia-contact-image.png";
 
-interface WhatsappContact {
+type WhatsappContact = {
   contactName: string | null;
   whatsappNumber: string;
-}
+};
 
-interface OtherContact {
+type OtherContact = {
   platformName: string;
   platformAddress: string;
-}
+};
 
-interface Image {
+type Image = {
   imageUrl: string;
   imageHref: string;
-}
+};
 
-interface CountryAddress {
+type CountryAddress = {
   name: string;
   flag: string;
   isFactory: boolean;
@@ -27,7 +27,7 @@ interface CountryAddress {
   whatsappNumber: WhatsappContact[];
   otherContact: OtherContact[];
   image: Image;
-}
+};
 
 const addresses: Record<string, CountryAddress> = {
   indonesia: {
