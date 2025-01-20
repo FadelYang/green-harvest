@@ -12,7 +12,7 @@ const NavigationBar = (props: any) => {
         {/* Right Content */}
         <div className="flex gap-8 items-center">
           <div>
-            <Link to={'/'}>
+            <Link to={"/"}>
               <img src={navBarLogo} alt="" className="h-[54px] w-[72px]" />
             </Link>
           </div>
@@ -26,13 +26,13 @@ const NavigationBar = (props: any) => {
         <div className="flex gap-6 items-center">
           <ul className="flex text-base text-slate-800 gap-6">
             <li>
-              <Link to={'/service'}>{t("navbar.ourExpertise")}</Link>
+              <Link to={"/service"}>{t("navbar.ourExpertise")}</Link>
             </li>
             <li>
               <a href="#">{t("navbar.valuedClients")}</a>
             </li>
             <li>
-              <a href="#">{t("navbar.about")}</a>
+              <Link to={"/about"}>{t("navbar.about")}</Link>
             </li>
             <li>
               <a href="#">{t("navbar.insightHub")}</a>
