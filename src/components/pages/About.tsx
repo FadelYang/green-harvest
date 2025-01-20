@@ -1,6 +1,7 @@
 import AboutHeroSection from '../organism/AboutHeroSection';
 import AboutOurGallery from '../organism/AboutOurGallery';
 import AboutOurStorySection from '../organism/AboutOurStorySection';
+import LastBannerSection from '../organism/LastBannerSection';
 import MainTemplate from '../templates/MainTemplate';
 
 const About = () => {
@@ -9,6 +10,7 @@ const About = () => {
       <AboutHeroSection />
       <AboutOurStorySection />
       <AboutOurGallery />
+      <LastBannerSection />
     </MainTemplate>
   )
 }
