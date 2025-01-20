@@ -4,7 +4,7 @@ import qnaImage from "/img/qna-image.png";
 const QnaSection = () => {
   return (
     <>
-      <div className="py-36 flex gap-10 max-w-[1444px] mx-auto">
+      <div className="py-36 flex gap-10 max-w-[1444px] mx-auto justify-between">
         <div className="flex flex-col gap-10">
           <h1 className="text-[#1E293B] font-medium text-[40px] pl-24">
             Frequently Asked <br />

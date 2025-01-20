@@ -55,7 +55,7 @@ const InsightHubSection = () => {
           </div>
         </div>
         {/* Article section */}
-        <div className="flex pl-24 gap-9 overflow-x-auto max-w-full no-scrollbar pb-36">
+        <div className="flex pl-24 gap-9 overflow-x-auto max-w-full no-scrollbar pb-36 mx-auto">
           <div className="flex gap-9">
             {insightHubArticleData.map((item, index) => (
               <ArticleCard
