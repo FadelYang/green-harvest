@@ -1,11 +1,14 @@
+import ContactAddressSection from '../organism/ContactAddressSection';
+import ContactHeaderSection from '../organism/ContactHeaderSection';
+import LastBannerSection from '../organism/LastBannerSection';
 import MainTemplate from '../templates/MainTemplate';
 
 const Contact = () => {
   return (
     <MainTemplate>
-      <div className="flex items-center justify-center">
-        This page is under construction
-      </div>
+      <ContactHeaderSection />
+      <ContactAddressSection />
+      <LastBannerSection />
     </MainTemplate>
   );
 };

@@ -38,7 +38,7 @@ const NavigationBar = (props: any) => {
               <a href="#">{t("navbar.insightHub")}</a>
             </li>
             <li>
-              <a href="#">{t("navbar.contact")}</a>
+              <Link to="/contact">{t("navbar.contact")}</Link>
             </li>
           </ul>
           <div className="">
