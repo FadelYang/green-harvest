@@ -21,7 +21,7 @@ const ServiceHeroSection = () => {
         <div className="px-24 z-10">
           <Button variant="primary-button">Get Free Consultation</Button>
         </div>
-        <div className="flex gap-3 -mt-16">
+        <div className="flex gap-3 -mt-16 overflow-hidden">
           <img src={serviceHeroImage1} alt="" />
           <img src={serviceHeroImage2} alt="" />
           <img src={serviceHeroImage3} alt="" />

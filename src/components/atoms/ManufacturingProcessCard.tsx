@@ -1,4 +1,3 @@
-import manufacturingProcessImage1 from "/img/manufacturing-process-1.png";
 
 type ManufacturingProcessCardProps = {
   openDetail: number | null;
@@ -6,10 +5,11 @@ type ManufacturingProcessCardProps = {
   title: string;
   description: string;
   onClick: any;
+  imageThumbnail: string | undefined
 };
 
 const ManufacturingProcessCard = (props: ManufacturingProcessCardProps) => {
-  const { openDetail, id, title, description, onClick } = props;
+  const { openDetail, id, title, description, onClick, imageThumbnail } = props;
 
   return (
     <>
@@ -41,7 +41,7 @@ const ManufacturingProcessCard = (props: ManufacturingProcessCardProps) => {
           </div>
           <div className="flex-1">
             <img
-              src={manufacturingProcessImage1}
+              src={imageThumbnail}
               alt=""
               className="object-cover w-full h-full"
             />
