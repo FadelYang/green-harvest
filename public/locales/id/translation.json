@@ -142,6 +142,23 @@
         "title": "Pengiriman Produk",
         "description": "We will send your products ready for distribution & marketing on time."
       }
+    },
+    "successStory": {
+      "header": "Kisah Sukses Kami",
+      "subHeader": "Selama 20 tahun terakhir, kami berkolaborasi dengan banyak mitra. Berikut adalah beberapa kisah sukses kami",
+      "readMoreButton": "Baca Lebih Lanjut",
+      "article": {
+        "1": {
+          "id": 1,
+          "title": "PUREVITALITY",
+          "description": "Dari Konsep ke Pasar: Peningkatan Pesat PureVitality dengan Keahlian Maklon Indo Greenlife Herbal"
+        },
+        "2": {
+          "id": 2,
+          "title": "SOMETHING",
+          "description": "Sesuatu seperti Rorem ipsum dolor sit amet, consectetur adipiscing elit."
+        }
+      }
     }
   },
   "footer": {

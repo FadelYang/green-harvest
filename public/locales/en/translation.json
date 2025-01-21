@@ -142,6 +142,23 @@
         "title": "Product Shipping",
         "description": "We will send your products ready for distribution & marketing on time."
       }
+    },
+    "successStory": {
+      "header": "Our Success Story",
+      "subHeader": "For the past 20 years, we collaborate with many partner. Here are some of our success story",
+      "readMoreButton": "Read More",
+      "article": {
+        "1": {
+          "id": 1,
+          "title": "PUREVITALITY",
+          "description": "From Concept to Market: PureVitality's Rapid Rise with Indo Greenlife Herbal's Maklon Expertise"
+        },
+        "2": {
+          "id": 2,
+          "title": "SOMETHING",
+          "description": "Something like Rorem ipsum dolor sit amet, consectetur adipiscing elit."
+        }
+      }
     }
   },
   "footer": {
