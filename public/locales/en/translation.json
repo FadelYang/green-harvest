@@ -8,14 +8,39 @@
     "consultNow": "Consult Now!"
   },
   "home": {
-    "header": "Your Trusted Partner in High Quality Maklon Services",
-    "subHeader": "Specializing in the production of high-quality, private-label goods, we offer tailored manufacturing solutions to meet your business needs.",
-    "consultNowButton": "Consult Now!",
-    "exploreOurExpertiseButton": "Explore Our Expertise",
-    "achievmentItem": {
-      "sku": "SKU",
-      "bpom": "BPOM Certified Products",
-      "brands": "Brands"
+    "hero": {
+      "header": "Your Trusted Partner in High Quality Maklon Services",
+      "subHeader": "Specializing in the production of high-quality, private-label goods, we offer tailored manufacturing solutions to meet your business needs.",
+      "consultNowButton": "Consult Now!",
+      "exploreOurExpertiseButton": "Explore Our Expertise",
+      "viewMoreOurExpertiseButton": "Explore More Our Expertise",
+      "achievmentItem": {
+        "sku": "SKU",
+        "bpom": "BPOM Certified Products",
+        "brand": "Brands"
+      },
+      "expertiseHero": {
+        "header": "OUR MAKLON EXPERTISE",
+        "subHeader": "We are not just producing your products, but also helping you build your product from scratch",
+        "expertiseItem": {
+          "customFormulation": {
+            "title": "Custom Formulation",
+            "description": "We offer custom formulation services using high quality materials, ensuring your unique vision comes to life."
+          },
+          "blendingAndPackaging": {
+            "title": "Blending and Packaging",
+            "description": "Our state-of-the-art facilities handle a range of blending and packaging options to suit different product types and quantities."
+          },
+          "qualityAssurance": {
+            "title": "Quality Assurance",
+            "description": "We adhere to stringent quality control measures and industry standards, guaranteeing that your products are safe, consistent, and compliant."
+          },
+          "privateLabelSolution": {
+            "title": "Private Label Solutions",
+            "description": "Expand your brand with our private label services. From concept to shelf, we support you at every step."
+          }
+        }
+      }
     }
   },
   "footer": {

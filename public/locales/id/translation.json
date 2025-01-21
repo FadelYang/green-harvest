@@ -1,10 +1,59 @@
 {
   "navbar": {
-    "ourExpertise": "Keahlian Kami",
+    "ourExpertise": "Keahlian Kadaami",
     "valuedClients": "Klien Kami",
     "about": "Tentang Kami",
     "insightHub": "Insight hub",
     "contact": "Kontak",
     "consultNow": "Konsultai Sekarang!"
+  },
+  "home": {
+    "hero": {
+      "header": "Mitra Terpercaya Anda dalam Pelayanan Maklon Berkualitas Tinggi",
+      "subHeader": "Spesialisasi dalam produksi barang-barang berlabel pribadi berkualitas tinggi, kami menawarkan solusi manufaktur yang disesuaikan untuk memenuhi kebutuhan bisnis Anda.",
+      "consultNowButton": "Konsultasi Sekarang!",
+      "exploreOurExpertiseButton": "Lihat Keahlian Kami",
+      "viewMoreOurExpertiseButton": "Lihat Lebih Lanjut Keahlian Kami",
+      "achievmentItem": {
+        "sku": "SKU",
+        "bpom": "Produk Bersertifikat BPOM",
+        "brands": "Merek"
+      },
+      "expertiseHero": {
+        "header": "Keahlian Maklon Kami",
+        "subHeader": "Kami tidak hanya memproduksi produk anda, tetapi juga membantu anda membangun produk dari awal",
+        "expertiseItem": {
+          "customFormulation": {
+            "title": "Formulasi Kustom",
+            "description": "Kami menawarkan layanan formulasi khusus menggunakan bahan berkualitas tinggi, memastikan visi unik Anda menjadi nyata."
+          },
+          "blendingAndPackaging": {
+            "title": "Pencampuran dan Pengemasan",
+            "description": "Fasilitas canggih kami menangani berbagai opsi pencampuran dan pengemasan untuk disesuaikan dengan jenis dan jumlah produk yang berbeda."
+          },
+          "qualityAssurance": {
+            "title": "Jaminan Kualitas",
+            "description": "Kami mematuhi langkah-langkah kontrol kualitas yang ketat dan standar industri, menjamin bahwa produk Anda aman, konsisten, dan patuh."
+          },
+          "privateLabelSolution": {
+            "title": "Solusi Label Pribadi",
+            "description": "Perluas merek Anda dengan layanan label pribadi kami. Dari konsep hingga rak, kami mendukung Anda di setiap langkah."
+          }
+        }
+      }
+    }
+  },
+  "footer": {
+    "aboutHarvest": "Harvest Group is a premier MAKLON manufacturer in Indonesia and Malaysia, specializing in a diverse array of health food products, nutritional supplements, and our latest offering in cosmetics and skincare production.",
+    "usefulLink": {
+      "home": "Home",
+      "valuedClients": "Valued Clients",
+      "insightHub": "Insight hub"
+    },
+    "ourCompany": {
+      "about": "About",
+      "ourExpertise": "Our Expertise",
+      "contact": "Contact"
+    }
   }
 }

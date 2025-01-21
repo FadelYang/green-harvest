@@ -9,7 +9,7 @@ const HeroMaklonExpertiseItem = (props: HeroMaklonExpertiseItemProps) => {
 
   return (
     <>
-      <div className="max-w-[286px] max-h-[264px] p-4 flex flex-col gap-6">
+      <div className="max-w-[286px] min-h-[264px] p-4 flex flex-col gap-6 bg-slate-50">
         <div>
           <img src={imagePath} alt="" />
         </div>

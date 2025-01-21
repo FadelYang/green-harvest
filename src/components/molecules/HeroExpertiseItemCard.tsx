@@ -1,5 +1,6 @@
 import clsx from "clsx";
 import HeroExpertiseItem from "../atoms/HeroExpertiseItem";
+import { useTranslationContext } from "../../context/TranslationContext";
 
 type HeroExpertiseItemCardProps = {
   className?: string;
@@ -7,11 +8,12 @@ type HeroExpertiseItemCardProps = {
 
 const HeroExpertiseItemCard = (props: HeroExpertiseItemCardProps) => {
   const { className } = props;
+  const { t } = useTranslationContext();
 
   const heroExpertiseItemProps = [
-    { totalNumber: "20.000K +", category: "SKU" },
-    { totalNumber: "1.017K +", category: "BPOM Certified Products" },
-    { totalNumber: "600 +", category: "Brands" },
+    { totalNumber: "20.000K +", category: t("home.hero.achievmentItem.sku") },
+    { totalNumber: "1.017K +", category: t("home.hero.achievmentItem.bpom") },
+    { totalNumber: "600 +", category: t("home.hero.achievmentItem.brand") },
   ];
 
   return (
