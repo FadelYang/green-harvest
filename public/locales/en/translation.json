@@ -41,6 +41,23 @@
           }
         }
       }
+    },
+    "feature": {
+      "header": "WHY CHOOSE US",
+      "subHeader": "Why Partner With Green Life Harvest?",
+      "consultNowButton": "Consult Now!",
+      "legalCompletness": {
+        "title": "Legal Completeness",
+        "description": "Green Life Harvest has given notable certifications to ensure our quality match with your vision. Our Certification include <black>BPOM, Halal, ISO 22000, ISO 22716, ISO 9001, HAACP, CPOTB, CPKB, CPPOB</black>, and <black>GMP</black> Certification"
+      },
+      "experience": {
+        "title": "20 Years of Experience",
+        "description": "Our <black>20 years of experience</black> brings us as one of the most reliable Maklon services with 1000+ <black>entrepreneurs and brands</black> trusted us to bring their vision come to life."
+      },
+      "lowMoq": {
+        "title": "High Quality with Low MOQ Requirements",
+        "description": "We prioritize quality above all else when creating your product. Our state-of-the-art facilities ensure that only high-quality materials are used. Plus, we can accommodate a low MOQ for your product."
+      }
     }
   },
   "footer": {
@@ -57,3 +74,4 @@
     }
   }
 }
+

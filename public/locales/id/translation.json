@@ -41,6 +41,23 @@
           }
         }
       }
+    },
+    "feature": {
+      "header": "MENGAPA MEMILIH KAMI?",
+      "subHeader": "Mengapa Bermitra Dengan Green Life Harvest?",
+      "consultNowButton": "Konsultasi Sekarang!",
+      "legalCompletness": {
+        "title": "Kelengkapan Sertifikat",
+        "description": "Green Life Harvest telah memberikan sertifikasi terkemuka untuk memastikan kualitas kami sesuai dengan visi Anda. Sertifikasi kami meliputi <black>BPOM, Halal, ISO 22000, ISO 22716, ISO 9001, HAACP, CPOTB, CPKB, CPPOB</black>, dan <black>Sertifikasi GMP</black>"
+      },
+      "experience": {
+        "title": "Pengalaman 20 Tahun",
+        "description": "<black>20 tahun pengalaman</black> kami menjadikan kami sebagai salah satu layanan Maklon paling andal dengan <black>1000+ pengusaha dan merek</black> memercayai kami untuk mewujudkan visi mereka."
+      },
+      "lowMoq": {
+        "title": "Kualitas Tinggi dengan Persyaratan MOQ Rendah",
+        "description": "Kami mengutamakan kualitas di atas segalanya saat membuat produk Anda. Fasilitas canggih kami memastikan hanya bahan berkualitas tinggi yang digunakan. Selain itu, kami dapat mengakomodasi MOQ rendah untuk produk Anda."
+      }
     }
   },
   "footer": {

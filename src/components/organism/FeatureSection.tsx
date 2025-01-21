@@ -13,6 +13,8 @@ import featureExperience1 from "/img/feature-experience-1.png";
 import featureExperience2 from "/img/feature-experience-2.png";
 import featureExperience3 from "/img/feature-experience-3.png";
 import Button from "../atoms/Button";
+import { useTranslationContext } from "../../context/TranslationContext";
+import { Trans } from "react-i18next";
 
 const certificationLogos = [
   badanPonCertificationLogo,
@@ -28,29 +30,28 @@ const certificationLogos = [
 ];
 
 const FeatureSection = () => {
+  const { t } = useTranslationContext();
+
   return (
     <>
       <div className="py-36 flex flex-col gap-[50px] max-w-[1444px] mx-auto">
         <div className="px-24">
           <div className="flex flex-col gap-10">
             <HeaderSection
-              title="WHY CHOOSE US?"
-              subTitle="Why Partner With Green Life Harvest?"
+              title={t("home.feature.header")}
+              subTitle={t("home.feature.subHeader")}
             />
             {/* Legal completeness */}
             <div className="flex gap-[72px]">
               <div className="flex flex-col gap-4 justify-center">
                 <p className="text-black text-[32px] font-medium leading-[42px]">
-                  Legal Completness
+                  {t("home.feature.legalCompletness.title")}
                 </p>
                 <p className="text-slate-500 font-normal self-stretch">
-                  Green Life Harvest has given notable certifications to ensure
-                  our quality match with your vision. Our Certification include{" "}
-                  <span className="text-black">
-                    BPOM, Halal, ISO 22000, ISO 22716, ISO 9001, HAACP, CPOTB,
-                    CPKB, CPPOB,{" "}
-                  </span>
-                  and <span className="text-black">GMP Certification</span>
+                  <Trans
+                    i18nKey={"home.feature.legalCompletness.description"}
+                    components={{ black: <span className="text-black" /> }}
+                  />
                 </p>
               </div>
               <div className="grid grid-cols-5 min-w-[675px] gap-5">
@@ -73,19 +74,16 @@ const FeatureSection = () => {
                 </div>
                 <div className="h-[53px] w-[181px] bg-yellow-500 mx-24 -mt-20 z-10 opacity-80"></div>
               </div>
-              <div className="flex flex-col justify-center gap-4">
+              <div className="flex flex-col justify-center gap-4 pr-24">
                 <p className="text-black text-[32px] font-medium">
-                  20 Years of Experience
+                  {t("home.feature.experience.title")}
                 </p>
                 <div className="max-w-[773px]">
                   <p className="text-slate-500 text-base font-normal">
-                    Our{" "}
-                    <span className="text-black">20 years of experience</span>{" "}
-                    brings us as one of the most reliable Maklon services with{" "}
-                    <span className="text-black">
-                      1000+ entrepreneurs and brands
-                    </span>{" "}
-                    trusted us to bring their vision come to life.
+                    <Trans
+                      i18nKey={"home.feature.experience.description"}
+                      components={{ black: <span className="text-black" /> }}
+                    />
                   </p>
                 </div>
               </div>
@@ -95,14 +93,11 @@ const FeatureSection = () => {
               <div className="flex justify-between gap-[72px]">
                 <div className="flex flex-col justify-center items gap-4 ps-[100px]">
                   <p className="text-black text-[32px] font-medium max-w-[609px]">
-                    High Quality with Low MOQ Requirements
+                    {t("home.feature.lowMoq.title")}
                   </p>
                   <div className="max-w-[773px]">
                     <p className="text-slate-500 text-base font-normal">
-                      We prioritize quality above all else when creating your
-                      product. Our state-of-the-art facilities ensure that only
-                      high-quality materials are used. Plus, we can accommodate
-                      a low MOQ for your product.
+                      {t("home.feature.lowMoq.description")}
                     </p>
                   </div>
                 </div>
@@ -116,7 +111,9 @@ const FeatureSection = () => {
             </div>
           </div>
           <div className="flex justify-center">
-            <Button variant="primary-button">Consult Now!</Button>
+            <Button variant="primary-button">
+              {t("home.feature.consultNowButton")}
+            </Button>
           </div>
         </div>
       </div>
