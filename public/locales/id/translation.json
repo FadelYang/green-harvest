@@ -58,6 +58,36 @@
         "title": "Kualitas Tinggi dengan Persyaratan MOQ Rendah",
         "description": "Kami mengutamakan kualitas di atas segalanya saat membuat produk Anda. Fasilitas canggih kami memastikan hanya bahan berkualitas tinggi yang digunakan. Selain itu, kami dapat mengakomodasi MOQ rendah untuk produk Anda."
       }
+    },
+    "product": {
+      "header": "Kategori Maklon Produk Greenlife Harvest Group",
+      "1": {
+        "closeText": "Maklon Herbal / Kapsul",
+        "openText": {
+          "title": "Maklon Herbal / Kapsul",
+          "description": "Maklon Herbal dengan khasiat & kemasan sesuai kebutuhan Anda. Dalam bentuk kapsul, kaplet, propolis, madu dll.",
+          "buttonText": "Lihat produk yang bisa maklon",
+          "buttonHref": "herbal"
+        }
+      },
+      "2": {
+        "closeText": "Minuman Kesehatan",
+        "openText": {
+          "title": "Minuman Kesehatan",
+          "description": "Health & Beauty Drink Maklon in powder form such as diet drinks, Fiber, Collagen, Meal Replacement etc.",
+          "buttonText": "See product that can be maklon",
+          "buttonHref": "drink"
+        }
+      },
+      "3": {
+        "closeText": "Manufaktur Kosmetik",
+        "openText": {
+          "title": "Manufaktur Kosmetik",
+          "description": "Maklon Cosmetics & Facial Skincare, Hair Care & Body Skincare that is legal & according to your request.",
+          "buttonText": "See product that can be maklon",
+          "buttonHref": "cosmetic"
+        }
+      }
     }
   },
   "footer": {

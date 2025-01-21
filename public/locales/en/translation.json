@@ -58,6 +58,36 @@
         "title": "High Quality with Low MOQ Requirements",
         "description": "We prioritize quality above all else when creating your product. Our state-of-the-art facilities ensure that only high-quality materials are used. Plus, we can accommodate a low MOQ for your product."
       }
+    },
+    "product": {
+      "header": "Greenlife Harvest Group Product Maklon Category",
+      "1": {
+        "closeText": "Herbal Maklon / Capsule",
+        "openText": {
+          "title": "Herbal Maklon / Capsule",
+          "description": "Herbal Maklon with efficacy & packaging according to your needs. In the form of capsules, caplets, propolis, honey etc.",
+          "buttonText": "See product that can be maklon",
+          "buttonHref": "herbal"
+        }
+      },
+      "2": {
+        "closeText": "Health Drink Maklon",
+        "openText": {
+          "title": "Health Drink Maklon",
+          "description": "Health & Beauty Drink Maklon in powder form such as diet drinks, Fiber, Collagen, Meal Replacement etc.",
+          "buttonText": "See product that can be maklon",
+          "buttonHref": "drink"
+        }
+      },
+      "3": {
+        "closeText": "Cosmetic Manufacturing",
+        "openText": {
+          "title": "Cosmetic Manufacturing",
+          "description": "Maklon Cosmetics & Facial Skincare, Hair Care & Body Skincare that is legal & according to your request.",
+          "buttonText": "See product that can be maklon",
+          "buttonHref": "cosmetic"
+        }
+      }
     }
   },
   "footer": {
@@ -74,4 +104,3 @@
     }
   }
 }
-
