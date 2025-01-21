@@ -1,6 +1,6 @@
 {
   "navbar": {
-    "ourExpertise": "Keahlian Kadaami",
+    "ourExpertise": "Keahlian Kami",
     "valuedClients": "Klien Kami",
     "about": "Tentang Kami",
     "insightHub": "Insight hub",
@@ -93,6 +93,55 @@
       "header": "Kami berkomitmen untuk menjadi mitra terbaik untuk pertumbuhan brand Anda.",
       "subHeader": "<bold>Greenlife Harvest Group</bold> adalah produsen label swasta terkemuka yang mengkhususkan diri pada produk herbal, suplemen, dan kosmetik sejak tahun 2004. Dipercaya oleh ratusan merek, produk kami menjangkau lebih dari 50 negara di seluruh dunia.",
       "exploreOurProfileButton": "Lihat Profil Kami"
+    },
+    "manufacturingProcess": {
+      "header": "PROSES",
+      "subHeader": "Proses Manufaktur Kami",
+      "1": {
+        "id": "1",
+        "title": "Konsep Produk",
+        "description": "Konsultasikan dengan kami mengenai konsep produk yang ingin Anda buat sesuai kebutuhan Anda."
+      },
+      "2": {
+        "id": "2",
+        "title": "Menentukan Bahan & Formula",
+        "description": "Discuss your desired product formula and raw materials with our R&D expert team."
+      },
+      "3": {
+        "id": "3",
+        "title": "Pembuatan Sampel",
+        "description": "We produce product samples according to the best concept & formulation that you want."
+      },
+      "4": {
+        "id": "4",
+        "title": "Kesepakatan Harga",
+        "description": "A cooperation contract agreement for product manufacturing to be made and distributed in accordance with adequate procedures."
+      },
+      "5": {
+        "id": "5",
+        "title": "Memilih Kemasan",
+        "description": "Discuss packaging design with our best designer team to support your brand & customer appeal."
+      },
+      "6": {
+        "id": "6",
+        "title": "Uji Stabilitas & Kompatibilitas",
+        "description": "We perform a series of tests to ensure the formula will not change when filled into your product packaging."
+      },
+      "7": {
+        "id": "7",
+        "title": "Sertifikasi Lisensi Produk",
+        "description": "Our team will help you process BPOM, HKI, and HALAL permits for your product until it's market-ready!"
+      },
+      "8": {
+        "id": "8",
+        "title": "Manufaktur Produk",
+        "description": "Choose us as your brand partner. We create your products with national and international standards."
+      },
+      "9": {
+        "id": "9",
+        "title": "Pengiriman Produk",
+        "description": "We will send your products ready for distribution & marketing on time."
+      }
     }
   },
   "footer": {
