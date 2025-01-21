@@ -9,7 +9,7 @@ const ServiceHeroSection = () => {
     <>
       <div className="flex flex-col gap-8 py-36 mx-auto max-w-[1444px]">
         <div className="px-24 flex gap-[200px]">
-          <h1 className="text-slate-800 text-[44px] leading-[54px] font-medium">
+          <h1 className="text-slate-800 text-[44px] leading-[54px] font-medium min-w-[520px]">
             Your Truested Partner in High Quality Maklon Services.
           </h1>
           <h2 className="flex items-end text-slate-500 leading-7 text-[18px] font-normal">
