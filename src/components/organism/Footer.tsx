@@ -5,9 +5,10 @@ import facebookIcon from "/img/facebookIcon.svg";
 import phoneIcon from "/img/phoneIcon.svg";
 import whatsAppIcon from "/img/whatsappIcon.svg";
 import envelopIcon from "/img/envelopIcon.svg";
+import { useTranslationContext } from "../../context/TranslationContext";
 
-const Footer = (props: any) => {
-  const { t } = props;
+const Footer = () => {
+  const { t } = useTranslationContext();
 
   return (
     <div className="bg-black py-[72px]  -mb-6">

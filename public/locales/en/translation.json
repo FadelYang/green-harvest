@@ -7,6 +7,17 @@
     "contact": "Contact",
     "consultNow": "Consult Now!"
   },
+  "home": {
+    "header": "Your Trusted Partner in High Quality Maklon Services",
+    "subHeader": "Specializing in the production of high-quality, private-label goods, we offer tailored manufacturing solutions to meet your business needs.",
+    "consultNowButton": "Consult Now!",
+    "exploreOurExpertiseButton": "Explore Our Expertise",
+    "achievmentItem": {
+      "sku": "SKU",
+      "bpom": "BPOM Certified Products",
+      "brands": "Brands"
+    }
+  },
   "footer": {
     "aboutHarvest": "Harvest Group is a premier MAKLON manufacturer in Indonesia and Malaysia, specializing in a diverse array of health food products, nutritional supplements, and our latest offering in cosmetics and skincare production.",
     "usefulLink": {

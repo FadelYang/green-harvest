@@ -4,8 +4,11 @@ import HeroExpertiseItemCard from "../molecules/HeroExpertiseItemCard";
 import HeroMaklonExpertiseCardList from "../molecules/HeroMaklonExpertiseCardList";
 import arrowRight from "/img/arrowRight.svg";
 import heroImage from "/img/hero-image.png";
+import { useTranslationContext } from '../../context/TranslationContext';
 
 const HeroSection = () => {
+  const { t } = useTranslationContext();
+
   return (
     <>
       {/* Hero */}
@@ -14,7 +17,7 @@ const HeroSection = () => {
         <div className="flex justify-between px-24 z-10">
           <div className="flex flex-col gap-8 max-w-[731px]">
             <h1 className="text-[44px] font-[500] text-slate-800">
-              Your Trusted Partner in High Quality Maklon Services
+              {t("navbar.valuedClients")}
             </h1>
             <h2 className="text-base font-normal text-slate-500">
               Specializing in the production of high-quality, private-label

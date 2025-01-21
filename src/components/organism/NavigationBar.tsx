@@ -3,16 +3,10 @@ import englishFlag from "/img/english-flag.svg";
 import indonesiaFlag from "/img/indonesia-flag.svg";
 import Button from "../atoms/Button";
 import { Link } from "react-router-dom";
-import { TFunction } from 'i18next';
+import { useTranslationContext } from '../../context/TranslationContext';
 
-type NavigationBarProps = {
-  t: TFunction<"translation", undefined>;
-  handleChangeLanguage: () => void;
-  currentLanguage: string;
-};
-
-const NavigationBar = (props: NavigationBarProps) => {
-  const { t, handleChangeLanguage, currentLanguage } = props;
+const NavigationBar = () => {
+  const { t, handleChangeLanguage, currentLanguage } = useTranslationContext();
 
   return (
     <div className="px-24 py-6 sticky top-0 overflow-hidden bg-white z-50">
