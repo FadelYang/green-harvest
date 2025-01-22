@@ -24,7 +24,7 @@ const Home = () => {
       <SuccessStorySection t={t} />
       <ProductAvailableSection t={t} />
       <InsightHubSection t={t} />
-      <QnaSection />
+      <QnaSection t={t} />
       <LastBannerSection />
     </MainTemplate>
   );

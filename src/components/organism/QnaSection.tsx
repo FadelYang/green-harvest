@@ -1,7 +1,10 @@
-import QnaList from '../molecules/QnaList';
+import { TranslationProps } from "../../types/types";
+import QnaList from "../molecules/QnaList";
 import qnaImage from "/img/qna-image.png";
 
-const QnaSection = () => {
+const QnaSection = (props: TranslationProps) => {
+  const { t } = props;
+
   return (
     <>
       <div className="py-36 flex gap-10 max-w-[1444px] mx-auto justify-between">
@@ -15,8 +18,8 @@ const QnaSection = () => {
             <div className="bg-yellow-500 w-[336px] h-[100px] z-10 opacity-80 -mt-14"></div>
           </div>
         </div>
-        <div className='p-6 pr-24 w-[724px]'>
-          <QnaList />
+        <div className="p-6 pr-24 w-[724px]">
+          <QnaList t={t}/>
         </div>
       </div>
     </>
