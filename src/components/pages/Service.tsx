@@ -10,7 +10,7 @@ const Service = (props: TranslationProps) => {
 
   return (
     <MainTemplate t={t}>
-      <ServiceHeroSection />
+      <ServiceHeroSection t={t}/>
       <ProductSection t={t}/>
       <ProductAvailableSection t={t}/>
       <LastBannerSection t={t}/>

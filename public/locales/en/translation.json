@@ -243,6 +243,13 @@
       "consultWithUsButton": "Consult With Us"
     }
   },
+  "service": {
+    "hero": {
+      "header": "Your Truested Partner in High Quality Maklon Services.",
+      "subHeader": "Launch your brand with confidence. From formulation to packaging, we provide end-to-end Maklon services solutions that meet the highest industry standards.",
+      "getFreeConsultationButton": "Get Free Consultation"
+    }
+  },
   "footer": {
     "aboutHarvest": "Harvest Group is a premier MAKLON manufacturer in Indonesia and Malaysia, specializing in a diverse array of health food products, nutritional supplements, and our latest offering in cosmetics and skincare production.",
     "usefulLink": {
