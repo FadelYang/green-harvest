@@ -159,6 +159,47 @@
           "description": "Sesuatu seperti Rorem ipsum dolor sit amet, consectetur adipiscing elit."
         }
       }
+    },
+    "productAvailable": {
+      "header": "Produk Khusus Tersedia di Harvest Group",
+      "products": {
+        "1": {
+          "id": 1,
+          "buttonText": "Minuman Fiber",
+          "title": "Minuman Fiber",
+          "description": "Boost digestive health with high-fiber drinks tailored to your brand's needs. Our fiber-based formulations help in maintaining gut health and provide essential nutrients for daily wellness."
+        },
+        "2": {
+          "id": 2,
+          "buttonText": "Meal Replacement",
+          "title": "Meal Replacement",
+          "description": "Create balanced meal replacement products that offer complete nutrition for those on the go. Our options include protein-packed shakes and fortified powders to support weight management and fitness goals."
+        },
+        "3": {
+          "id": 3,
+          "buttonText": "Skincare & Kosmetik",
+          "title": "Skincare & Cosmetics",
+          "description": "Develop premium skincare and cosmetic products, from cleansers and moisturizers to specialized treatments. Our formulations focus on efficacy and safety, ensuring high customer satisfaction."
+        },
+        "4": {
+          "id": 4,
+          "buttonText": "Minuman Kolagen",
+          "title": "Minuman Kolagen",
+          "description": "Support beauty from within with our collagen-based drinks, designed to enhance skin elasticity and hydration. We provide customizable formulas rich in peptides and vitamins for optimal results."
+        },
+        "5": {
+          "id": 5,
+          "buttonText": "Susu Kolostrum",
+          "title": "Susu Kolostrum",
+          "description": "Leverage the power of colostrum for immune support with our specialized colostrum milk products. Rich in antibodies and growth factors, these products are perfect for health-focused brands."
+        },
+        "6": {
+          "id": 6,
+          "buttonText": "Whey Protein",
+          "title": "Whey Protein",
+          "description": "Formulate high-quality whey protein products for fitness enthusiasts and athletes. Our whey protein options come in various flavors and compositions, ideal for muscle recovery and strength building."
+        }
+      }
     }
   },
   "footer": {

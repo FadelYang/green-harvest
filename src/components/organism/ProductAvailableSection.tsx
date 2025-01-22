@@ -6,57 +6,51 @@ import productAvailable3 from "/img/product-available-3.png";
 import productAvailable4 from "/img/product-available-4.png";
 import productAvailable5 from "/img/product-available-5.png";
 import productAvailable6 from "/img/product-available-6.png";
+import { useTranslationContext } from "../../context/TranslationContext";
 
 const ProductAvailableSection = () => {
   const [activeProduct, setActiveProduct] = useState<Number>(1);
+  const { t } = useTranslationContext();
 
   const products = [
     {
       id: 1,
-      buttonText: "Fiber-based Drink",
-      title: "Fiber Drink",
-      description:
-        "Boost digestive health with high-fiber drinks tailored to your brand's needs. Our fiber-based formulations help in maintaining gut health and provide essential nutrients for daily wellness.",
+      buttonText: t('home.productAvailable.products.1.buttonText'),
+      title: t('home.productAvailable.products.1.title'),
+      description:t('home.productAvailable.products.1.description'),
       image: productAvailable1,
     },
     {
       id: 2,
-      buttonText: "Meal Replacement",
-      title: "Meal Replacement",
-      description:
-        "Create balanced meal replacement products that offer complete nutrition for those on the go. Our options include protein-packed shakes and fortified powders to support weight management and fitness goals.",
+      buttonText: t('home.productAvailable.products.2.buttonText'),
+      title: t('home.productAvailable.products.2.title'),
+      description:t('home.productAvailable.products.2.description'),
       image: productAvailable2,
     },
     {
       id: 3,
-      buttonText: "Skincare & Cosmetics",
-      title: "Skincare & Cosmetics",
-      description:
-        "Develop premium skincare and cosmetic products, from cleansers and moisturizers to specialized treatments. Our formulations focus on efficacy and safety, ensuring high customer satisfaction.",
+      buttonText: t('home.productAvailable.products.3.buttonText'),
+      title: t('home.productAvailable.products.3.title'),
+      description:t('home.productAvailable.products.3.description'),
       image: productAvailable3,
     },
     {
-      id: 4,
-      buttonText: "Collagen-based Drink",
-      title: "Collagen-based Drink",
-      description:
-        "Support beauty from within with our collagen-based drinks, designed to enhance skin elasticity and hydration. We provide customizable formulas rich in peptides and vitamins for optimal results.",
+      buttonText: t('home.productAvailable.products.4.buttonText'),
+      title: t('home.productAvailable.products.4.title'),
+      description:t('home.productAvailable.products.4.description'),
       image: productAvailable4,
     },
     {
       id: 5,
-      buttonText: "Collustrum Milk",
-      title: "Collustrum Milk",
-      description:
-        "Leverage the power of colostrum for immune support with our specialized colostrum milk products. Rich in antibodies and growth factors, these products are perfect for health-focused brands.",
+      buttonText: t('home.productAvailable.products.5.buttonText'),
+      title: t('home.productAvailable.products.5.title'),
+      description:t('home.productAvailable.products.5.description'),
       image: productAvailable5,
     },
     {
-      id: 6,
-      buttonText: "Whey Protein",
-      title: "Whey Protein",
-      description:
-        "Formulate high-quality whey protein products for fitness enthusiasts and athletes. Our whey protein options come in various flavors and compositions, ideal for muscle recovery and strength building.",
+      buttonText: t('home.productAvailable.products.6.buttonText'),
+      title: t('home.productAvailable.products.6.title'),
+      description:t('home.productAvailable.products.6.description'),
       image: productAvailable6,
     },
   ];
@@ -71,10 +65,14 @@ const ProductAvailableSection = () => {
           <div className="flex flex-col gap-4">
             {products.map((item, index) => (
               <Button
-                onClick={() => setActiveProduct(item.id)}
+                onClick={() => setActiveProduct(item.id!)}
                 key={index}
                 paddingSize="px-6 py-2"
-                className={`product-available-select-button ${activeProduct === item.id ? "product-availabel-select-button-selected" : ""}`}
+                className={`product-available-select-button ${
+                  activeProduct === item.id
+                    ? "product-availabel-select-button-selected"
+                    : ""
+                }`}
               >
                 {item.buttonText}
               </Button>
@@ -82,7 +80,12 @@ const ProductAvailableSection = () => {
           </div>
           <div className="">
             {products.map((item, index) => (
-              <div key={index} className={`flex flex-col ${activeProduct === item.id ? 'block ': 'hidden'}`}>
+              <div
+                key={index}
+                className={`flex flex-col ${
+                  activeProduct === item.id ? "block " : "hidden"
+                }`}
+              >
                 <div>
                   <img src={item.image} alt="" />
                 </div>
