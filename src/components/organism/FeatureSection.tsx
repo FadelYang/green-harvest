@@ -13,8 +13,8 @@ import featureExperience1 from "/img/feature-experience-1.png";
 import featureExperience2 from "/img/feature-experience-2.png";
 import featureExperience3 from "/img/feature-experience-3.png";
 import Button from "../atoms/Button";
-import { useTranslationContext } from "../../context/TranslationContext";
 import { Trans } from "react-i18next";
+import { TranslationProps } from '../../types/types';
 
 const certificationLogos = [
   badanPonCertificationLogo,
@@ -29,8 +29,8 @@ const certificationLogos = [
   tsi9001CertificationLogo,
 ];
 
-const FeatureSection = () => {
-  const { t } = useTranslationContext();
+const FeatureSection = (props: TranslationProps) => {
+  const { t } = props;
 
   return (
     <>

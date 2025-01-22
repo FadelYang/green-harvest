@@ -9,12 +9,12 @@ import product3Open from "/img/product-3-open.png";
 import product3Close from "/img/product-3-close.png";
 import Button from "../atoms/Button";
 import { useNavigate } from "react-router-dom";
-import { useTranslationContext } from "../../context/TranslationContext";
+import { TranslationProps } from '../../types/types';
 
-const ProductSection = () => {
+const ProductSection = (props: TranslationProps) => {
   const [activeProduct, setActiveProduct] = useState<number>(1);
   const navigate = useNavigate();
-  const { t } = useTranslationContext();
+  const { t } = props;
 
   const products = [
     {

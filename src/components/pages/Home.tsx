@@ -1,3 +1,4 @@
+import { useTranslationContext } from "../../context/TranslationContext";
 import FeatureSection from "../organism/FeatureSection";
 import HeroSection from "../organism/HeroSection";
 import InsightHubSection from "../organism/InsightHubSection";
@@ -11,16 +12,18 @@ import VideoSection from "../organism/VideoSection";
 import MainTemplate from "../templates/MainTemplate";
 
 const Home = () => {
+  const { t } = useTranslationContext();
+
   return (
-    <MainTemplate>
-      <HeroSection />
-      <FeatureSection />
-      <ProductSection />
-      <VideoSection />
-      <ManufacturingProcessSection />
-      <SuccessStorySection />
-      <ProductAvailableSection />
-      <InsightHubSection />
+    <MainTemplate t={t}>
+      <HeroSection t={t} />
+      <FeatureSection t={t} />
+      <ProductSection t={t} />
+      <VideoSection t={t} />
+      <ManufacturingProcessSection t={t} />
+      <SuccessStorySection t={t} />
+      <ProductAvailableSection t={t} />
+      <InsightHubSection t={t} />
       <QnaSection />
       <LastBannerSection />
     </MainTemplate>

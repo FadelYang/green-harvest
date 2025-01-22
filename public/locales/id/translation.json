@@ -200,6 +200,10 @@
           "description": "Formulate high-quality whey protein products for fitness enthusiasts and athletes. Our whey protein options come in various flavors and compositions, ideal for muscle recovery and strength building."
         }
       }
+    },
+    "insightHub": {
+      "header": "Pusat Wawasan",
+      "viewMoreArticleButton": "Lihat Artikel Lainnya"
     }
   },
   "footer": {

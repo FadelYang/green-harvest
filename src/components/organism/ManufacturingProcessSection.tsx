@@ -1,9 +1,9 @@
-import { useTranslationContext } from "../../context/TranslationContext";
+import { TranslationProps } from '../../types/types';
 import Button from "../atoms/Button";
 import ManufacturingProcessList from "../molecules/ManufacturingProcessList";
 
-const ManufacturingProcessSection = () => {
-  const { t } = useTranslationContext();
+const ManufacturingProcessSection = (props: TranslationProps) => {
+  const { t } = props;
 
   return (
     <>

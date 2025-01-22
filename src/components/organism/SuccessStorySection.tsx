@@ -2,10 +2,10 @@ import Button from "../atoms/Button";
 import arrowRight from "/img/arrowRight.svg";
 import Arrow from "../atoms/Arrow";
 import SuccessStoryArticleList from "../molecules/SuccessStoryArticleList";
-import { useTranslationContext } from "../../context/TranslationContext";
+import { TranslationProps } from '../../types/types';
 
-const SuccessStorySection = () => {
-  const { t } = useTranslationContext();
+const SuccessStorySection = (props: TranslationProps) => {
+  const { t } = props;
 
   return (
     <>

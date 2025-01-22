@@ -4,6 +4,7 @@ import arrowRight from "/img/arrowRight.svg";
 import articleImage1 from "/img/article-image-1.png";
 import articleImage2 from "/img/article-image-2.png";
 import articleImage3 from "/img/article-image-3.png";
+import { TranslationProps } from '../../types/types';
 
 const insightHubArticleData = [
   {
@@ -34,21 +35,23 @@ const insightHubArticleData = [
   },
 ];
 
-const InsightHubSection = () => {
+const InsightHubSection = (props: TranslationProps) => {
+  const { t } = props;
+
   return (
     <>
       <div className="flex flex-col pt-36 gap-9">
         <div>
           <div className="px-24 flex justify-between items-center max-w-[1444px] mx-auto">
             <h1 className="text-slate-800 text-[40px] font-medium leading-[48px]">
-              Insight Hub
+              {t("home.insightHub.header")}
             </h1>
             <div>
               <Button
                 paddingSize="px-6 py-4"
                 className="flex gap-3 primary-text font-medium text-base border-b border-[#015F26]"
               >
-                View More Article{" "}
+                {t("home.insightHub.viewMoreArticleButton")}
                 <img src={arrowRight} alt="" className="-rotate-45" />
               </Button>
             </div>

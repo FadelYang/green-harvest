@@ -1,11 +1,11 @@
 import { Trans } from 'react-i18next';
-import { useTranslationContext } from "../../context/TranslationContext";
 import Button from "../atoms/Button";
 import arrowRight from "/img/arrowRight.svg";
 import video from "/video/video.mp4";
+import { TranslationProps } from '../../types/types';
 
-const VideoSection = () => {
-  const { t } = useTranslationContext();
+const VideoSection = (props: TranslationProps) => {
+  const { t } = props;
 
   return (
     <>

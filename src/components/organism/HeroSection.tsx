@@ -1,13 +1,14 @@
+import { TFunction } from "i18next";
 import Button from "../atoms/Button";
 import HeaderSection from "../atoms/HeaderSection";
 import HeroExpertiseItemCard from "../molecules/HeroExpertiseItemCard";
 import HeroMaklonExpertiseCardList from "../molecules/HeroMaklonExpertiseCardList";
 import arrowRight from "/img/arrowRight.svg";
 import heroImage from "/img/hero-image.png";
-import { useTranslationContext } from "../../context/TranslationContext";
+import { TranslationProps } from '../../types/types';
 
-const HeroSection = () => {
-  const { t } = useTranslationContext();
+const HeroSection = (props: TranslationProps) => {
+  const { t } = props;
 
   return (
     <>
@@ -65,14 +66,17 @@ const HeroSection = () => {
           </div>
           <div className="flex justify-center gap-4">
             <div>
-              <Button variant="primary-button">{t('home.hero.consultNowButton')}</Button>
+              <Button variant="primary-button">
+                {t("home.hero.consultNowButton")}
+              </Button>
             </div>
             <div>
               <Button
                 paddingSize="px-6 py-4"
                 className="flex gap-3 primary-text font-medium text-base border-b border-[#015F26]"
               >
-                {t('home.hero.viewMoreOurExpertiseButton')} <img src={arrowRight} alt="" />
+                {t("home.hero.viewMoreOurExpertiseButton")}{" "}
+                <img src={arrowRight} alt="" />
               </Button>
             </div>
           </div>

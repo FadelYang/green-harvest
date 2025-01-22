@@ -6,9 +6,14 @@ import phoneIcon from "/img/phoneIcon.svg";
 import whatsAppIcon from "/img/whatsappIcon.svg";
 import envelopIcon from "/img/envelopIcon.svg";
 import { useTranslationContext } from "../../context/TranslationContext";
+import { TFunction } from "i18next";
 
-const Footer = () => {
-  const { t } = useTranslationContext();
+type FooterProps = {
+  t: TFunction<"translation", undefined>;
+};
+
+const Footer = (props: FooterProps) => {
+  const { t } = props;
 
   return (
     <div className="bg-black py-[72px]  -mb-6">

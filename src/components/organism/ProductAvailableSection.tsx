@@ -6,11 +6,11 @@ import productAvailable3 from "/img/product-available-3.png";
 import productAvailable4 from "/img/product-available-4.png";
 import productAvailable5 from "/img/product-available-5.png";
 import productAvailable6 from "/img/product-available-6.png";
-import { useTranslationContext } from "../../context/TranslationContext";
+import { TranslationProps } from '../../types/types';
 
-const ProductAvailableSection = () => {
+const ProductAvailableSection = (props: TranslationProps) => {
   const [activeProduct, setActiveProduct] = useState<Number>(1);
-  const { t } = useTranslationContext();
+  const { t } = props;
 
   const products = [
     {
