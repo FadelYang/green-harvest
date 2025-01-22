@@ -1,30 +1,33 @@
+import { TranslationProps } from "../../types/types";
 import Button from "../atoms/Button";
 import lastBannerImage from "/img/last-banner-image.png";
 
-const LastBannerSection = () => {
+const LastBannerSection = (props: TranslationProps) => {
+  const { t } = props;
+
   return (
     <>
       <div className="flex justify-center px-24 py-36 overflow-hidden max-w-[1444px] mx-auto">
         <div className="bg-primary p-10 flex">
           <div className="flex flex-col gap-8 z-10 min-w-[600px]">
             <p className="text-white  font-medium text-[32px]">
-              Create Tailored Products for Your Brand
+              {t("home.lastBanner.header")}
             </p>
             <p className="text-white font-normal leading-[26px]">
-              Collaborate with us to develop premium products that engage your
-              customers. We guarantee quality, safety, and compliance at every
-              stage.
+              {t("home.lastBanner.subHeader")}
             </p>
             <div>
-              <Button className="bg-yellow-400">Consult With us</Button>
+              <Button className="bg-yellow-400">
+                {t("home.lastBanner.consultWithUsButton")}
+              </Button>
             </div>
           </div>
           <div className="flex items-end -m-10">
             <img src={lastBannerImage} alt="" className="z-10 w-[1160px]" />
           </div>
-          <div className='relative'>
+          <div className="relative">
             <svg
-            className='absolute -right-44 -mt-9'
+              className="absolute -right-44 -mt-9"
               xmlns="http://www.w3.org/2000/svg"
               width="509"
               height="295"

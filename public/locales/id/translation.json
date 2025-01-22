@@ -236,6 +236,11 @@
         "question": "Berapa lama perkiraan waktu produksi di Maklon Harvest Group?",
         "answer": "The first Maklon Production Process is different for each Maklon Division, but for the 2nd PO or Repeat Order, the production process only takes 2-3 weeks after order confirmation."
       }
+    },
+    "lastBanner": {
+      "header": "Buat Produk yang Disesuaikan untuk Merek Anda",
+      "subHeader": "Berkolaborasi dengan kami untuk mengembangkan produk premium yang melibatkan pelanggan Anda. Kami menjamin kualitas, keamanan, dan kepatuhan di setiap tahap.",
+      "consultWithUsButton": "Konsultasikan Dengan Kami"
     }
   },
   "footer": {

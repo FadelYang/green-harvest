@@ -1,4 +1,3 @@
-import { TFunction } from "i18next";
 import Button from "../atoms/Button";
 import HeaderSection from "../atoms/HeaderSection";
 import HeroExpertiseItemCard from "../molecules/HeroExpertiseItemCard";

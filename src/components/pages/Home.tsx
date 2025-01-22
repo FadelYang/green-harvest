@@ -25,7 +25,7 @@ const Home = () => {
       <ProductAvailableSection t={t} />
       <InsightHubSection t={t} />
       <QnaSection t={t} />
-      <LastBannerSection />
+      <LastBannerSection t={t}/>
     </MainTemplate>
   );
 };
