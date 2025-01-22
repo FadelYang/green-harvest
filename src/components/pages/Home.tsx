@@ -1,4 +1,4 @@
-import { useTranslationContext } from "../../context/TranslationContext";
+import { TranslationProps } from '../../types/types';
 import FeatureSection from "../organism/FeatureSection";
 import HeroSection from "../organism/HeroSection";
 import InsightHubSection from "../organism/InsightHubSection";
@@ -11,8 +11,8 @@ import SuccessStorySection from "../organism/SuccessStorySection";
 import VideoSection from "../organism/VideoSection";
 import MainTemplate from "../templates/MainTemplate";
 
-const Home = () => {
-  const { t } = useTranslationContext();
+const Home = (props: TranslationProps) => {
+  const { t } = props;
 
   return (
     <MainTemplate t={t}>

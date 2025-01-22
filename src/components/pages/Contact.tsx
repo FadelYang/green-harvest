@@ -1,14 +1,17 @@
-import ContactAddressSection from '../organism/ContactAddressSection';
-import ContactHeaderSection from '../organism/ContactHeaderSection';
-import LastBannerSection from '../organism/LastBannerSection';
-import MainTemplate from '../templates/MainTemplate';
+import { TranslationProps } from "../../types/types";
+import ContactAddressSection from "../organism/ContactAddressSection";
+import ContactHeaderSection from "../organism/ContactHeaderSection";
+import LastBannerSection from "../organism/LastBannerSection";
+import MainTemplate from "../templates/MainTemplate";
 
-const Contact = () => {
+const Contact = (props: TranslationProps) => {
+  const { t } = props;
+
   return (
-    <MainTemplate>
+    <MainTemplate t={t}>
       <ContactHeaderSection />
       <ContactAddressSection />
-      <LastBannerSection />
+      <LastBannerSection t={t}/>
     </MainTemplate>
   );
 };

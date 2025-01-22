@@ -4,11 +4,13 @@ import ProductPageHeader from "../organism/ProductPageHeader";
 import ProductCardList from "../molecules/ProductCardList";
 import LastBannerSection from "../organism/LastBannerSection";
 import NotFound from "./NotFound";
+import { TranslationProps } from "../../types/types";
 
-const Product = () => {
+const Product = (props: TranslationProps) => {
   const { category } = useParams<{ category?: string }>() || null;
 
   const currentExistCategories = ["herbal", "drink", "cosmetic"];
+  const { t } = props;
 
   if (!category) {
     console.error("Category is missing or undefined.");
@@ -18,15 +20,15 @@ const Product = () => {
   return (
     <>
       {currentExistCategories.includes(category) ? (
-        <MainTemplate>
+        <MainTemplate t={t}>
           <>
             <ProductPageHeader category={category} />
             <ProductCardList category={category} />
-            <LastBannerSection />
+            <LastBannerSection t={t}/>
           </>
         </MainTemplate>
       ) : (
-        <NotFound />
+        <NotFound t={t}/>
       )}
     </>
   );

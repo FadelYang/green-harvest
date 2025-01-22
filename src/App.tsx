@@ -6,20 +6,20 @@ import About from "./components/pages/About";
 import Contact from "./components/pages/Contact";
 import NotFound from "./components/pages/NotFound";
 import Product from "./components/pages/Product";
-import { TranslationProvider } from "./context/TranslationContext";
+import { useTranslationContext } from "./context/TranslationContext";
 
 const App = () => {
+  const { t } = useTranslationContext();
+
   return (
-    <TranslationProvider>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/service" element={<Service />} />
-        <Route path="/products/:category" element={<Product />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/about" element={<About />} />
-        <Route path="*" element={<NotFound />} />
-      </Routes>
-    </TranslationProvider>
+    <Routes>
+      <Route path="/" element={<Home t={t} />} />
+      <Route path="/service" element={<Service t={t} />} />
+      <Route path="/products/:category" element={<Product t={t} />} />
+      <Route path="/contact" element={<Contact t={t} />} />
+      <Route path="/about" element={<About t={t} />} />
+      <Route path="*" element={<NotFound t={t} />} />
+    </Routes>
   );
 };
 
