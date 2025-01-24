@@ -53,9 +53,9 @@ const NavigationBar = (props: NavigationBarProps) => {
             <li>
               <Link to={"/service"}>{t("navbar.ourExpertise")}</Link>
             </li>
-            <li>
+            {/* <li>
               <a href="#">{t("navbar.valuedClients")}</a>
-            </li>
+            </li> */}
             <li>
               <Link to={"/about"}>{t("navbar.about")}</Link>
             </li>

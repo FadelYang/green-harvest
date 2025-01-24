@@ -250,6 +250,40 @@
       "getFreeConsultationButton": "Dapatkan Konsultasi Gratis"
     }
   },
+  "aboutUs": {
+    "hero": {
+      "header": "Anda Pemilik Mereknya, Kami Melakukan Selebihnya",
+      "subHeader": "<bold>Greenlife Harvest</bold> Group adalah produsen label swasta terkemuka yang mengkhususkan diri pada produk herbal, suplemen, dan kosmetik sejak tahun 2004. Dipercaya oleh ratusan merek, produk kami menjangkau lebih dari 50 negara di seluruh dunia.",
+      "consultNowButton": "Konsultasi Sekarang!"
+    },
+    "ourStory": {
+      "header": "Kisah kami",
+      "story1": {
+        "title": "Dua dekade menciptakan produk berkualitas untuk ratusan merek",
+        "body": {
+          "1": "Didirikan pada tahun 2004, Harvest Group berdiri sebagai MAKLON utama pabrikan di Indonesia dan Malaysia, yang mengkhususkan diri pada rangkaian produk makanan kesehatan, suplemen nutrisi, dan penawaran terbaru kami dalam produksi kosmetik dan perawatan kulit.",
+          "2": "Di PT IndoGreenlife Harvest, kami lebih dari sekedar produsen kontrak. Komitmen kami dimulai dengan mencari bahan baku berkualitas tinggi dan memanfaatkan teknologi canggih untuk menghasilkan produk yang efektif dan aman yang disesuaikan untuk memenuhi kebutuhan klien kami.. Dengan delapan fasilitas manufaktur yang berlokasi strategis di Indonesia dan Malaysia, kami mematuhi standar kualitas yang ketat, termasuk sertifikasi GMP, HACCP, dan Halal, didukung oleh sistem manajemen kualitas komprehensif yang selaras dengan standar ISO internasional.",
+          "3": "Sejak mulai beroperasi di Indonesia pada tahun 2018, kami telah berkembang pesat, mendapatkan kepercayaan dari banyak pengusaha yang telah bermitra dengan Harvest Group dan Indo Greenlife Harvest. Hingga saat ini, kami telah memproduksi lebih dari 6.000 produk merek MAKLON, mengekspor ke lebih dari 50 negara di seluruh dunia."
+        }
+      },
+      "story2": {
+        "title": "Solusi Terpadu untuk Produk Kesehatan Anda",
+        "body": {
+          "1": "Bermitra dengan kami untuk mengembangkan merek produk kesehatan Anda dengan lancar. One-stop-solution kami mencakup semua aspek produk pengembangan, termasuk penelitian dan pengembangan formulasi baru, konsultasi produk, dukungan pemasaran, layanan Maklon, desain kemasan, registrasi produk, dokumentasi ekspor, pengujian laboratorium, dan penjelasan produk secara detail oleh konsultan internal kami.",
+          "2": "Fasilitas manufaktur canggih kami beroperasi 24/7, dengan produksi bulanan melebihi 2 juta kotak untuk memenuhi permintaan global. Dalam beberapa tahun terakhir, kami telah mengoptimalkan proses manufaktur dengan meningkatkan otomatisasi, sehingga menghasilkan peningkatan produktivitas dan efisiensi.",
+          "3": "Kami selalu terdepan dalam tren pasar, menawarkan rangkaian lengkap lebih dari 20 jenis produk kesehatan yang memenuhi berbagai kebutuhan konsumen, termasuk penambah kesehatan kekebalan tubuh, solusi kesehatan pencernaan, suplemen anti-penuaan, suplemen atletik, dan suplemen makanan seperti minuman pengganti makanan dan . peptida. Produk kami tersedia dalam enam format: bubuk, kantong teh, kapsul, tablet, permen, dan cairan.",
+          "4": "Di awal tahun 2023, kami akan memperkenalkan layanan Maklon khusus produk kosmetik dan perawatan kulit untuk memenuhi kebutuhan produk kecantikan Anda."
+        }
+      },
+      "story3": {
+        "title": "Bermitra dengan Harvest Group",
+        "body": {
+          "1": "Ciptakan merek produk kesehatan Anda bersama kami dan mulailah perjalanan pertumbuhan dan kesuksesan bersama. Percayakan Harvest Group sebagai mitra terpercaya Anda untuk produk kesehatan dan kecantikan."
+        }
+      }
+    },
+    "ourGallery": "Galeri Kami"
+  },
   "footer": {
     "aboutHarvest": "Harvest Group is a premier MAKLON manufacturer in Indonesia and Malaysia, specializing in a diverse array of health food products, nutritional supplements, and our latest offering in cosmetics and skincare production.",
     "usefulLink": {
