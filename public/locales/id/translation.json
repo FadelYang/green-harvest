@@ -105,42 +105,42 @@
       "2": {
         "id": "2",
         "title": "Menentukan Bahan & Formula",
-        "description": "Discuss your desired product formula and raw materials with our R&D expert team."
+        "description": "Diskusikan formula produk dan bahan baku yang Anda inginkan dengan tim ahli R&D kami."
       },
       "3": {
         "id": "3",
         "title": "Pembuatan Sampel",
-        "description": "We produce product samples according to the best concept & formulation that you want."
+        "description": "Kami memproduksi sampel produk sesuai dengan konsep & formulasi terbaik yang anda inginkan."
       },
       "4": {
         "id": "4",
         "title": "Kesepakatan Harga",
-        "description": "A cooperation contract agreement for product manufacturing to be made and distributed in accordance with adequate procedures."
+        "description": "Perjanjian kontrak kerjasama untuk pembuatan produk yang akan dibuat dan didistribusikan sesuai dengan prosedur yang memadai."
       },
       "5": {
         "id": "5",
         "title": "Memilih Kemasan",
-        "description": "Discuss packaging design with our best designer team to support your brand & customer appeal."
+        "description": "Diskusikan desain kemasan dengan tim desainer terbaik kami untuk mendukung merek & daya tarik pelanggan anda."
       },
       "6": {
         "id": "6",
         "title": "Uji Stabilitas & Kompatibilitas",
-        "description": "We perform a series of tests to ensure the formula will not change when filled into your product packaging."
+        "description": "Kami melakukan serangkaian pengujian untuk memastikan formula tidak akan berubah saat dimasukkan ke dalam kemasan produk Anda."
       },
       "7": {
         "id": "7",
         "title": "Sertifikasi Lisensi Produk",
-        "description": "Our team will help you process BPOM, HKI, and HALAL permits for your product until it's market-ready!"
+        "description": "Tim kami akan membantu Anda memproses izin BPOM, HKI, dan HALAL untuk produk Anda hingga siap dipasarkan!"
       },
       "8": {
         "id": "8",
         "title": "Manufaktur Produk",
-        "description": "Choose us as your brand partner. We create your products with national and international standards."
+        "description": "Pilih kami sebagai mitra merek Anda. Kami menciptakan produk Anda dengan standar nasional dan internasional."
       },
       "9": {
         "id": "9",
         "title": "Pengiriman Produk",
-        "description": "We will send your products ready for distribution & marketing on time."
+        "description": "Kami akan mengirimkan produk Anda agar siap didistribusikan & dipasarkan tepat waktu."
       }
     },
     "successStory": {
