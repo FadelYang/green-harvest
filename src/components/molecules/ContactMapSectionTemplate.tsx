@@ -1,18 +1,20 @@
-import envelopIcon from "/img/envelopIcon.svg";
-import contactAddressMasterData from "../atoms/contactAddressMasterData";
 import WhatsappIcon from "../atoms/WhatsappIcon";
 import PhoneIcon from "../atoms/PhoneIcon";
 import EnvelopIcon from "../atoms/EnvelopIcon";
 import FactoryIcon from "../atoms/FactoryIcon";
 import MonitorIcon from "../atoms/MonitorIcon";
+import useAddresses from "../atoms/contactAddressMasterData";
+import { TFunction } from "i18next";
 
 type ContactMapSectionTemplateProps = {
   country: string;
+  t: TFunction<"translation", undefined>;
 };
 
 const ContactMapSectionTemplate = (props: ContactMapSectionTemplateProps) => {
-  const { country } = props;
-  const countryData = contactAddressMasterData.getAddressByCountry(country);
+  const { country, t } = props;
+  const { getAddressByCountry } = useAddresses({ t });
+  const countryData = getAddressByCountry(country);
 
   return (
     <>
@@ -77,9 +79,15 @@ const ContactMapSectionTemplate = (props: ContactMapSectionTemplateProps) => {
             </div>
             <div className="flex gap-2">
               {countryData?.otherContact[0].platformName === "Website" ? (
-                <MonitorIcon fill="none" stroke="#64748B" />
+                <>
+                  <MonitorIcon fill="none" stroke="#64748B" />
+                  {t("contact.address.malaysia.website")}:
+                </>
               ) : (
-                <EnvelopIcon fill="none" stroke="#64748B" />
+                <>
+                  <EnvelopIcon fill="none" stroke="#64748B" />
+                  {t("contact.address.indonesia.email")}:
+                </>
               )}
               {countryData?.otherContact.map((item, index) => (
                 <div key={index}>{item?.platformAddress}</div>

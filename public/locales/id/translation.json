@@ -284,6 +284,30 @@
     },
     "ourGallery": "Galeri Kami"
   },
+  "contact": {
+    "hero": {
+      "header": "Jangkau Harvest Group – Merealisasikan Kebutuhan Anda dengan Mutu Tinggi",
+      "subHeader": "Membangun Merek Anda dari Konsep ke Pasar",
+      "contactUsButton": "Hubungi kami",
+      "viewOurLocationOnMaps": "Lihat Lokasi Kami di Peta"
+    },
+    "address": {
+      "indonesia": {
+        "email": "E-mail",
+        "website": "Situs web",
+        "1": "Kompleks Gudang dan Industri Era Prima",
+        "2": "Jl. Daan Mogot KM 21 No. 1 Blok Q1 Kel, RT.001/RW.001",
+        "3": "Poris Plawad, Cipondoh, Kota Tangerang, Banten 15141"
+      },
+      "malaysia": {
+        "email": "E-mail",
+        "website": "Situs web",
+        "1": "Greenlife Harvest Marketing (M) Sdn Bhd (788643-U)",
+        "2": "Greenlife Harvest (M) Sdn Bhd (790012-P)",
+        "3": "Greenlife Harvest BioTech (M) Sdn Bhd (924532-D)"
+      }
+    }
+  },
   "footer": {
     "aboutHarvest": "Harvest Group is a premier MAKLON manufacturer in Indonesia and Malaysia, specializing in a diverse array of health food products, nutritional supplements, and our latest offering in cosmetics and skincare production.",
     "usefulLink": {

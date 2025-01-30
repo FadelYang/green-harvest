@@ -9,9 +9,9 @@ const Contact = (props: TranslationProps) => {
 
   return (
     <MainTemplate t={t}>
-      <ContactHeaderSection />
-      <ContactAddressSection />
-      <LastBannerSection t={t}/>
+      <ContactHeaderSection t={t} />
+      <ContactAddressSection t={t} />
+      <LastBannerSection t={t} />
     </MainTemplate>
   );
 };

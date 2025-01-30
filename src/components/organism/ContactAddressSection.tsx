@@ -1,11 +1,14 @@
+import { TranslationProps } from "../../types/types";
 import ContactMapSectionTemplate from "../molecules/ContactMapSectionTemplate";
 
-const ContactAddressSection = () => {
+const ContactAddressSection = (props: TranslationProps) => {
+  const { t } = props;
+
   return (
     <>
-      <div className='flex flex-col gap-36 max-w-[1444px] mx-auto px-24'>
-        <ContactMapSectionTemplate country="indonesia" />
-        <ContactMapSectionTemplate country="malaysia" />
+      <div className="flex flex-col gap-36 max-w-[1444px] mx-auto px-24">
+        <ContactMapSectionTemplate country="indonesia" t={t} />
+        <ContactMapSectionTemplate country="malaysia" t={t} />
       </div>
     </>
   );
