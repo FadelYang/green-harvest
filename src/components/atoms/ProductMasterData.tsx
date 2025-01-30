@@ -75,57 +75,49 @@ export default function useProduct(props: TranslationProps) {
     },
     drink: {
       hero: {
-        heading: "Private Label Powder Drink Product Maklon BPOM Certified",
-        subHeading:
-          "Your Partner in Powder Drink Manufacturing. As Indonesia’s leading beverage maklon, we specialize in producing a wide range of premium powder drink products, including protein shakes, meal replacements, and collagen drinks. Launch your brand with confidence, ensuring your products meet BPOM and Halal MUI standards—customized under your label from start to finish.",
+        heading: t('product.drink.hero.header'),
+        subHeading: t('product.drink.hero.subHeader'),
         heroImage: productDetailDrinkImage,
       },
       categoryId: 2,
-      categoryName: "Drink",
-      listSectionHeading:
-        "Which Powder Drink Products Can Be Makloned At Harvest Group?",
+      categoryName: t('product.drink.categoryName'),
+      listSectionHeading: t('product.drink.listSectionHeading'),
       products: [
         {
           productId: 4,
           productThumbnailImage: producDrinkImage1,
-          productName: "Collagen Drink",
-          productDescription:
-            "Collagen drinks with antioxidants tighten skin, reduce wrinkles, and regenerate skin cells.",
+          productName: t('product.drink.products.1.productName'),
+          productDescription: t('product.drink.products.1.productDescription')
         },
         {
           productId: 5,
           productThumbnailImage: producDrinkImage2,
-          productName: "Meal Replacement",
-          productDescription:
-            "Diet meal replacement drinks like Added Oat, Fiber, Malt, Soy Protein Isolate, etc.",
+          productName: t('product.drink.products.2.productName'),
+          productDescription: t('product.drink.products.2.productDescription')
         },
         {
           productId: 6,
           productThumbnailImage: producDrinkImage3,
-          productName: "Colostrum Milk Powder",
-          productDescription:
-            "Colostrum milk powder with almond flavor: anti-aging, slimming, and boosts immunity.",
+          productName: t('product.drink.products.3.productName'),
+          productDescription: t('product.drink.products.3.productDescription')
         },
         {
           productId: 7,
           productThumbnailImage: producDrinkImage4,
-          productName: "Fitness Supplement",
-          productDescription:
-            "Maklon fitness supplement drinks like whey protein and milk for athletes and workouts to maximize muscle growth.",
+          productName: t('product.drink.products.4.productName'),
+          productDescription: t('product.drink.products.4.productDescription')
         },
         {
           productId: 8,
           productThumbnailImage: producDrinkImage5,
-          productName: "Fiber Drink",
-          productDescription:
-            "A fiber-rich drink blend with natural fruit extracts for promoting weight loss, digestive health, and overall health concern.",
+          productName: t('product.drink.products.5.productName'),
+          productDescription: t('product.drink.products.5.productDescription')
         },
         {
           productId: 9,
           productThumbnailImage: producDrinkImage6,
-          productName: "Adult Stamina",
-          productDescription:
-            "Adult Stamina drinks, including Stamina Drink and Coffee Stamina, are made from natural herbal extracts to effectively boost men's stamina.",
+          productName: t('product.drink.products.6.productName'),
+          productDescription: t('product.drink.products.6.productDescription')
         },
       ],
     },

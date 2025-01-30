@@ -315,7 +315,7 @@
         "subHeader": "All-in-One Solutions for Your Herbal Brand. As Indonesia's largest herbal manufacturer, we have developed hundreds of prominent brand products. Launch your herbal business with confidence, ensuring compliance with BPOM and Halal MUI standards—all under your own brand.",
         "bookAConsultationButton": "Book A Consultation"
       },
-      "categoryId": "1",
+      "categoryId": 1,
       "categoryName": "Herbal",
       "listSectionHeading": "Which Herbal Products Can Be Makloned At Harvest Group?",
       "products": {
@@ -333,6 +333,48 @@
           "productId": 3,
           "productName": "Capsule Containing Extract Product.",
           "productDescription": "Maklon products Spirulina Capsules, ASI boosters, Collagen Capsules, Ginger Extract Capsules, Binahong Extract Capsules, Ginseng Extract Capsules, Turmeric Extract Capsules etc."
+        }
+      }
+    },
+    "drink": {
+      "hero": {
+        "header": "Produk Minuman Bubuk Private Label Maklon Bersertifikat BPOM",
+        "subHeader": "Mitra Anda dalam Pembuatan Minuman Serbuk. Sebagai produsen minuman terkemuka di Indonesia, kami memiliki spesialisasi dalam memproduksi berbagai macam produk minuman serbuk premium, termasuk protein shake, pengganti makanan, dan minuman kolagen. Luncurkan merek Anda dengan percaya diri, kami memastikan produk Anda memenuhi standar BPOM dan Halal MUI—semuanya dengan merek Anda sendiri.",
+        "bookAConsultationButton": "Booking Konsultasi"
+      },
+      "categoryId": 2,
+      "categoryName": "Drink",
+      "listSectionHeading": "Produk Minuman Powder Apa Saja Yang Dapat Di Maklonkan Di Harvest Group?",
+      "products": {
+        "1": {
+          "productId": 4,
+          "productName": "Minuman Kolagen",
+          "productDescription": "Minuman kolagen dengan antioksidan mengencangkan kulit, mengurangi kerutan, dan meregenerasi sel kulit."
+        },
+        "2": {
+          "productId": 5,
+          "productName": "Minuman Pengganti Makanan",
+          "productDescription": "Minuman pengganti makanan diet seperti Added Oat, Fiber, Malt, Soy Protein Isolate, dll."
+        },
+        "3": {
+          "productId": 6,
+          "productName": "Susu Bubuk Kolostrum",
+          "productDescription": "Susu bubuk kolostrum rasa almond: anti penuaan, melangsingkan, dan meningkatkan kekebalan tubuh."
+        },
+        "4": {
+          "productId": 7,
+          "productName": "Suplemen Kebugaran",
+          "productDescription": "Minuman suplemen kebugaran Maklon seperti protein whey dan susu untuk atlet dan olahraga untuk memaksimalkan pertumbuhan otot."
+        },
+        "5": {
+          "productId": 8,
+          "productName": "Minuman Fiber",
+          "productDescription": "Campuran minuman kaya serat dengan ekstrak buah alami untuk meningkatkan penurunan berat badan, kesehatan pencernaan, dan masalah kesehatan secara keseluruhan."
+        },
+        "6": {
+          "productId": 9,
+          "productName": "Stamina Dewasa",
+          "productDescription": "Minuman Stamina dewasa antara lain Stamina Drink dan Coffee Stamina terbuat dari ekstrak herbal alami yang efektif meningkatkan stamina pria."
         }
       }
     }

@@ -335,6 +335,48 @@
             "productDescription": "Produk Maklon Kapsul Spirulina, Booster ASI, Kapsul Kolagen, Kapsul Ekstrak Jahe, Kapsul Ekstrak Binahong, Kapsul Ekstrak Ginseng, Kapsul Ekstrak Kunyit dll."
           }
         ]
+      },
+      "drink": {
+        "hero": {
+          "header": "Private Label Powder Drink Product Maklon BPOM Certified",
+          "subHeader": "Your Partner in Powder Drink Manufacturing. As Indonesia’s leading beverage maklon, we specialize in producing a wide range of premium powder drink products, including protein shakes, meal replacements, and collagen drinks. Launch your brand with confidence, ensuring your products meet BPOM and Halal MUI standards—customized under your label from start to finish.",
+          "bookAConsultationButton": "Book A Consultation"
+        },
+        "categoryId": 2,
+        "categoryName": "Drink",
+        "listSectionHeading": "Which Powder Drink Products Can Be Makloned At Harvest Group?",
+        "products": {
+          "1": {
+            "productId": 4,
+            "productName": "Collagen Drink",
+            "productDescription": "Collagen drinks with antioxidants tighten skin, reduce wrinkles, and regenerate skin cells."
+          },
+          "2": {
+            "productId": 5,
+            "productName": "Meal Replacement",
+            "productDescription": "Diet meal replacement drinks like Added Oat, Fiber, Malt, Soy Protein Isolate, etc."
+          },
+          "3": {
+            "productId": 6,
+            "productName": "Colostrum Milk Powder",
+            "productDescription": "Colostrum milk powder with almond flavor: anti-aging, slimming, and boosts immunity."
+          },
+          "4": {
+            "productId": 7,
+            "productName": "Fitness Supplement",
+            "productDescription": "Maklon fitness supplement drinks like whey protein and milk for athletes and workouts to maximize muscle growth."
+          },
+          "5": {
+            "productId": 8,
+            "productName": "Fiber Drink",
+            "productDescription": "A fiber-rich drink blend with natural fruit extracts for promoting weight loss, digestive health, and overall health concern."
+          },
+          "6": {
+            "productId": 9,
+            "productName": "Adult Stamina",
+            "productDescription": "Adult Stamina drinks, including Stamina Drink and Coffee Stamina, are made from natural herbal extracts to effectively boost men's stamina."
+          }
+        }
       }
   },
   "footer": {
