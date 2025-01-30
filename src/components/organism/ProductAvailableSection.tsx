@@ -35,6 +35,7 @@ const ProductAvailableSection = (props: TranslationProps) => {
       image: productAvailable3,
     },
     {
+      id: 4,
       buttonText: t('home.productAvailable.products.4.buttonText'),
       title: t('home.productAvailable.products.4.title'),
       description:t('home.productAvailable.products.4.description'),
@@ -48,6 +49,7 @@ const ProductAvailableSection = (props: TranslationProps) => {
       image: productAvailable5,
     },
     {
+      id: 6,
       buttonText: t('home.productAvailable.products.6.buttonText'),
       title: t('home.productAvailable.products.6.title'),
       description:t('home.productAvailable.products.6.description'),

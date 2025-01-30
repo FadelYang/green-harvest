@@ -74,8 +74,8 @@
         "closeText": "Minuman Kesehatan",
         "openText": {
           "title": "Minuman Kesehatan",
-          "description": "Health & Beauty Drink Maklon in powder form such as diet drinks, Fiber, Collagen, Meal Replacement etc.",
-          "buttonText": "See product that can be maklon",
+          "description": "Minuman Kesehatan & Kecantikan Maklon dalam bentuk bubuk seperti minuman diet, Serat, Kolagen, Pengganti Makanan dll.",
+          "buttonText": "Lihat produk yang bisa maklon",
           "buttonHref": "drink"
         }
       },
@@ -83,8 +83,8 @@
         "closeText": "Manufaktur Kosmetik",
         "openText": {
           "title": "Manufaktur Kosmetik",
-          "description": "Maklon Cosmetics & Facial Skincare, Hair Care & Body Skincare that is legal & according to your request.",
-          "buttonText": "See product that can be maklon",
+          "description": "Maklon Kosmetik & Perawatan Kulit Wajah, Perawatan Rambut & Perawatan Tubuh yang legal & sesuai permintaan Anda.",
+          "buttonText": "Lihat produk yang bisa maklon",
           "buttonHref": "cosmetic"
         }
       }
@@ -167,37 +167,37 @@
           "id": 1,
           "buttonText": "Minuman Fiber",
           "title": "Minuman Fiber",
-          "description": "Boost digestive health with high-fiber drinks tailored to your brand's needs. Our fiber-based formulations help in maintaining gut health and provide essential nutrients for daily wellness."
+          "description": "Tingkatkan kesehatan pencernaan dengan minuman berserat tinggi yang disesuaikan dengan kebutuhan merek Anda. Formulasi berbasis serat kami membantu menjaga kesehatan usus dan menyediakan nutrisi penting untuk kesehatan sehari-hari."
         },
         "2": {
           "id": 2,
-          "buttonText": "Meal Replacement",
-          "title": "Meal Replacement",
-          "description": "Create balanced meal replacement products that offer complete nutrition for those on the go. Our options include protein-packed shakes and fortified powders to support weight management and fitness goals."
+          "buttonText": "Pengganti Makanan",
+          "title": "Pengganti Makanan",
+          "description": "Ciptakan produk pengganti makanan seimbang yang menawarkan nutrisi lengkap bagi mereka yang sedang bepergian. Pilihan kami meliputi shake yang mengandung banyak protein dan bubuk yang diperkaya untuk mendukung manajemen berat badan dan tujuan kebugaran."
         },
         "3": {
           "id": 3,
-          "buttonText": "Skincare & Kosmetik",
-          "title": "Skincare & Cosmetics",
-          "description": "Develop premium skincare and cosmetic products, from cleansers and moisturizers to specialized treatments. Our formulations focus on efficacy and safety, ensuring high customer satisfaction."
+          "buttonText": "Kosmetik & Skincare",
+          "title": "Kosmetik & Skincare",
+          "description": "Mengembangkan produk perawatan kulit dan kosmetik premium, mulai dari pembersih dan pelembap hingga perawatan khusus. Formulasi kami berfokus pada kemanjuran dan keamanan, memastikan kepuasan pelanggan yang tinggi."
         },
         "4": {
           "id": 4,
           "buttonText": "Minuman Kolagen",
           "title": "Minuman Kolagen",
-          "description": "Support beauty from within with our collagen-based drinks, designed to enhance skin elasticity and hydration. We provide customizable formulas rich in peptides and vitamins for optimal results."
+          "description": "Membantu perawatan kecantikan dari dalam dengan minuman berbasis kolagen kami, yang dirancang untuk meningkatkan elastisitas dan hidrasi kulit. Kami menyediakan formula yang dapat disesuaikan yang kaya akan peptida dan vitamin untuk hasil yang optimal."
         },
         "5": {
           "id": 5,
           "buttonText": "Susu Kolostrum",
           "title": "Susu Kolostrum",
-          "description": "Leverage the power of colostrum for immune support with our specialized colostrum milk products. Rich in antibodies and growth factors, these products are perfect for health-focused brands."
+          "description": "Manfaatkan khasiat kolostrum untuk mendukung kekebalan tubuh dengan produk susu kolostrum khusus kami. Kaya akan antibodi dan faktor pertumbuhan, produk ini sangat cocok untuk merek yang berfokus pada kesehatan."
         },
         "6": {
           "id": 6,
           "buttonText": "Whey Protein",
           "title": "Whey Protein",
-          "description": "Formulate high-quality whey protein products for fitness enthusiasts and athletes. Our whey protein options come in various flavors and compositions, ideal for muscle recovery and strength building."
+          "description": "Formulasikan produk protein whey berkualitas tinggi untuk penggiat fitness dan atlet. Pilihan protein whey kami tersedia dalam berbagai rasa dan komposisi, ideal untuk pemulihan otot dan pembentukan massa otot."
         }
       }
     },
