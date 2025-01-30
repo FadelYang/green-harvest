@@ -1,14 +1,16 @@
+import { TFunction } from "i18next";
 import Button from "../atoms/Button";
-import ProductMasterData from '../atoms/ProductMasterData';
+import useProduct from "../atoms/ProductMasterData";
 
 type ProductDetailPageProps = {
   category: string;
+  t: TFunction<"translation", undefined>;
 };
 
-
 const ProductPageHeader = (props: ProductDetailPageProps) => {
-  const { category } = props;
-  const data = ProductMasterData.getDetailProductPageContentByCategory(category);
+  const { category, t } = props;
+  const { getDetailProductPageContentByCategory } = useProduct({ t });
+  const data = getDetailProductPageContentByCategory(category);
 
   return (
     <>
@@ -21,10 +23,12 @@ const ProductPageHeader = (props: ProductDetailPageProps) => {
                   <h1 className="text-slate-800 text-[44px] font-medium leading-[54px] tracking=[-1.76px] min-w-[604px]">
                     {data.heading}
                   </h1>
-                  <h2 className='text-slate-500 text-[18px] font-normal leading-7 max-w-[604px]'>{data.subHeading}</h2>
+                  <h2 className="text-slate-500 text-[18px] font-normal leading-7 max-w-[604px]">
+                    {data.subHeading}
+                  </h2>
                 </div>
                 <div>
-                  <Button variant="primary-button">Book A Consultation</Button>
+                  <Button variant="primary-button">{t('product.herbal.hero.bookAConsultationButton')}</Button>
                 </div>
                 <div className="">
                   <img src={data.heroImage} alt="Hero" />

@@ -308,6 +308,35 @@
       }
     }
   },
+  "product": {
+    "herbal": {
+      "hero": {
+        "header": "Private Label Herbal Product Maklon BPOM Certified",
+        "subHeader": "All-in-One Solutions for Your Herbal Brand. As Indonesia's largest herbal manufacturer, we have developed hundreds of prominent brand products. Launch your herbal business with confidence, ensuring compliance with BPOM and Halal MUI standards—all under your own brand.",
+        "bookAConsultationButton": "Book A Consultation"
+      },
+      "categoryId": "1",
+      "categoryName": "Herbal",
+      "listSectionHeading": "Which Herbal Products Can Be Makloned At Harvest Group?",
+      "products": {
+        "1": {
+          "productId": 1,
+          "productName": "Internal Medicine Liquid",
+          "productDescription": "Herbal manufacturing such as Propolis, Stamina Honey, Fertility, Slimming, Stomach Honey, Children's Honey, Tolak Angin, Date Palm Extract and other products."
+        },
+        "2": {
+          "productId": 2,
+          "productName": "External Medicine Liquid",
+          "productDescription": "Herbal manufacturing such as Propolis, Stamina Honey, Fertility, Slimming, Stomach Honey, Children's Honey, Tolak Angin, Date Palm Extract and other products."
+        },
+        "3": {
+          "productId": 3,
+          "productName": "Capsule Containing Extract Product.",
+          "productDescription": "Maklon products Spirulina Capsules, ASI boosters, Collagen Capsules, Ginger Extract Capsules, Binahong Extract Capsules, Ginseng Extract Capsules, Turmeric Extract Capsules etc."
+        }
+      }
+    }
+  },
   "footer": {
     "aboutHarvest": "Harvest Group is a premier MAKLON manufacturer in Indonesia and Malaysia, specializing in a diverse array of health food products, nutritional supplements, and our latest offering in cosmetics and skincare production.",
     "usefulLink": {

@@ -22,8 +22,8 @@ const Product = (props: TranslationProps) => {
       {currentExistCategories.includes(category) ? (
         <MainTemplate t={t}>
           <>
-            <ProductPageHeader category={category} />
-            <ProductCardList category={category} />
+            <ProductPageHeader category={category} t={t}/>
+            <ProductCardList category={category} t={t}/>
             <LastBannerSection t={t}/>
           </>
         </MainTemplate>

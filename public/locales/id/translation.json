@@ -308,6 +308,35 @@
       }
     }
   },
+  "product": {
+      "herbal": {
+        "hero": {
+          "header": "Produk Herbal Private Label Maklon Bersertifikat BPOM",
+          "subHeader": "Solusi Lengkap untuk Merek Herbal Anda. Sebagai produsen herbal terbesar di Indonesia, kami telah mengembangkan ratusan produk merek ternama. Luncurkan bisnis herbal Anda dengan percaya diri, kami memastikan kepatuhan terhadap standar BPOM dan Halal MUI—semuanya dengan merek Anda sendiri.",
+          "bookAConsultationButton": "Booking Konsultasi"
+        },
+        "categoryId": "1",
+        "categoryName": "Herbal",
+        "listSectionHeading": "Produk Herbal Apa Saja Yang Dapat Dimaklonkan Di Harvest Group?",
+        "products": [
+          {
+            "productId": 1,
+            "productName": "Cairan Obat Penyakit Dalam",
+            "productDescription": "Pembuatan jamu seperti Propolis, Madu Stamina, Kesuburan, Pelangsing, Madu Perut, Madu Anak, Tolak Angin, Ekstrak Kurma dan produk lainnya."
+          },
+          {
+            "productId": 2,
+            "productName": "Cairan Obat Luar",
+            "productDescription": "Maklon produk obat keseleo, obat kumur, obat sariawan, minyak angin, minyak gosok gatal, obat terapi herbal, minyak penumbuh rambut, minyak penumbuh rambut."
+          },
+          {
+            "productId": 3,
+            "productName": "Produk Ekstrak Kapsul.",
+            "productDescription": "Produk Maklon Kapsul Spirulina, Booster ASI, Kapsul Kolagen, Kapsul Ekstrak Jahe, Kapsul Ekstrak Binahong, Kapsul Ekstrak Ginseng, Kapsul Ekstrak Kunyit dll."
+          }
+        ]
+      }
+  },
   "footer": {
     "aboutHarvest": "Harvest Group is a premier MAKLON manufacturer in Indonesia and Malaysia, specializing in a diverse array of health food products, nutritional supplements, and our latest offering in cosmetics and skincare production.",
     "usefulLink": {

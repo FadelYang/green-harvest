@@ -1,13 +1,17 @@
+import { TFunction } from "i18next";
 import ProductCard from "../atoms/ProductCard";
+import useProduct from "../atoms/ProductMasterData";
 import ProductMasterData from "../atoms/ProductMasterData";
 
 type ProductCardListProps = {
   category: string;
+  t: TFunction<"translation", undefined>;
 };
 
 const ProductCardList = (props: ProductCardListProps) => {
-  const { category } = props;
-  const products = ProductMasterData.getProductByCategory(category);
+  const { category, t } = props;
+  const { getProductByCategory } = useProduct({ t });
+  const products = getProductByCategory(category);
 
   return (
     <>
