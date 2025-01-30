@@ -309,75 +309,102 @@
     }
   },
   "product": {
-      "herbal": {
-        "hero": {
-          "header": "Produk Herbal Private Label Maklon Bersertifikat BPOM",
-          "subHeader": "Solusi Lengkap untuk Merek Herbal Anda. Sebagai produsen herbal terbesar di Indonesia, kami telah mengembangkan ratusan produk merek ternama. Luncurkan bisnis herbal Anda dengan percaya diri, kami memastikan kepatuhan terhadap standar BPOM dan Halal MUI—semuanya dengan merek Anda sendiri.",
-          "bookAConsultationButton": "Booking Konsultasi"
-        },
-        "categoryId": "1",
-        "categoryName": "Herbal",
-        "listSectionHeading": "Produk Herbal Apa Saja Yang Dapat Dimaklonkan Di Harvest Group?",
-        "products": [
-          {
-            "productId": 1,
-            "productName": "Cairan Obat Penyakit Dalam",
-            "productDescription": "Pembuatan jamu seperti Propolis, Madu Stamina, Kesuburan, Pelangsing, Madu Perut, Madu Anak, Tolak Angin, Ekstrak Kurma dan produk lainnya."
-          },
-          {
-            "productId": 2,
-            "productName": "Cairan Obat Luar",
-            "productDescription": "Maklon produk obat keseleo, obat kumur, obat sariawan, minyak angin, minyak gosok gatal, obat terapi herbal, minyak penumbuh rambut, minyak penumbuh rambut."
-          },
-          {
-            "productId": 3,
-            "productName": "Produk Ekstrak Kapsul.",
-            "productDescription": "Produk Maklon Kapsul Spirulina, Booster ASI, Kapsul Kolagen, Kapsul Ekstrak Jahe, Kapsul Ekstrak Binahong, Kapsul Ekstrak Ginseng, Kapsul Ekstrak Kunyit dll."
-          }
-        ]
+    "herbal": {
+      "hero": {
+        "header": "Produk Herbal Private Label Maklon Bersertifikat BPOM",
+        "subHeader": "Solusi Lengkap untuk Merek Herbal Anda. Sebagai produsen herbal terbesar di Indonesia, kami telah mengembangkan ratusan produk merek ternama. Luncurkan bisnis herbal Anda dengan percaya diri, kami memastikan kepatuhan terhadap standar BPOM dan Halal MUI—semuanya dengan merek Anda sendiri.",
+        "bookAConsultationButton": "Booking Konsultasi"
       },
-      "drink": {
-        "hero": {
-          "header": "Private Label Powder Drink Product Maklon BPOM Certified",
-          "subHeader": "Your Partner in Powder Drink Manufacturing. As Indonesia’s leading beverage maklon, we specialize in producing a wide range of premium powder drink products, including protein shakes, meal replacements, and collagen drinks. Launch your brand with confidence, ensuring your products meet BPOM and Halal MUI standards—customized under your label from start to finish.",
-          "bookAConsultationButton": "Book A Consultation"
+      "categoryId": "1",
+      "categoryName": "Herbal",
+      "listSectionHeading": "Produk Herbal Apa Saja Yang Dapat Dimaklonkan Di Harvest Group?",
+      "products": [
+        {
+          "productId": 1,
+          "productName": "Cairan Obat Penyakit Dalam",
+          "productDescription": "Pembuatan jamu seperti Propolis, Madu Stamina, Kesuburan, Pelangsing, Madu Perut, Madu Anak, Tolak Angin, Ekstrak Kurma dan produk lainnya."
         },
-        "categoryId": 2,
-        "categoryName": "Drink",
-        "listSectionHeading": "Which Powder Drink Products Can Be Makloned At Harvest Group?",
-        "products": {
-          "1": {
-            "productId": 4,
-            "productName": "Collagen Drink",
-            "productDescription": "Collagen drinks with antioxidants tighten skin, reduce wrinkles, and regenerate skin cells."
-          },
-          "2": {
-            "productId": 5,
-            "productName": "Meal Replacement",
-            "productDescription": "Diet meal replacement drinks like Added Oat, Fiber, Malt, Soy Protein Isolate, etc."
-          },
-          "3": {
-            "productId": 6,
-            "productName": "Colostrum Milk Powder",
-            "productDescription": "Colostrum milk powder with almond flavor: anti-aging, slimming, and boosts immunity."
-          },
-          "4": {
-            "productId": 7,
-            "productName": "Fitness Supplement",
-            "productDescription": "Maklon fitness supplement drinks like whey protein and milk for athletes and workouts to maximize muscle growth."
-          },
-          "5": {
-            "productId": 8,
-            "productName": "Fiber Drink",
-            "productDescription": "A fiber-rich drink blend with natural fruit extracts for promoting weight loss, digestive health, and overall health concern."
-          },
-          "6": {
-            "productId": 9,
-            "productName": "Adult Stamina",
-            "productDescription": "Adult Stamina drinks, including Stamina Drink and Coffee Stamina, are made from natural herbal extracts to effectively boost men's stamina."
-          }
+        {
+          "productId": 2,
+          "productName": "Cairan Obat Luar",
+          "productDescription": "Maklon produk obat keseleo, obat kumur, obat sariawan, minyak angin, minyak gosok gatal, obat terapi herbal, minyak penumbuh rambut, minyak penumbuh rambut."
+        },
+        {
+          "productId": 3,
+          "productName": "Produk Ekstrak Kapsul.",
+          "productDescription": "Produk Maklon Kapsul Spirulina, Booster ASI, Kapsul Kolagen, Kapsul Ekstrak Jahe, Kapsul Ekstrak Binahong, Kapsul Ekstrak Ginseng, Kapsul Ekstrak Kunyit dll."
+        }
+      ]
+    },
+    "drink": {
+      "hero": {
+        "header": "Private Label Powder Drink Product Maklon BPOM Certified",
+        "subHeader": "Your Partner in Powder Drink Manufacturing. As Indonesia’s leading beverage maklon, we specialize in producing a wide range of premium powder drink products, including protein shakes, meal replacements, and collagen drinks. Launch your brand with confidence, ensuring your products meet BPOM and Halal MUI standards—customized under your label from start to finish.",
+        "bookAConsultationButton": "Book A Consultation"
+      },
+      "categoryId": 2,
+      "categoryName": "Drink",
+      "listSectionHeading": "Which Powder Drink Products Can Be Makloned At Harvest Group?",
+      "products": {
+        "1": {
+          "productId": 4,
+          "productName": "Collagen Drink",
+          "productDescription": "Collagen drinks with antioxidants tighten skin, reduce wrinkles, and regenerate skin cells."
+        },
+        "2": {
+          "productId": 5,
+          "productName": "Meal Replacement",
+          "productDescription": "Diet meal replacement drinks like Added Oat, Fiber, Malt, Soy Protein Isolate, etc."
+        },
+        "3": {
+          "productId": 6,
+          "productName": "Colostrum Milk Powder",
+          "productDescription": "Colostrum milk powder with almond flavor: anti-aging, slimming, and boosts immunity."
+        },
+        "4": {
+          "productId": 7,
+          "productName": "Fitness Supplement",
+          "productDescription": "Maklon fitness supplement drinks like whey protein and milk for athletes and workouts to maximize muscle growth."
+        },
+        "5": {
+          "productId": 8,
+          "productName": "Fiber Drink",
+          "productDescription": "A fiber-rich drink blend with natural fruit extracts for promoting weight loss, digestive health, and overall health concern."
+        },
+        "6": {
+          "productId": 9,
+          "productName": "Adult Stamina",
+          "productDescription": "Adult Stamina drinks, including Stamina Drink and Coffee Stamina, are made from natural herbal extracts to effectively boost men's stamina."
         }
       }
+    },
+    "cosmetic": {
+      "hero": {
+        "header": "Produk Kosmetik Private Label Maklon Bersertifikat BPOM",
+        "subHeader": "Solusi Lengkap untuk Brand Kosmetik Anda. Sebagai produsen kosmetik terpercaya di Indonesia, kami menawarkan layanan lengkap pengembangan produk kosmetik premium, termasuk perawatan kulit, kosmetik dekoratif, dan produk perawatan pribadi.. Luncurkan merek Anda dengan mudah, pastikan kepatuhan terhadap standar BPOM dan Halal MUI—semuanya disesuaikan dengan label unik Anda.",
+        "bookAConsultationButton": "Booking Konsultasi"
+      },
+      "categoryId": 3,
+      "categoryName": "cosmetic",
+      "listSectionHeading": "Produk Kosmetik Apa Saja Yang Dapat Dimaklonkan Di Harvest Group?",
+      "products": {
+        "1": {
+          "productId": 10,
+          "productName": "Dekoratif",
+          "productDescription": "Jasa pembuatan hiasan seperti parfum, lip gloss, lip balm, lip cream, dan berbagai jasa pembuatan hiasan lainnya"
+        },
+        "2": {
+          "productId": 11,
+          "productName": "Perawatan Wajah",
+          "productDescription": "Maklon Facecare seperti Pembersih wajah, pelembab, esens & serum, masker wajah, masker gel, pembersih toner, serum anti jerawat, krim siang, krim malam, gel & krim tabir surya, serum anti penuaan."
+        },
+        "3": {
+          "productId": 12,
+          "productName": "Perawatan Tubuh.",
+          "productDescription": "Maklon Perawatan tubuh seperti personal care, bodymoisturizer, body cleanser, body lotion, body serum, peeling spray, body wash, body mask, body scrub, body lotion, deodorant spray."
+        }
+      }
+    }
   },
   "footer": {
     "aboutHarvest": "Harvest Group is a premier MAKLON manufacturer in Indonesia and Malaysia, specializing in a diverse array of health food products, nutritional supplements, and our latest offering in cosmetics and skincare production.",

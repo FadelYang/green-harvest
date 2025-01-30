@@ -123,36 +123,32 @@ export default function useProduct(props: TranslationProps) {
     },
     cosmetic: {
       hero: {
-        heading: "Private Label Cosmetics Product Maklon BPOM Certified",
-        subHeading:
-          "Complete Solutions for Your Cosmetics Brand. As a trusted cosmetics manufacturer in Indonesia, we offer full-service development of premium cosmetic products, including skincare, decorative cosmetics, and personal care items. Launch your brand with ease, ensuring compliance with BPOM and Halal MUI standards—all customized under your unique label.",
+        heading: t('product.cosmetic.hero.header'),
+        subHeading: t('product.cosmetic.hero.subHeader'),
         heroImage: productDetailCosmeticImage,
       },
       categoryId: 3,
-      categoryName: "Herbal",
+      categoryName: t('product.cosmetic.categoryName'),
       listSectionHeading:
-        "Which Cosmetic Products Can Be Makloned At Harvest Group?",
+      t('product.cosmetic.listSectionHeading'),
       products: [
         {
           productId: 10,
           productThumbnailImage: productCosmeticImage1,
-          productName: "Internal Medicine Liquid",
-          productDescription:
-            "Herbal manufacturing such as Propolis, Stamina Honey, Fertility, Slimming, Stomach Honey, Children's Honey, Tolak Angin, Date Palm Extract and other products.",
+          productName: t('product.cosmetic.products.1.productName'),
+          productDescription: t('product.cosmetic.products.1.productDescription')
         },
         {
           productId: 11,
           productThumbnailImage: productCosmeticImage2,
-          productName: "External Medicine Liquid",
-          productDescription:
-            "Herbal manufacturing such as Propolis, Stamina Honey, Fertility, Slimming, Stomach Honey, Children's Honey, Tolak Angin, Date Palm Extract and other products.",
+          productName: t('product.cosmetic.products.2.productName'),
+          productDescription: t('product.cosmetic.products.2.productDescription')
         },
         {
           productId: 12,
           productThumbnailImage: productCosmeticImage3,
-          productName: "Capsule Containing Extract Product.",
-          productDescription:
-            "Maklon products Spirulina Capsules, ASI boosters, Collagen Capsules, Ginger Extract Capsules, Binahong Extract Capsules, Ginseng Extract Capsules, Turmeric Extract Capsules etc.",
+          productName: t('product.cosmetic.products.3.productName'),
+          productDescription: t('product.cosmetic.products.3.productDescription')
         },
       ],
     },
