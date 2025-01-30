@@ -17,11 +17,11 @@ const ProductPageHeader = (props: ProductDetailPageProps) => {
           <div className="pb-36">
             <div className="flex flex-col gap-8 pt-[72px]">
               <div className="flex flex-col gap-8 px-24">
-                <div className="flex gap-8">
+                <div className="flex justify-between">
                   <h1 className="text-slate-800 text-[44px] font-medium leading-[54px] tracking=[-1.76px] min-w-[604px]">
                     {data.heading}
                   </h1>
-                  <h2 className='text-slate-500 text-[18px] font-normal leading-7 min-w-[604px]'>{data.subHeading}</h2>
+                  <h2 className='text-slate-500 text-[18px] font-normal leading-7 max-w-[604px]'>{data.subHeading}</h2>
                 </div>
                 <div>
                   <Button variant="primary-button">Book A Consultation</Button>
