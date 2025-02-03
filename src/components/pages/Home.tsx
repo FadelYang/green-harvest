@@ -16,9 +16,8 @@ const Home = (props: TranslationProps) => {
 
   return (
     <MainTemplate t={t}>
-      test
-      {/* <HeroSection t={t} />
-      <FeatureSection t={t} />
+      <HeroSection t={t} />
+      {/* <FeatureSection t={t} />
       <ProductSection t={t} />
       <VideoSection t={t} />
       <ManufacturingProcessSection t={t} />
