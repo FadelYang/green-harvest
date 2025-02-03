@@ -16,16 +16,17 @@ const Home = (props: TranslationProps) => {
 
   return (
     <MainTemplate t={t}>
-      <HeroSection t={t} />
+      test
+      {/* <HeroSection t={t} />
       <FeatureSection t={t} />
       <ProductSection t={t} />
       <VideoSection t={t} />
       <ManufacturingProcessSection t={t} />
-      {/* <SuccessStorySection t={t} /> */}
+      <SuccessStorySection t={t} /> // optional
       <ProductAvailableSection t={t} />
       <InsightHubSection t={t} />
       <QnaSection t={t} />
-      <LastBannerSection t={t}/>
+      <LastBannerSection t={t}/> */}
     </MainTemplate>
   );
 };

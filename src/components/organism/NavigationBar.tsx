@@ -5,6 +5,7 @@ import Button from "../atoms/Button";
 import { Link } from "react-router-dom";
 import { useTranslationContext } from "../../context/TranslationContext";
 import { TFunction } from "i18next";
+import HamburgerIcon from '../atoms/HamburgerIcon';
 
 type NavigationBarProps = {
   t: TFunction<"translation", undefined>;
@@ -15,13 +16,13 @@ const NavigationBar = (props: NavigationBarProps) => {
   const { t } = props;
 
   return (
-    <div className="px-24 py-6 sticky top-0 overflow-hidden bg-white z-50">
+    <div className="pb-4 px-6 pt-[52px] xl:px-24 xl:py-6 sticky top-0 overflow-hidden bg-white z-50">
       <div className="flex justify-between items-center max-w-[1440px] mx-auto px-0 2xl:px-24">
         {/* Right Content */}
-        <div className="flex gap-8 items-center">
+        <div className="flex gap-4 xl:gap-8 items-center">
           <div>
             <Link to={"/"}>
-              <img src={navBarLogo} alt="" className="h-[54px] w-[72px]" />
+              <img src={navBarLogo} alt="" className="h-[48px] w-[64px] xl:h-[54px] xl:w-[72px]" />
             </Link>
           </div>
           <button onClick={() => handleChangeLanguage()}>
@@ -48,7 +49,7 @@ const NavigationBar = (props: NavigationBarProps) => {
         </div>
 
         {/* Left Content */}
-        <div className="flex gap-6 items-center">
+        <div className="hidden xl:flex gap-6 items-center">
           <ul className="flex text-base text-slate-800 gap-6">
             <li>
               <Link to={"/service"}>{t("navbar.ourExpertise")}</Link>
@@ -71,6 +72,9 @@ const NavigationBar = (props: NavigationBarProps) => {
               {t("navbar.consultNow")}
             </Button>
           </div>
+        </div>
+        <div className="flex xl:hidden">
+          <HamburgerIcon />
         </div>
       </div>
     </div>
