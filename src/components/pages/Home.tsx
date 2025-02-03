@@ -18,8 +18,8 @@ const Home = (props: TranslationProps) => {
     <MainTemplate t={t}>
       <HeroSection t={t} />
       <FeatureSection t={t} />
-      {/* <ProductSection t={t} />
-      <VideoSection t={t} />
+      <ProductSection t={t} />
+      {/* <VideoSection t={t} />
       <ManufacturingProcessSection t={t} />
       <SuccessStorySection t={t} /> // optional
       <ProductAvailableSection t={t} />
