@@ -10,35 +10,35 @@ const VideoSection = (props: TranslationProps) => {
   return (
     <>
       <div className="bg-[#EBFFF3]">
-        <div className="flex flex-col gap-10 pl-24 py-36 max-w-[1444px] mx-auto">
-          <div className="flex justify-between pr-24">
-            <p className="text-[40px] font-medium leading-[50px] w-[611px]">
+        <div className="flex flex-col gap-10 xl:pl-24 pl-0 xl:py-36 py-[72px] max-w-[1444px] mx-auto">
+          <div className="flex xl:flex-row flex-col xl:justify-between xl:gap-0 gap-6 xl:pr-24 pr-0">
+            <p className="xl:text-[40px] text-2xl font-medium xl:leading-[50px] leading-[34px] xl:w-[611px] px-6 xl:px-0">
               {t("home.video.header")}
             </p>
-            <div className="w-[530px] flex flex-col gap-4">
-              <p className="text-slate-800 font-normal">
+            <div className="xl:w-[530px] flex flex-col xl:gap-4 gap-6">
+              <p className="text-slate-800 font-normal leading-[26px] text-base px-6 xl:px-0">
                 <Trans
                   i18nKey={"home.video.subHeader"}
                   components={{ bold: <span className="font-bold" /> }}
                 />
               </p>
-              <div className="flex justify-start self-start">
+              <div className="flex justify-start self-start w-full px-6">
                 <Button
                   paddingSize="px-6 py-4"
-                  className="flex gap-3 primary-text font-medium text-base border-b border-[#015F26]"
+                  className="flex gap-3 primary-text font-medium text-base border-b border-[#015F26] xl:justify-start justify-center w-full xl:w-auto"
                 >
                   {t('home.video.exploreOurProfileButton')} <img src={arrowRight} alt="" />
                 </Button>
               </div>
             </div>
           </div>
-          <div className="w-full h-full pr-24 z-20">
+          <div className="w-full h-full xl:pr-24 z-20 xl:px-0 px-6">
             <video width="100%" controls>
               <source src={video} type="video/mp4" />
             </video>
           </div>
           <div className="relative">
-            <div className="absolute right-0 -mt-24 z-10 w-[524px] h-[100px] bg-yellow-500 opacity-80"></div>
+            <div className="absolute right-0 xl:-mt-24 -mt-16 z-10 xl:w-[524px] w-[150px] xl:h-[100px] h-[42px] bg-yellow-500 opacity-80"></div>
           </div>
         </div>
       </div>
