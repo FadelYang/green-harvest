@@ -6,64 +6,66 @@ import productAvailable3 from "/img/product-available-3.png";
 import productAvailable4 from "/img/product-available-4.png";
 import productAvailable5 from "/img/product-available-5.png";
 import productAvailable6 from "/img/product-available-6.png";
-import { TranslationProps } from '../../types/types';
+import { TranslationProps } from "../../types/types";
+import ChevronDownIcon from "../atoms/ChevronDownIcon";
 
 const ProductAvailableSection = (props: TranslationProps) => {
   const [activeProduct, setActiveProduct] = useState<Number>(1);
+  const [isDropdownOpen, setDropdownOpen] = useState(false);
   const { t } = props;
 
   const products = [
     {
       id: 1,
-      buttonText: t('home.productAvailable.products.1.buttonText'),
-      title: t('home.productAvailable.products.1.title'),
-      description:t('home.productAvailable.products.1.description'),
+      buttonText: t("home.productAvailable.products.1.buttonText"),
+      title: t("home.productAvailable.products.1.title"),
+      description: t("home.productAvailable.products.1.description"),
       image: productAvailable1,
     },
     {
       id: 2,
-      buttonText: t('home.productAvailable.products.2.buttonText'),
-      title: t('home.productAvailable.products.2.title'),
-      description:t('home.productAvailable.products.2.description'),
+      buttonText: t("home.productAvailable.products.2.buttonText"),
+      title: t("home.productAvailable.products.2.title"),
+      description: t("home.productAvailable.products.2.description"),
       image: productAvailable2,
     },
     {
       id: 3,
-      buttonText: t('home.productAvailable.products.3.buttonText'),
-      title: t('home.productAvailable.products.3.title'),
-      description:t('home.productAvailable.products.3.description'),
+      buttonText: t("home.productAvailable.products.3.buttonText"),
+      title: t("home.productAvailable.products.3.title"),
+      description: t("home.productAvailable.products.3.description"),
       image: productAvailable3,
     },
     {
       id: 4,
-      buttonText: t('home.productAvailable.products.4.buttonText'),
-      title: t('home.productAvailable.products.4.title'),
-      description:t('home.productAvailable.products.4.description'),
+      buttonText: t("home.productAvailable.products.4.buttonText"),
+      title: t("home.productAvailable.products.4.title"),
+      description: t("home.productAvailable.products.4.description"),
       image: productAvailable4,
     },
     {
       id: 5,
-      buttonText: t('home.productAvailable.products.5.buttonText'),
-      title: t('home.productAvailable.products.5.title'),
-      description:t('home.productAvailable.products.5.description'),
+      buttonText: t("home.productAvailable.products.5.buttonText"),
+      title: t("home.productAvailable.products.5.title"),
+      description: t("home.productAvailable.products.5.description"),
       image: productAvailable5,
     },
     {
       id: 6,
-      buttonText: t('home.productAvailable.products.6.buttonText'),
-      title: t('home.productAvailable.products.6.title'),
-      description:t('home.productAvailable.products.6.description'),
+      buttonText: t("home.productAvailable.products.6.buttonText"),
+      title: t("home.productAvailable.products.6.title"),
+      description: t("home.productAvailable.products.6.description"),
       image: productAvailable6,
     },
   ];
 
   return (
     <>
-      <div className="px-24 py-36 flex flex-col gap-[72px] max-w-[1444px] mx-auto">
-        <h1 className="text-center text-[40px] font-medium leading-[50px]">
+      <div className="xl:px-24 px-6 xl:py-36 py-[72px] flex flex-col xl:gap-[72px] gap-6 max-w-[1444px] mx-auto">
+        <h1 className="text-center xl:text-[40px] text-2xl font-medium xl:leading-[50px] leading-[34px]">
           Tailored Products Available at Harvest Group
         </h1>
-        <div className="flex gap-[75px]">
+        <div className="xl:flex hidden gap-[75px]">
           <div className="flex flex-col gap-4">
             {products.map((item, index) => (
               <Button
@@ -96,6 +98,73 @@ const ProductAvailableSection = (props: TranslationProps) => {
                     {item.title}
                   </p>
                   <p className="text-slate-500 font-normal leading-[26px] max-w-[800px]">
+                    {item.description}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <div className="xl:hidden flex flex-col gap-6">
+          <div className="relative inline-block w-full">
+            {/* Dropdown Button */}
+            <button
+              onClick={() => setDropdownOpen(!isDropdownOpen)}
+              className="flex items-center px-6 py-3 rounded-full w-full justify-between text-primary bg-[#EBFFF3]"
+            >
+              <div>
+                {products.map((product) => (
+                  <>{product.id === activeProduct ? product.title : ""}</>
+                ))}
+              </div>
+              {isDropdownOpen ? (
+                <div className="rotate-180">
+                  <ChevronDownIcon />
+                </div>
+              ) : (
+                <div className="">
+                  <ChevronDownIcon />
+                </div>
+              )}
+            </button>
+
+            {/* Dropdown Menu */}
+            {isDropdownOpen && (
+              <div className="absolute left-0 mt-2 bg-white border rounded-lg shadow-lg w-full">
+                <ul className="py-2">
+                  {products.map((item, index) => (
+                    <li
+                      key={index}
+                      className="px-6 py-3 hover:text-primary hover:bg-[#EBFFF3] cursor-pointer"
+                      onClick={() => {
+                        setActiveProduct(item.id!);
+                        setDropdownOpen(false);
+                      }}
+                    >
+                      {item.title}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
+          </div>
+          <div className="bg-white shadow-lg">
+            {products.map((item, index) => (
+              <div
+                key={index}
+                className={`flex flex-col ${
+                  activeProduct === item.id ? "block " : "hidden"
+                }`}
+              >
+                <div>
+                  <img src={item.image} alt="" className='h-[345px] object-cover'/>
+                </div>
+                <div className="flex flex-col gap-2 p-6">
+                  <p className="text-slate-800 text-[20px] font-semibold">
+                    {item.title}
+                  </p>
+                  <p className="text-slate-500 font-normal leading-[26px]">
                     {item.description}
                   </p>
                 </div>

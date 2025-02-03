@@ -19,7 +19,7 @@ const ManufacturingProcessSection = (props: TranslationProps) => {
           </div>
           <div className="xl:block hidden">
             <Button variant="primary-button">
-              {t("home.hero.consulgap6tNowButton")}
+              {t("home.hero.consultNowButton")}
             </Button>
           </div>
         </div>
