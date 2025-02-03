@@ -84,7 +84,7 @@ const ManufacturingProcessList = () => {
 
   return (
     <>
-      <div className="flex">
+      <div className="flex xl:flex-row flex-col">
         {manufacturingProcesses.map((item) => (
           <ManufacturingProcessCard
             key={item.id}

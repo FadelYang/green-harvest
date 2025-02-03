@@ -20,8 +20,8 @@ const Home = (props: TranslationProps) => {
       <FeatureSection t={t} />
       <ProductSection t={t} />
       <VideoSection t={t} />
-      {/* <ManufacturingProcessSection t={t} />
-      <SuccessStorySection t={t} /> // optional
+      <ManufacturingProcessSection t={t} />
+      {/* <SuccessStorySection t={t} /> // optional
       <ProductAvailableSection t={t} />
       <InsightHubSection t={t} />
       <QnaSection t={t} />

@@ -15,20 +15,20 @@ const ManufacturingProcessCard = (props: ManufacturingProcessCardProps) => {
     <>
       {openDetail !== id ? (
         <div className="flex hover:cursor-pointer" onClick={onClick}>
-          <div className="p-6 bg-white flex flex-col gap-6 w-[80px]">
+          <div className="p-6 bg-white flex xl:flex-col flex-row xl:items-stretch items-center  gap-6 w-[80px]">
             <button>
               <p className="px-[11px] py-[3px] w-8 h-8 rounded-full text-white bg-black">
                 {id}
               </p>
             </button>
-            <p className="text-slate-800 rotate-90 whitespace-nowrap font-semibold">
+            <p className="text-slate-800 xl:rotate-90 whitespace-nowrap font-semibold">
               {title}
             </p>
           </div>
         </div>
       ) : (
-        <div className="flex h-[400px]">
-          <div className="p-6 bg-[#1C7F43] flex flex-col gap-4 w-[192px]">
+        <div className="flex xl:flex-row flex-col xl:h-[400px]">
+          <div className="p-6 bg-[#1C7F43] flex flex-col gap-4 xl:w-[192px]">
             <button>
               <p className="px-[11px] py-[3px] w-8 h-8 rounded-full text-white bg-black">
                 {id}
@@ -36,14 +36,14 @@ const ManufacturingProcessCard = (props: ManufacturingProcessCardProps) => {
             </button>
             <div className="text-white flex flex-col gap-2">
               <p className="text-2xl font-semibold">{title}</p>
-              <p>{description}</p>
+              <p className='leading-[26px]'>{description}</p>
             </div>
           </div>
           <div className="flex-1">
             <img
               src={imageThumbnail}
               alt=""
-              className="object-cover w-full h-full"
+              className="object-cover w-full xl:h-full h-[192px]"
             />
           </div>
         </div>

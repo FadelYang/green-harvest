@@ -96,7 +96,7 @@ const FeatureSection = (props: TranslationProps) => {
                     />
                   </div>
                 </div>
-                <div className="h-[42px] w-[126px] xl:h-[53px] xl:w-[181px] bg-yellow-500 mx-20 -mt-20 z-10 opacity-80"></div>
+                <div className="h-[42px] w-[126px] xl:h-[53px] xl:w-[181px] bg-yellow-500 mx-20 -mt-20 xl:-mt-24 z-10 opacity-80"></div>
               </div>
               <div className="flex flex-col justify-center gap-4 xl-pr-24 px-6">
                 <p className="text-black text-[32px] font-medium">
