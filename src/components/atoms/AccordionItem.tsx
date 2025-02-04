@@ -12,8 +12,8 @@ const AccordionItem = (props: AccordionItemProps) => {
   return (
     <div onClick={onClick} className="hover:cursor-pointer border-b-[1px]">
       <div className="flex flex-col gap-4 py-4">
-        <div className="flex justify-between items-center">
-          <p className="text-xl font-semibold">{question}</p>
+        <div className="flex justify-between items-center gap-[18px]">
+          <p className="text-xl xl:font-semibold font-medium leading-[30px]">{question}</p>
           <img
             src={chevronDown}
             alt="Toggle"
@@ -23,7 +23,7 @@ const AccordionItem = (props: AccordionItemProps) => {
       </div>
       {isOpen && (
         <div className='pb-4'>
-          <p className="text-slate-500 font-medium leading-[26px] whitespace-pre-line">{answer}</p>
+          <p className="text-slate-500 xl:font-medium font-normal text-[16px] leading-[26px] whitespace-pre-line">{answer}</p>
         </div>
       )}
     </div>

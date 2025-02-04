@@ -7,7 +7,7 @@ import ManufacturingProcessSection from "../organism/ManufacturingProcessSection
 import ProductAvailableSection from "../organism/ProductAvailableSection";
 import ProductSection from "../organism/ProductSection";
 import QnaSection from "../organism/QnaSection";
-import SuccessStorySection from "../organism/SuccessStorySection";
+// import SuccessStorySection from "../organism/SuccessStorySection";
 import VideoSection from "../organism/VideoSection";
 import MainTemplate from "../templates/MainTemplate";
 
@@ -24,8 +24,8 @@ const Home = (props: TranslationProps) => {
       {/* <SuccessStorySection t={t} /> // optional */}
       <ProductAvailableSection t={t} />
       <InsightHubSection t={t} />
-      {/* <QnaSection t={t} />
-      <LastBannerSection t={t}/> */}
+      <QnaSection t={t} />
+      <LastBannerSection t={t}/>
     </MainTemplate>
   );
 };
