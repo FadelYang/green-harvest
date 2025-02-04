@@ -65,7 +65,7 @@ const HeroSection = (props: TranslationProps) => {
               <img
                 src={heroImageResponsive}
                 alt=""
-                className="absolute inset-0 w-full h-full object-contain xl:hidden block"
+                className="absolute inset-0 w-full h-full object-contain xl:hidden block mt-0 md:mt-28"
               />
             </div>
           </div>

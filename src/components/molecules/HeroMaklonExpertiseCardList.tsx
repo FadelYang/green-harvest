@@ -45,7 +45,7 @@ const HeroMaklonExpertiseCardList = () => {
 
   return (
     <>
-      <div className="flex xl:flex-row flex-col gap-8">
+      <div className="grid xl:grid-cols-4 md:grid-cols-2 gap-8">
         {heroMaklonExpertiseItems.map((item) => (
           <HeroMaklonExpertiseCard
             imagePath={item.imagePath}
