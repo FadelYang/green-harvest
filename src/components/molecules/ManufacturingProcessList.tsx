@@ -16,11 +16,6 @@ const ManufacturingProcessList = () => {
   const [openDetail, setOpenDetail] = useState<number | null>(1);
   const { t } = useTranslationContext();
 
-  console.log({
-    "tes": t("home.manufacturingProcess.1.title")
-  });
-  
-
   const manufacturingProcesses = [
     {
       id: 1,

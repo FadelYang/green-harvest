@@ -5,15 +5,24 @@ import Button from "../atoms/Button";
 import { Link } from "react-router-dom";
 import { useTranslationContext } from "../../context/TranslationContext";
 import { TFunction } from "i18next";
-import HamburgerIcon from '../atoms/HamburgerIcon';
+import HamburgerIcon from "../atoms/HamburgerIcon";
+import XIcon from "../atoms/XIcon";
 
 type NavigationBarProps = {
   t: TFunction<"translation", undefined>;
+  isMobile: boolean;
+  isSidebarOpen: boolean;
+  sidebarToggle: () => void;
 };
 
 const NavigationBar = (props: NavigationBarProps) => {
   const { handleChangeLanguage, currentLanguage } = useTranslationContext();
-  const { t } = props;
+  const {
+    t,
+    isMobile,
+    isSidebarOpen,
+    sidebarToggle,
+  } = props;
 
   return (
     <div className="pb-4 px-6 pt-[52px] xl:px-24 xl:py-6 sticky top-0 overflow-hidden bg-white z-50">
@@ -22,7 +31,11 @@ const NavigationBar = (props: NavigationBarProps) => {
         <div className="flex gap-4 xl:gap-8 items-center">
           <div>
             <Link to={"/"}>
-              <img src={navBarLogo} alt="" className="h-[48px] w-[64px] xl:h-[54px] xl:w-[72px]" />
+              <img
+                src={navBarLogo}
+                alt=""
+                className="h-[48px] w-[64px] xl:h-[54px] xl:w-[72px]"
+              />
             </Link>
           </div>
           <button onClick={() => handleChangeLanguage()}>
@@ -73,9 +86,15 @@ const NavigationBar = (props: NavigationBarProps) => {
             </Button>
           </div>
         </div>
-        <div className="flex xl:hidden">
-          <HamburgerIcon />
-        </div>
+        {isMobile && isSidebarOpen ? (
+          <div className="flex xl:hidden" onClick={() =>  sidebarToggle()}>
+            <XIcon />
+          </div>
+        ) : (
+          <div className="flex xl:hidden" onClick={() =>  sidebarToggle()}>
+            <HamburgerIcon />
+          </div>
+        )}
       </div>
     </div>
   );

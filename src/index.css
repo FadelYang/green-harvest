@@ -35,3 +35,7 @@ html, body, #root {
 .product-availabel-select-button-selected {
   @apply text-primary bg-[#EBFFF3] rounded-xl w-[269px] font-semibold;
 }
+
+.sidebar-item {
+  @apply text-[32px] font-medium leading-[26px]
+}
