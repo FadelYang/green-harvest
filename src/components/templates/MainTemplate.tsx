@@ -21,7 +21,7 @@ const MainTemplate = (props: MainTemplateProps) => {
       <main className="flex-grow">{children}</main>
 
       {/* Footer */}
-      {/* <Footer t={t}/> */}
+      <Footer t={t}/>
     </div>
   );
 };

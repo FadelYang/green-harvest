@@ -5,7 +5,7 @@ import facebookIcon from "/img/facebookIcon.svg";
 import phoneIcon from "/img/phoneIcon.svg";
 import whatsAppIcon from "/img/whatsappIcon.svg";
 import envelopIcon from "/img/envelopIcon.svg";
-import { useTranslationContext } from "../../context/TranslationContext";
+// import { useTranslationContext } from "../../context/TranslationContext";
 import { TFunction } from "i18next";
 
 type FooterProps = {
@@ -16,13 +16,15 @@ const Footer = (props: FooterProps) => {
   const { t } = props;
 
   return (
-    <div className="bg-black py-[72px]  -mb-6">
-      <div className=" text-white px-24 mx-auto max-w-[1444px]">
-        <div className="flex gap-24">
+    <div className="bg-black xl:py-[72px] -mb-6">
+      <div className=" text-white xl:px-24 p-6 mx-auto max-w-[1444px]">
+        <div className="flex xl:flex-row flex-col xl:gap-24 gap-[74px]">
           {/* First column */}
           <div className="max-w-[212px] flex flex-col justify-between h-full gap-7">
             <img src={footerLogo} alt="" className="w-min-[212px]" />
-            <p className="text-[16px]">{t("footer.aboutHarvest")}</p>
+            <p className="xl:block hidden text-[16px]">
+              {t("footer.aboutHarvest")}
+            </p>
             <div className="flex gap-2">
               <img src={instagramIcon} alt="" />
               <img src={twitterIcon} alt="" />
@@ -30,8 +32,8 @@ const Footer = (props: FooterProps) => {
             </div>
           </div>
           {/* Second Coulnm */}
-          <div className="flex flex-col max-w-[415px]">
-            <div className="flex justify-between">
+          <div className="flex flex-col xl:max-w-[415px]">
+            <div className="flex xl:flex-row flex-col xl:justify-between xl:gap-0 gap-[74px]">
               <div>
                 <p className="font-semibold text-lg mb-6">Useful Link</p>
                 <ul className="flex flex-col gap-4">
@@ -61,7 +63,7 @@ const Footer = (props: FooterProps) => {
                 </ul>
               </div>
             </div>
-            <div className="mt-auto">
+            <div className="mt-auto xl:block hidden">
               <div className="flex border rounded-md shadow-sm w-full max-w-md overflow-hidden bg-white p-2">
                 <span className="flex items-center px-3 text-gray-600">@</span>
                 <input
@@ -80,7 +82,7 @@ const Footer = (props: FooterProps) => {
           </div>
 
           {/* Third Column */}
-          <div className="max-w[400px]">
+          <div className="max-w-[400px] mb-6">
             <p className="font-semibold text-lg mb-6">Contact Us</p>
             <p>
               Era Prima Warehouse and Industrial Complex Jl. Daan Mogot KM 21
@@ -96,11 +98,11 @@ const Footer = (props: FooterProps) => {
               <div className="flex gap-2 items-start">
                 <img src={whatsAppIcon} alt="" />
                 <div className="flex flex-col gap-3">
-                  <div className="flex gap-3">
+                  <div className="flex gap-2">
                     <div>WA Food Supplement:</div>
                     <div>+62 812-8045-4168</div>
                   </div>
-                  <div className="flex gap-3">
+                  <div className="flex gap-2">
                     <div>WA Food Supplement:</div>
                     <div>+62 812-9865-9168</div>
                   </div>
@@ -109,6 +111,28 @@ const Footer = (props: FooterProps) => {
               <div className="flex gap-2">
                 <img src={envelopIcon} alt="" />
                 <div>Email info@greenlifeharvest.com</div>
+              </div>
+            </div>
+            <div className="mt-6 xl:hidden block">
+              <div className="flex border rounded-md shadow-sm w-full md:max-w-md lg:max-w-lg overflow-hidden bg-white">
+                <div className="flex-grow flex items-center p-2">
+                  <span className="flex items-center px-3 text-gray-600 text-[30px]">
+                    @
+                  </span>
+                  <div className="flex-grow relative">
+                    <input
+                      type="email"
+                      placeholder="Your Email"
+                      className="px-4 py-2 outline-none border-0 text-sm text-gray-700 w-full pr-24"
+                    />
+                    <button
+                      type="submit"
+                      className="absolute right-0 top-1/2 transform -translate-y-1/2 mr-1 py-[10px] px-[15px] bg-green-600 rounded text-white text-sm font-medium hover:bg-green-700"
+                    >
+                      Subscribe
+                    </button>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
