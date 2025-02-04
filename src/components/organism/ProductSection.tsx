@@ -100,7 +100,7 @@ const ProductSection = (props: TranslationProps) => {
                       : product.closeResponsive
                   }
                   alt={`Product ${product.id}`}
-                  className="transition-all duration-300 xl:hidden block"
+                  className="transition-all duration-300 xl:hidden block w-screen"
                 />
 
                 {/* Text overlay responsive */}
