@@ -23,8 +23,8 @@ const Home = (props: TranslationProps) => {
       <ManufacturingProcessSection t={t} />
       {/* <SuccessStorySection t={t} /> // optional */}
       <ProductAvailableSection t={t} />
-      {/* <InsightHubSection t={t} />
-      <QnaSection t={t} />
+      <InsightHubSection t={t} />
+      {/* <QnaSection t={t} />
       <LastBannerSection t={t}/> */}
     </MainTemplate>
   );

@@ -40,13 +40,13 @@ const InsightHubSection = (props: TranslationProps) => {
 
   return (
     <>
-      <div className="flex flex-col pt-36 gap-9">
+      <div className="flex flex-col xl:pt-36 pt-[72px] xl:gap-9 gap-6">
         <div>
-          <div className="px-24 flex justify-between items-center max-w-[1444px] mx-auto">
-            <h1 className="text-slate-800 text-[40px] font-medium leading-[48px]">
+          <div className="xl:px-24 px-6 flex justify-between items-center max-w-[1444px] mx-auto">
+            <h1 className="text-slate-800 xl:text-[40px] text-2xl font-medium xl:leading-[48px] leading-[34px]">
               {t("home.insightHub.header")}
             </h1>
-            <div>
+            <div className='xl:block hidden'>
               <Button
                 paddingSize="px-6 py-4"
                 className="flex gap-3 primary-text font-medium text-base border-b border-[#015F26]"
@@ -58,8 +58,8 @@ const InsightHubSection = (props: TranslationProps) => {
           </div>
         </div>
         {/* Article section */}
-        <div className="flex pl-24 gap-9 overflow-x-auto max-w-full no-scrollbar pb-36 mx-auto">
-          <div className="flex gap-9">
+        <div className="flex xl:pl-24 pl-6 gap-9 overflow-x-auto max-w-full no-scrollbar xl:pb-36 pb-5 mx-auto z-10">
+          <div className="flex xl:gap-9 gap-4">
             {insightHubArticleData.map((item, index) => (
               <ArticleCard
                 key={index}
@@ -72,6 +72,15 @@ const InsightHubSection = (props: TranslationProps) => {
             ))}
           </div>
         </div>
+        <div className='xl:hidden block px-6'>
+              <Button
+                paddingSize="px-6 py-4"
+                className="flex gap-3 primary-text font-medium text-base border-b border-[#015F26] w-full justify-center"
+              >
+                {t("home.insightHub.viewMoreArticleButton")}
+                <img src={arrowRight} alt="" className="-rotate-45" />
+              </Button>
+            </div>
       </div>
     </>
   );
