@@ -157,8 +157,8 @@ const ProductAvailableSection = (props: TranslationProps) => {
                   activeProduct === item.id ? "block " : "hidden"
                 }`}
               >
-                <div>
-                  <img src={item.image} alt="" className='h-[345px] object-cover'/>
+                <div className=''>
+                  <img src={item.image} alt="" className='h-[345px] w-full object-cover'/>
                 </div>
                 <div className="flex flex-col gap-2 p-6">
                   <p className="text-slate-800 text-[20px] font-semibold">
