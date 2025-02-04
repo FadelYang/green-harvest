@@ -62,7 +62,7 @@ const NavigationBar = (props: NavigationBarProps) => {
         </div>
 
         {/* Left Content */}
-        <div className="hidden xl:flex gap-6 items-center">
+        <div className="hidden md:flex gap-6 items-center">
           <ul className="flex text-base text-slate-800 gap-6">
             <li>
               <Link to={"/service"}>{t("navbar.ourExpertise")}</Link>
@@ -87,11 +87,11 @@ const NavigationBar = (props: NavigationBarProps) => {
           </div>
         </div>
         {isMobile && isSidebarOpen ? (
-          <div className="flex xl:hidden" onClick={() =>  sidebarToggle()}>
+          <div className="flex md:hidden" onClick={() =>  sidebarToggle()}>
             <XIcon />
           </div>
         ) : (
-          <div className="flex xl:hidden" onClick={() =>  sidebarToggle()}>
+          <div className="flex md:hidden" onClick={() =>  sidebarToggle()}>
             <HamburgerIcon />
           </div>
         )}
