@@ -56,7 +56,7 @@ const FeatureSection = (props: TranslationProps) => {
                   />
                 </p>
               </div>
-              <div className="flex justify-center">
+              <div className="flex xl:justify-center justify-start">
                 <div className="grid grid-cols-4 xl:grid-cols-5 xl:min-w-[675px] xl:gap-5 gap-1">
                   {certificationLogos.map((certificationLogo, index) => (
                     <img src={certificationLogo} alt="" key={index} />
@@ -69,7 +69,7 @@ const FeatureSection = (props: TranslationProps) => {
         {/* Experience */}
         <div className="flex flex-col gap-10">
           <div className="flex flex-col gap-[50px]">
-            <div className="flex xl:flex-row flex-col xl:gap-[72px] gap-16">
+            <div className="flex md:flex-row flex-col xl:gap-[72px] gap-16 md:gap-6">
               {/* first section */}
               <div>
                 <img
@@ -92,7 +92,7 @@ const FeatureSection = (props: TranslationProps) => {
                     <img
                       src={featureExperience2Responsive}
                       alt=""
-                      className="xl:hidden block w-[219px] h-[166px]"
+                      className="xl:hidden block min-w-[219px] min-h-[166px]"
                     />
                   </div>
                 </div>
@@ -113,8 +113,8 @@ const FeatureSection = (props: TranslationProps) => {
               </div>
             </div>
             {/* second section */}
-            <div className="">
-              <div className="flex xl:flex-row flex-col-reverse justify-between gap-6 xl:gap-[72px]">
+            <div className="sm:pt-10 pt-0">
+              <div className="flex md:flex-row flex-col-reverse justify-between gap-6 xl:gap-[72px]">
                 <div className="flex flex-col justify-center items gap-4 xl:ps-[100px] px-6">
                   <p className="text-black text-[32px] font-medium max-w-[609px]">
                     {t("home.feature.lowMoq.title")}
@@ -130,7 +130,7 @@ const FeatureSection = (props: TranslationProps) => {
                 </div>
               </div>
               <div className="relative">
-                <div className="absolute right-0 -mt-[400px] xl:-mt-64 xl:w-[100px] xl:h-[408px] w-[42px] h-[174px] bg-yellow-500 opacity-80"></div>
+                <div className="absolute right-0 -mt-[400px] sm:-mt-[150px] xl:-mt-64 xl:w-[100px] xl:h-[408px] w-[42px] h-[174px] bg-yellow-500 opacity-80"></div>
               </div>
             </div>
           </div>
