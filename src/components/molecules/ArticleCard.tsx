@@ -14,7 +14,7 @@ const ArticleCard = (props: ArticleCard) => {
     <>
       <div className="flex flex-col xl:w-[496px] w-[324px] gap-4 shadow-xl">
         <div className=''>
-          <img src={thumbnailImage} alt="" className='xl:max-w-[496px] xl:min-h-[298px] w-[324px] h-[321px] object-cover'/>
+          <img src={thumbnailImage} alt="" className='xl:min-w-[496px] xl:min-h-[298px] w-[324px] h-[321px] object-cover'/>
         </div>
         <div className="flex flex-col gap-2 px-6 pb-6">
           <div className="flex justify-between text-gray-500 ">
