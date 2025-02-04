@@ -4,15 +4,15 @@ import arrowUpRight from "/img/arrowUpright.svg";
 import product1Open from "/img/product-1-open.png";
 import product1Close from "/img/product-1-close.png";
 import product1OpenResponsive from "/img/product-1-open-responsive.png";
-import product1CloseResponsive from "/img/product-2-close-responsive.png";
+import product1CloseResponsive from "/img/product-1-close-responsive.png";
 
 import product2Open from "/img/product-2-open.png";
 import product2Close from "/img/product-2-close.png";
-import product2OpenResponsive from "/img/product-1-open-responsive.png";
+import product2OpenResponsive from "/img/product-2-open-responsive.png";
 import product2CloseResponsive from "/img/product-2-close-responsive.png";
 
 import product3Open from "/img/product-3-open.png";
-import product3OpenResponsive from "/img/product-1-open-responsive.png";
+import product3OpenResponsive from "/img/product-3-open-responsive.png";
 import product3Close from "/img/product-3-close.png";
 import product3CloseResponsive from "/img/product-3-close-responsive.png";
 
@@ -77,7 +77,7 @@ const ProductSection = (props: TranslationProps) => {
           {t("home.product.header")}
         </h1>
         {/* product image container */}
-        <div className="flex justify-center xl:flex-row flex-col gap-0">
+        <div className="flex justify-center xl:flex-row flex-col gap-0 mx-auto">
           {products.map((product) => (
             <div
               key={product.id}
@@ -95,11 +95,34 @@ const ProductSection = (props: TranslationProps) => {
                 />
                 <img
                   src={
-                    activeProduct === product.id ? product.openResponsive : product.closeResponsive
+                    activeProduct === product.id
+                      ? product.openResponsive
+                      : product.closeResponsive
                   }
                   alt={`Product ${product.id}`}
                   className="transition-all duration-300 xl:hidden block"
                 />
+
+                {/* Text overlay responsive */}
+                <div className="absolute inset-0 items-end justify-start text-start xl:hidden flex">
+                  <p className="text-white text-lg font-medium">
+                    {activeProduct === product.id ? (
+                      <div className="p-4 flex flex-col">
+                        <p className="text-2xl font-medium">
+                          {product.openText.title}
+                        </p>
+                        <p className="text-[14px] text-slate-100 font-normal leading-6">
+                          {product.openText.description}
+                        </p>
+                      </div>
+                    ) : (
+                      <p className="p-4 text-2xl font-medium">
+                        {product.openText.title}
+                      </p>
+                    )}
+                  </p>
+                </div>
+
                 {/* Text Overlay */}
                 <div className="absolute inset-0 items-end justify-start text-start xl:flex hidden">
                   <p className="text-white text-lg font-medium">
