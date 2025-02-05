@@ -9,8 +9,8 @@ const AboutOurGallery = (props: TranslationProps) => {
 
   return (
     <>
-      <div className="max-w-[1444px] px-24 mx-auto flex justify-between">
-        <h1 className="text-slate-800 text-2xl font-medium min-w-[130px]">
+      <div className="max-w-[1444px] xl:px-24 px-6 mx-auto flex xl:flex-row flex-col justify-between">
+        <h1 className="text-slate-800 text-2xl font-medium min-w-[130px] xl:mb-0 mb-4">
           {t("aboutUs.ourGallery")}
         </h1>
         <div className="flex gap-6 justify-end flex-wrap">
