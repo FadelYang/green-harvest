@@ -16,7 +16,7 @@ const HeroSection = (props: TranslationProps) => {
       <section className="pt-10 xl:pt-[72px] pb-[54px] overflow-hidden max-w-[1444px] mx-auto">
         {/* main hero content */}
         <div className="flex xl:flex-row flex-col xl:justify-between px-6 xl:px-24 z-10">
-          <div className="flex flex-col gap-6 xl:gap-8  max-w-[760px] mt-">
+          <div className="flex flex-col gap-6 xl:gap-8  xl:max-w-[760px] mt-">
             <h1 className="text-[32px] xl:text-[44px] font-[500] text-slate-800">
               {t("home.hero.header")}
             </h1>
@@ -60,12 +60,12 @@ const HeroSection = (props: TranslationProps) => {
               <img
                 src={heroImage}
                 alt=""
-                className="absolute inset-0 w-full h-full object-cover hidden xl:block"
+                className="absolute inset-0 w-full h-full object-cover hidden md:block mt-0 md:-mt-20"
               />
               <img
                 src={heroImageResponsive}
                 alt=""
-                className="absolute inset-0 w-full h-full object-contain xl:hidden block mt-0 md:mt-28"
+                className="absolute inset-0 w-auto h-full object-contain md:hidden block mt-0 md:mt-28"
               />
             </div>
           </div>
