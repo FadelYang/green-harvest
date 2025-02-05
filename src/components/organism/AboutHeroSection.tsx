@@ -31,9 +31,9 @@ const AboutHeroSection = (props: TranslationProps) => {
               <Button variant="primary-button" className='w-full sm:w-auto'>{t("aboutUs.hero.consultNowButton")}</Button>
             </div>
         </div>
-        <div>
+        <div className='flex'>
           <img src={aboutHeroImage} alt="" className='sm:block hidden'/>
-          <img src={aboutHeroImageResponsive} alt="" className='block sm:hidden'/>
+          <img src={aboutHeroImageResponsive} alt="" className='block sm:hidden flex-grow'/>
         </div>
       </div>
     </>

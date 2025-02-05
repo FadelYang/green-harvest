@@ -55,7 +55,7 @@ const AboutOurStorySection = (props: TranslationProps) => {
             <img
               src={aboutOurStoryImage2Responsive}
               alt=""
-              className="max-w-full sm:hidden block"
+              className="max-w-full sm:hidden block flex-grow"
             />
             <img
               src={aboutOurStoryImage3}
@@ -65,7 +65,7 @@ const AboutOurStorySection = (props: TranslationProps) => {
             <img
               src={aboutOurStoryImage3Responsive}
               alt=""
-              className="max-w-full sm:hidden block"
+              className="max-w-full sm:hidden block flex-grow"
             />
           </div>
         </div>
@@ -119,7 +119,7 @@ const AboutOurStorySection = (props: TranslationProps) => {
               <img
                 src={aboutOurStoryImage6Responsive}
                 alt=""
-                className="xl:hidden block"
+                className="xl:hidden block flex-grow"
               />
               <img
                 src={aboutOurStoryImage7}
@@ -129,7 +129,7 @@ const AboutOurStorySection = (props: TranslationProps) => {
               <img
                 src={aboutOurStoryImage7Responsive}
                 alt=""
-                className="xl:hidden block"
+                className="xl:hidden block flex-grow"
               />
             </div>
           </div>
