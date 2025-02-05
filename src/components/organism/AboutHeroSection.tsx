@@ -2,19 +2,20 @@ import { Trans } from "react-i18next";
 import { TranslationProps } from "../../types/types";
 import Button from "../atoms/Button";
 import aboutHeroImage from "/img/about-hero-image.png";
+import aboutHeroImageResponsive from "/img/about-hero-image-responsive.png";
 
 const AboutHeroSection = (props: TranslationProps) => {
   const { t } = props;
 
   return (
     <>
-      <div className="px-24 pt-[72px] max-w-[1444px] mx-auto flex flex-col gap-[60px] pb-36">
-        <div className="flex justify-between">
-          <div className="flex flex-col gap-8">
-            <h1 className="text-slate-800 font-medium text-[44px] max-w-[517px]">
+      <div className="xl:px-24 p-6 pt-[40px] max-w-[1444px] mx-auto flex flex-col gap-[60px] xl:pb-36 pb-[72px]">
+        <div className="flex xl:flex-row flex-col xl:justify-between xl:gap-0 gap-6">
+          <div className="flex flex-col xl:gap-8 gap-6">
+            <h1 className="text-slate-800 font-medium xl:text-[44px] text-[32px] max-w-[517px] leading-[42px] tracking-[-1.28px]">
               {t("aboutUs.hero.header")}
             </h1>
-            <div>
+            <div className='hidden xl:block'>
               <Button variant="primary-button">{t("aboutUs.hero.consultNowButton")}</Button>
             </div>
           </div>
@@ -26,9 +27,13 @@ const AboutHeroSection = (props: TranslationProps) => {
               />
             </h2>
           </div>
+          <div className='xl:hidden block'>
+              <Button variant="primary-button" className='w-full sm:w-auto'>{t("aboutUs.hero.consultNowButton")}</Button>
+            </div>
         </div>
         <div>
-          <img src={aboutHeroImage} alt="" />
+          <img src={aboutHeroImage} alt="" className='sm:block hidden'/>
+          <img src={aboutHeroImageResponsive} alt="" className='block sm:hidden'/>
         </div>
       </div>
     </>
