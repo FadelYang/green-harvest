@@ -18,7 +18,7 @@ const ContactMapSectionTemplate = (props: ContactMapSectionTemplateProps) => {
 
   return (
     <>
-      <div className="flex gap-8 justify-between">
+      <div className="flex xl:flex-row flex-col-reverse gap-8 justify-between">
         <div className="flex flex-col gap-6">
           <div className="flex flex-col gap-4">
             <div className="flex gap-[10px]">
@@ -97,7 +97,7 @@ const ContactMapSectionTemplate = (props: ContactMapSectionTemplateProps) => {
         </div>
         <div>
           <a href="#">
-            <img src={countryData?.image.imageUrl} alt="" />
+            <img src={countryData?.image.imageUrl} alt="" className='xl:h-auto h-[312px] xl:object-none object-cover'/>
           </a>
         </div>
       </div>

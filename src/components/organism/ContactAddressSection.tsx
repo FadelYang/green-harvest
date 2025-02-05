@@ -6,7 +6,7 @@ const ContactAddressSection = (props: TranslationProps) => {
 
   return (
     <>
-      <div className="flex flex-col gap-36 max-w-[1444px] mx-auto px-24">
+      <div className="flex flex-col gap-36 max-w-[1444px] mx-auto xl:px-24 px-6">
         <ContactMapSectionTemplate country="indonesia" t={t} />
         <ContactMapSectionTemplate country="malaysia" t={t} />
       </div>
