@@ -60,7 +60,7 @@ const HeroSection = (props: TranslationProps) => {
               <img
                 src={heroImage}
                 alt=""
-                className="absolute inset-0 w-full h-full object-cover hidden md:block mt-0 md:-mt-20"
+                className="absolute inset-0 w-full h-full object-cover hidden md:block mt-20 xl:-mt-2"
               />
               <img
                 src={heroImageResponsive}
@@ -70,7 +70,7 @@ const HeroSection = (props: TranslationProps) => {
             </div>
           </div>
           <div className="relative flex justify-center xl:hidden">
-            <div className="absolute -mt-40">
+            <div className="absolute md:-mt-32 -mt-40">
               <HeroExpertiseItemCard />
             </div>
           </div>
