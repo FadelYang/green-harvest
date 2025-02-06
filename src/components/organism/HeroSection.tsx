@@ -23,7 +23,7 @@ const HeroSection = (props: TranslationProps) => {
             <h2 className="text-base font-normal text-slate-500">
               {t("home.hero.subHeader")}
             </h2>
-            <div className="hidden sm:flex flex-col gap-4 mb-6">
+            <div className="hidden xl:flex flex-col gap-4">
               <div className="z-10">
                 <Button variant="primary-button" className="w-full xl:w-auto">
                   {t("home.hero.consultNowButton")}
