@@ -28,7 +28,6 @@ export const TranslationProvider: FC<TranslationProviderProps> = ({
 
   const handleChangeLanguage = () => {
     const newLanguage = currentLanguage === "en" ? "id" : "en";
-    console.log({ newLanguage });
     setCurrentLanguage(newLanguage);
     changeLanguage(newLanguage);
   };

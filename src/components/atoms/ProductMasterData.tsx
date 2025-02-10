@@ -37,10 +37,7 @@ type Category = {
 };
 
 export default function useProduct(props: TranslationProps) {
-  const { t } = props;
-
-  console.log('Item: ' + t('product.herbal.products[0].productId'));
-  
+  const { t } = props;  
 
   const productsByCategory: Record<string, Category> = {
     herbal: {
