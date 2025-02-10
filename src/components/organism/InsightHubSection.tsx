@@ -4,7 +4,7 @@ import arrowRight from "/img/arrowRight.svg";
 import articleImage1 from "/img/article-image-1.png";
 import articleImage2 from "/img/article-image-2.png";
 import articleImage3 from "/img/article-image-3.png";
-import { TranslationProps } from '../../types/types';
+import { TranslationProps } from "../../types/types";
 
 const insightHubArticleData = [
   {
@@ -40,13 +40,16 @@ const InsightHubSection = (props: TranslationProps) => {
 
   return (
     <>
-      <div className="flex flex-col xl:pt-36 pt-[72px] xl:gap-9 gap-6">
+      <div
+        className="flex flex-col xl:pt-36 pt-[72px] xl:gap-9 gap-6"
+        id="insight-hub"
+      >
         <div>
           <div className="xl:px-24 px-6 flex justify-between items-center max-w-[1444px] mx-auto">
             <h1 className="text-slate-800 xl:text-[40px] text-2xl font-medium xl:leading-[48px] leading-[34px]">
               {t("home.insightHub.header")}
             </h1>
-            <div className='xl:block hidden'>
+            <div className="xl:block hidden">
               <Button
                 paddingSize="px-6 py-4"
                 className="flex gap-3 primary-text font-medium text-base border-b border-[#015F26]"
@@ -72,15 +75,15 @@ const InsightHubSection = (props: TranslationProps) => {
             ))}
           </div>
         </div>
-        <div className='xl:hidden block px-6'>
-              <Button
-                paddingSize="px-6 py-4"
-                className="flex gap-3 primary-text font-medium text-base border-b border-[#015F26] w-full justify-center"
-              >
-                {t("home.insightHub.viewMoreArticleButton")}
-                <img src={arrowRight} alt="" className="-rotate-45" />
-              </Button>
-            </div>
+        <div className="xl:hidden block px-6">
+          <Button
+            paddingSize="px-6 py-4"
+            className="flex gap-3 primary-text font-medium text-base border-b border-[#015F26] w-full justify-center"
+          >
+            {t("home.insightHub.viewMoreArticleButton")}
+            <img src={arrowRight} alt="" className="-rotate-45" />
+          </Button>
+        </div>
       </div>
     </>
   );

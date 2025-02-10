@@ -2,7 +2,7 @@ import navBarLogo from "/img/navbar-logo.png";
 import englishFlag from "/img/english-flag.svg";
 import indonesiaFlag from "/img/indonesia-flag.svg";
 import Button from "../atoms/Button";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useTranslationContext } from "../../context/TranslationContext";
 import { TFunction } from "i18next";
 import HamburgerIcon from "../atoms/HamburgerIcon";
@@ -17,12 +17,16 @@ type NavigationBarProps = {
 
 const NavigationBar = (props: NavigationBarProps) => {
   const { handleChangeLanguage, currentLanguage } = useTranslationContext();
-  const {
-    t,
-    isMobile,
-    isSidebarOpen,
-    sidebarToggle,
-  } = props;
+  const { t, isMobile, isSidebarOpen, sidebarToggle } = props;
+  const navigate = useNavigate();
+
+  const scrollToSection = async (sectionId: string, url: string) => {
+    await navigate(url);
+    setTimeout(() => {
+      const section = document.getElementById(sectionId);
+      if (section) section.scrollIntoView({ behavior: "smooth" });
+    }, 500);
+  };
 
   return (
     <div className="pb-4 px-6 pt-[52px] xl:px-24 xl:py-6 sticky top-0 overflow-hidden bg-white z-20">
@@ -74,7 +78,7 @@ const NavigationBar = (props: NavigationBarProps) => {
               <Link to={"/about"}>{t("navbar.about")}</Link>
             </li>
             <li>
-              <a href="#">{t("navbar.insightHub")}</a>
+              <button onClick={() => scrollToSection('insight-hub', '/')}>{t("navbar.insightHub")}</button>
             </li>
             <li>
               <Link to="/contact">{t("navbar.contact")}</Link>
@@ -87,11 +91,11 @@ const NavigationBar = (props: NavigationBarProps) => {
           </div>
         </div>
         {isMobile && isSidebarOpen ? (
-          <div className="flex md:hidden" onClick={() =>  sidebarToggle()}>
+          <div className="flex md:hidden" onClick={() => sidebarToggle()}>
             <XIcon />
           </div>
         ) : (
-          <div className="flex md:hidden" onClick={() =>  sidebarToggle()}>
+          <div className="flex md:hidden" onClick={() => sidebarToggle()}>
             <HamburgerIcon />
           </div>
         )}
