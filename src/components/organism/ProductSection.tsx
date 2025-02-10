@@ -108,9 +108,17 @@ const ProductSection = (props: TranslationProps) => {
                   <p className="text-white text-lg font-medium">
                     {activeProduct === product.id ? (
                       <div className="p-4 flex flex-col">
-                        <p className="text-2xl font-medium">
+                        <a
+                          className="text-2xl font-medium"
+                          onClick={() => {
+                            navigate(
+                              `/products/${product.openText.buttonHref}`
+                            );
+                            window.scrollTo(0, 0);
+                          }}
+                        >
                           {product.openText.title}
-                        </p>
+                        </a>
                         <p className="text-[14px] text-slate-100 font-normal leading-6">
                           {product.openText.description}
                         </p>
