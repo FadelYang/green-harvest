@@ -3,8 +3,9 @@ import WhatsappIcon from "../atoms/WhatsappIcon";
 import BaseModal from "../atoms/BaseModal";
 import CsAvatar from "/img/cs-avatar.png";
 import MessageICon from "../atoms/MessageICon";
-import LiveChatCard from "../molecules/LiveChatCard";
-import { TranslationProps } from '../../types/types';
+import LiveChatCard, { liveChatCardProps } from "../molecules/LiveChatCard";
+import { TranslationProps } from "../../types/types";
+import LiveChatDetailCard from "../molecules/LiveChatDetailCard";
 
 const liveChatData = [
   {
@@ -53,13 +54,29 @@ const liveChatData = [
 
 const LiveChatModal = (props: TranslationProps) => {
   const [isLiveChatShow, setIsLiveChatShow] = useState(false);
+  const [isSpesificChatShowed, setIsSpesificChatShowed] = useState(false);
+  const [selectedSpesificChat, setSelectedSpesificChat] =
+    useState<liveChatCardProps>({
+      id: "0",
+      avatar: "",
+      name: "",
+      role: "",
+      division: "",
+      latestChat: "",
+      isLatestChatRead: false,
+      latestChatTime: "",
+    });
   const { t } = props;
 
   return (
     <>
       <button
         className="fixed xl:bottom-4 bottom-4 xl:right-20 right-4 z-50"
-        onClick={() => setIsLiveChatShow(!isLiveChatShow)}
+        onClick={() => {
+          setIsLiveChatShow(!isLiveChatShow);
+          if (isSpesificChatShowed)
+            setIsSpesificChatShowed(!isSpesificChatShowed);
+        }}
       >
         <div className="px-6 py-4 border border-[#015F26] inline-block rounded-xl rounded-br-none bg-white">
           <WhatsappIcon fill="white" stroke="#015F26" />
@@ -87,7 +104,14 @@ const LiveChatModal = (props: TranslationProps) => {
                   ))}
                 </div>
 
-                <div className='cursor-pointer -ml-5' onClick={() => setIsLiveChatShow(!isLiveChatShow)}>
+                <div
+                  className="cursor-pointer -ml-5"
+                  onClick={() => {
+                    setIsLiveChatShow(!isLiveChatShow);
+                    if (isSpesificChatShowed)
+                      setIsSpesificChatShowed(!isSpesificChatShowed);
+                  }}
+                >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"
@@ -120,23 +144,51 @@ const LiveChatModal = (props: TranslationProps) => {
                 </div>
               </div>
               <h2 className="text-center text-slate-500 text-[14px]">
-                {t('liveChat.header')}
+                {t("liveChat.header")}
               </h2>
             </div>
             <div>
               {liveChatData.map((item, index) => (
-                <LiveChatCard
-                  id={+index}
-                  avatar={item.avatar}
-                  name={item.name}
-                  role={item.role}
-                  division={item.division}
-                  latestChat={item.latestChat}
-                  isLatestChatRead={item.isLatestChatRead}
-                  latestChatTime={item.latestChatTime}
-                />
+                <div
+                  key={index}
+                  className="hover:cursor-pointer"
+                  onClick={() => {
+                    setSelectedSpesificChat(item);
+                    setIsSpesificChatShowed(!isSpesificChatShowed);
+                    setIsLiveChatShow(!isLiveChatShow);
+                  }}
+                >
+                  <LiveChatCard
+                    id={item.id}
+                    avatar={item.avatar}
+                    name={item.name}
+                    role={item.role}
+                    division={item.division}
+                    latestChat={item.latestChat}
+                    isLatestChatRead={item.isLatestChatRead}
+                    latestChatTime={item.latestChatTime}
+                  />
+                </div>
               ))}
             </div>
+          </div>
+        </BaseModal>
+      )}
+
+      {isSpesificChatShowed && (
+        <BaseModal>
+          <div className="max-w-[346px] w-[311px]">
+            <LiveChatDetailCard
+              id={selectedSpesificChat.id}
+              avatar={selectedSpesificChat.avatar}
+              name={selectedSpesificChat.name}
+              role={selectedSpesificChat.role}
+              division={selectedSpesificChat.division}
+              onClick={() => {
+                setIsSpesificChatShowed(!isSpesificChatShowed);
+                setIsLiveChatShow(!isLiveChatShow);
+              }}
+            />
           </div>
         </BaseModal>
       )}

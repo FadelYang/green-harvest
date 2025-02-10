@@ -1,7 +1,7 @@
 import OnlineDotIcon from "../atoms/OnlineDotIcon";
 
-type liveChatCardProps = {
-  id: number;
+export type liveChatCardProps = {
+  id: string;
   avatar: string;
   name: string;
   role: string;
@@ -9,6 +9,7 @@ type liveChatCardProps = {
   latestChat?: string;
   latestChatTime?: string;
   isLatestChatRead?: boolean;
+  onClick?: () => void;
 };
 
 const LiveChatCard = (props: liveChatCardProps) => {
