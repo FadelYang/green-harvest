@@ -25,7 +25,7 @@ const NavigationBar = (props: NavigationBarProps) => {
   } = props;
 
   return (
-    <div className="pb-4 px-6 pt-[52px] xl:px-24 xl:py-6 sticky top-0 overflow-hidden bg-white z-50">
+    <div className="pb-4 px-6 pt-[52px] xl:px-24 xl:py-6 sticky top-0 overflow-hidden bg-white z-20">
       <div className="flex justify-between items-center max-w-[1440px] mx-auto px-0 2xl:px-24">
         {/* Right Content */}
         <div className="flex gap-4 xl:gap-8 items-center">

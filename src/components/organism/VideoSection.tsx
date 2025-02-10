@@ -32,7 +32,7 @@ const VideoSection = (props: TranslationProps) => {
               </div>
             </div>
           </div>
-          <div className="w-full h-full xl:pr-24 z-20 xl:px-0 px-6">
+          <div className="w-full h-full xl:pr-24 z-10 xl:px-0 px-6">
             <video width="100%" controls>
               <source src={video} type="video/mp4" />
             </video>
