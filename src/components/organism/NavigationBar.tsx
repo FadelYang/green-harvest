@@ -7,6 +7,7 @@ import { useTranslationContext } from "../../context/TranslationContext";
 import { TFunction } from "i18next";
 import HamburgerIcon from "../atoms/HamburgerIcon";
 import XIcon from "../atoms/XIcon";
+import { useEffect, useState } from "react";
 
 type NavigationBarProps = {
   t: TFunction<"translation", undefined>;
@@ -18,6 +19,8 @@ type NavigationBarProps = {
 const NavigationBar = (props: NavigationBarProps) => {
   const { handleChangeLanguage, currentLanguage } = useTranslationContext();
   const { t, isMobile, isSidebarOpen, sidebarToggle } = props;
+  const [isVisible, setIsVisible] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
   const navigate = useNavigate();
 
   const scrollToSection = async (sectionId: string, url: string) => {
@@ -28,8 +31,26 @@ const NavigationBar = (props: NavigationBarProps) => {
     }, 500);
   };
 
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > lastScrollY) {
+        setIsVisible(false);
+      } else {
+        setIsVisible(true);
+      }
+      setLastScrollY(window.scrollY);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [lastScrollY]);
+
   return (
-    <div className="pb-4 px-6 pt-[52px] xl:px-24 xl:py-6 sticky top-0 overflow-hidden bg-white z-20">
+    <div
+      className={`pb-4 px-6 pt-[52px] xl:px-24 xl:py-6 sticky top-0 overflow-hidden bg-white z-20 ${
+        isVisible ? "translate-y-0 duration-300" : "-translate-y-full duration-300"
+      }`}
+    >
       <div className="flex justify-between items-center max-w-[1440px] mx-auto px-0 2xl:px-24">
         {/* Right Content */}
         <div className="flex gap-4 xl:gap-8 items-center">
@@ -78,7 +99,9 @@ const NavigationBar = (props: NavigationBarProps) => {
               <Link to={"/about"}>{t("navbar.about")}</Link>
             </li>
             <li>
-              <button onClick={() => scrollToSection('insight-hub', '/')}>{t("navbar.insightHub")}</button>
+              <button onClick={() => scrollToSection("insight-hub", "/")}>
+                {t("navbar.insightHub")}
+              </button>
             </li>
             <li>
               <Link to="/contact">{t("navbar.contact")}</Link>
