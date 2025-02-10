@@ -3,8 +3,6 @@ import NavigationBar from "../organism/NavigationBar";
 import Footer from "../organism/Footer";
 import { TFunction } from "i18next";
 import Sidebar from "../organism/Sidebar";
-import WhatsappIcon from "../atoms/WhatsappIcon";
-import BaseModal from '../atoms/BaseModal';
 import LiveChatModal from '../organism/LiveChatModal';
 
 type MainTemplateProps = {
@@ -48,7 +46,7 @@ const MainTemplate = (props: MainTemplateProps) => {
         sidebarToggle={sidebarToggle}
       />
 
-      <LiveChatModal />
+      <LiveChatModal t={t}/>
 
       <Sidebar t={t} isMobile={isMobile} isSidebarOpen={isSidebarOpen} />
 

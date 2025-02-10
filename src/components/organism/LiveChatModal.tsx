@@ -1,10 +1,10 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import WhatsappIcon from "../atoms/WhatsappIcon";
 import BaseModal from "../atoms/BaseModal";
 import CsAvatar from "/img/cs-avatar.png";
 import MessageICon from "../atoms/MessageICon";
 import LiveChatCard from "../molecules/LiveChatCard";
-import XIcon from "../atoms/XIcon";
+import { TranslationProps } from '../../types/types';
 
 const liveChatData = [
   {
@@ -51,8 +51,9 @@ const liveChatData = [
   },
 ];
 
-const LiveChatModal = () => {
+const LiveChatModal = (props: TranslationProps) => {
   const [isLiveChatShow, setIsLiveChatShow] = useState(false);
+  const { t } = props;
 
   return (
     <>
@@ -119,8 +120,7 @@ const LiveChatModal = () => {
                 </div>
               </div>
               <h2 className="text-center text-slate-500 text-[14px]">
-                Select a customer representative to chat about <br /> your
-                product needs
+                {t('liveChat.header')}
               </h2>
             </div>
             <div>
