@@ -1,7 +1,6 @@
 import { TFunction } from "i18next";
 import ProductCard from "../atoms/ProductCard";
 import useProduct from "../atoms/ProductMasterData";
-import ProductMasterData from "../atoms/ProductMasterData";
 
 type ProductCardListProps = {
   category: string;
@@ -15,8 +14,8 @@ const ProductCardList = (props: ProductCardListProps) => {
 
   return (
     <>
-      <div className="flex gap-8 flex-wrap max-w-[1444px] mx-auto px-24">
-        <h1 className="mx-auto text-slate-800 text-[32px] leading-[42px] font-semibold">
+      <div className="flex gap-8 flex-wrap max-w-[1444px] mx-auto xl:px-24 px-6 xl:py-0 py-[72px] justify-center">
+        <h1 className="mx-auto text-slate-800 xl:text-[32px] text-2xl xl:leading-[42px] leading-[34px] xl:text-start text-center font-semibold">
           {products?.listSectionHeading}
         </h1>
         {products?.products.map((item) => (
