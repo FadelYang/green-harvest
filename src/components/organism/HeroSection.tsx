@@ -23,7 +23,7 @@ const HeroSection = (props: TranslationProps) => {
             <h2 className="text-base font-normal text-slate-500">
               {t("home.hero.subHeader")}
             </h2>
-            <div className="hidden xl:flex flex-col gap-4">
+            <div className="flex flex-col gap-4">
               <div className="z-10">
                 <Button variant="primary-button" className="w-full xl:w-auto">
                   {t("home.hero.consultNowButton")}
@@ -54,7 +54,7 @@ const HeroSection = (props: TranslationProps) => {
           </div>
         </div>
         {/* image container */}
-        <div className="-mt-[90px]">
+        <div className="xl:-mt-[90px] mt-0">
           <div className="pl-6 xl:pl-14">
             <div className="relative w-screen max-w-none h-[400px] xl:mt-0 -mt-10 overflow-hidden p-4">
               <img
@@ -65,7 +65,7 @@ const HeroSection = (props: TranslationProps) => {
               <img
                 src={heroImageResponsive}
                 alt=""
-                className="absolute inset-0 w-auto h-full object-contain md:hidden block mt-0 md:mt-28"
+                className="absolute inset-0 w-auto object-contain md:hidden block mt-20 md:mt-28"
               />
             </div>
           </div>
