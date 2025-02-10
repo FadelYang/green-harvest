@@ -4,6 +4,8 @@ import Footer from "../organism/Footer";
 import { TFunction } from "i18next";
 import Sidebar from "../organism/Sidebar";
 import WhatsappIcon from "../atoms/WhatsappIcon";
+import BaseModal from '../atoms/BaseModal';
+import LiveChatModal from '../organism/LiveChatModal';
 
 type MainTemplateProps = {
   t: TFunction<"translation", undefined>;
@@ -46,11 +48,7 @@ const MainTemplate = (props: MainTemplateProps) => {
         sidebarToggle={sidebarToggle}
       />
 
-      <div className="fixed xl:bottom-4 bottom-4 xl:right-20 right-4 z-50">
-        <div className='px-6 py-4 border border-[#015F26] inline-block rounded-xl rounded-br-none bg-white'>
-          <WhatsappIcon fill="white" stroke="#015F26" />
-        </div>
-      </div>
+      <LiveChatModal />
 
       <Sidebar t={t} isMobile={isMobile} isSidebarOpen={isSidebarOpen} />
 
