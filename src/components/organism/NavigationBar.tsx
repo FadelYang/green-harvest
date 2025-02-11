@@ -33,7 +33,7 @@ const NavigationBar = (props: NavigationBarProps) => {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > lastScrollY && !isSidebarOpen) {
+      if (!isSidebarOpen && window.scrollY > lastScrollY) {
         setIsVisible(false);
       } else if (isSidebarOpen) {
         setIsVisible(true);
@@ -49,7 +49,7 @@ const NavigationBar = (props: NavigationBarProps) => {
 
   return (
     <div
-      className={`pb-4 px-6 xl:px-24 xl:py-6 sticky top-0 overflow-hidden bg-white z-20 ${
+      className={`pb-4 px-6 xl:px-24 py-6 sticky top-0 overflow-hidden bg-white z-20 ${
         isVisible ? "translate-y-0 duration-300" : "-translate-y-full duration-300"
       }`}
     >

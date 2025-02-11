@@ -13,7 +13,7 @@ type MainTemplateProps = {
 const MainTemplate = (props: MainTemplateProps) => {
   const { t, children } = props;
   const [isMobile, setIsMobile] = useState(false);
-  const [isSidebarOpen, setIsSidebarOpen] = useState(true);
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
   const handleResize = () => {
     setIsMobile(window.innerWidth < 768);
