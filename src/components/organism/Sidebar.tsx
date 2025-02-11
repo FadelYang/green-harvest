@@ -1,6 +1,7 @@
 import { TFunction } from "i18next";
 import { Link } from "react-router";
 import Button from '../atoms/Button';
+import useScrollToSection from '../../hooks/useScrollToSection';
 
 type SidebarProps = {
   t: TFunction<"translation", undefined>;
@@ -10,6 +11,7 @@ type SidebarProps = {
 
 const Sidebar = (props: SidebarProps) => {
   const { isMobile, isSidebarOpen, t } = props;
+  const { scrollToSection } = useScrollToSection();
 
   return (
     <>
@@ -27,9 +29,9 @@ const Sidebar = (props: SidebarProps) => {
                 <li className="sidebar-item">
                   <Link to={"/about"}>{t("navbar.about")}</Link>
                 </li>
-                <li className="sidebar-item">
-                  <a href="#">{t("navbar.insightHub")}</a>
-                </li>
+                <button className="sidebar-item" onClick={() => scrollToSection("insight-hub", "/")}>
+                  {t("navbar.insightHub")}
+                </button>
                 <li className="sidebar-item">
                   <Link to="/contact">{t("navbar.contact")}</Link>
                 </li>

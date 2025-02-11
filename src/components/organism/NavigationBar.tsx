@@ -2,7 +2,7 @@ import navBarLogo from "/img/navbar-logo.png";
 import englishFlag from "/img/english-flag.svg";
 import indonesiaFlag from "/img/indonesia-flag.svg";
 import Button from "../atoms/Button";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { useTranslationContext } from "../../context/TranslationContext";
 import { TFunction } from "i18next";
 import HamburgerIcon from "../atoms/HamburgerIcon";

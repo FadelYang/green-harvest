@@ -42,11 +42,10 @@ const InsightHubSection = (props: TranslationProps) => {
     <>
       <div
         className="flex flex-col xl:pt-36 pt-[72px] xl:gap-9 gap-6"
-        id="insight-hub"
       >
         <div>
           <div className="xl:px-24 px-6 flex justify-between items-center max-w-[1444px] mx-auto">
-            <h1 className="text-slate-800 xl:text-[40px] text-2xl font-medium xl:leading-[48px] leading-[34px]">
+            <h1 className="text-slate-800 xl:text-[40px] text-2xl font-medium xl:leading-[48px] leading-[34px]" id="insight-hub">
               {t("home.insightHub.header")}
             </h1>
             <div className="xl:block hidden">
