@@ -101,7 +101,7 @@ const LiveChatModal = (props: TranslationProps) => {
 
       {isLiveChatShow && (
         <BaseModal>
-          <div className="max-w-[346px]">
+          <div className="p-4 max-w-[346px]">
             <div className="flex flex-col gap-[10px] justify-center items-center pb-4">
               <div className="flex items-center justify-between w-full">
                 <div className="flex flex-1 justify-center">
@@ -193,13 +193,15 @@ const LiveChatModal = (props: TranslationProps) => {
 
       {isSpesificChatShowed && (
         <BaseModal>
-          <div className="max-w-[346px] w-[311px]">
+          <div className="max-w-[346px]">
             <LiveChatDetailCard
               id={selectedSpesificChat.id}
               avatar={selectedSpesificChat.avatar}
               name={selectedSpesificChat.name}
               role={selectedSpesificChat.role}
               division={selectedSpesificChat.division}
+              latestChat={selectedSpesificChat.latestChat}
+              latestChatTime={selectedSpesificChat.latestChatTime}
               onClick={() => {
                 setIsSpesificChatShowed(!isSpesificChatShowed);
                 setIsLiveChatShow(!isLiveChatShow);
