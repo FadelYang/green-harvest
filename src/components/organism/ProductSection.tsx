@@ -77,12 +77,13 @@ const ProductSection = (props: TranslationProps) => {
           {t("home.product.header")}
         </h1>
         {/* product image container */}
-        <div className="flex justify-center xl:flex-row flex-col gap-0 mx-auto">
+        <div className="flex justify-center xl:flex-row flex-col gap-1 mx-auto">
           {products.map((product) => (
             <div
               key={product.id}
               onMouseEnter={() => setActiveProduct(product.id)}
               onMouseLeave={() => setActiveProduct(1)}
+              className="transition duration-500"
             >
               {/* Product Image */}
               <div className="relative">
@@ -100,7 +101,7 @@ const ProductSection = (props: TranslationProps) => {
                       : product.closeResponsive
                   }
                   alt={`Product ${product.id}`}
-                  className="transition-all duration-300 xl:hidden block w-screen"
+                  className="xl:hidden block w-screen"
                 />
 
                 {/* Text overlay responsive */}
