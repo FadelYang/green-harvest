@@ -15,13 +15,13 @@ const ManufacturingProcessCard = (props: ManufacturingProcessCardProps) => {
     <>
       {openDetail !== id ? (
         <div className="flex hover:cursor-pointer" onClick={onClick}>
-          <div className="p-6 bg-white flex xl:flex-col flex-row xl:items-stretch items-center  gap-6 w-[80px]">
+          <div className="xl:p-6 p-4 bg-white flex xl:flex-col flex-row xl:items-stretch items-center  gap-6 w-[80px]">
             <button>
               <p className="px-[11px] py-[3px] w-8 h-8 rounded-full text-white bg-black">
                 {id}
               </p>
             </button>
-            <p className="text-slate-800 xl:rotate-90 whitespace-nowrap font-semibold">
+            <p className="text-slate-800 xl:rotate-90 whitespace-nowrap font-medium text-xs">
               {title}
             </p>
           </div>

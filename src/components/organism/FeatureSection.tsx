@@ -38,7 +38,7 @@ const FeatureSection = (props: TranslationProps) => {
     <>
       <div className="py-[72px] xl:py-36 flex flex-col gap-[50px] max-w-[1444px] mx-auto">
         <div className="px-6 xl:px-24">
-          <div className="flex flex-col gap-10">
+          <div className="">
             <HeaderSection
               title={t("home.feature.header")}
               subTitle={t("home.feature.subHeader")}
@@ -59,7 +59,7 @@ const FeatureSection = (props: TranslationProps) => {
               <div className="flex xl:justify-center justify-start">
                 <div className="grid grid-cols-4 xl:grid-cols-5 xl:min-w-[675px] xl:gap-5 gap-1">
                   {certificationLogos.map((certificationLogo, index) => (
-                    <img src={certificationLogo} alt="" key={index} />
+                    <img src={certificationLogo} alt="" key={index} className='sm:w-full w-2/3'/>
                   ))}
                 </div>
               </div>

@@ -8,7 +8,7 @@ const ManufacturingProcessSection = (props: TranslationProps) => {
   return (
     <>
       <div className="flex flex-col xl:gap-10 gap-6 xl:py-36 py-[72px] xl:px-24 px-6 max-w-[1444px] mx-auto">
-        <div className="flex justify-between items-center">
+        <div className="flex justify-between items-center xl:max-w-full max-w-[345px]">
           <div className="flex flex-col gap-2">
             <p className="text-slate-500 text-base font-semibold leading-[26px] uppercase">
               {t("home.manufacturingProcess.header")}
@@ -26,7 +26,7 @@ const ManufacturingProcessSection = (props: TranslationProps) => {
         <div className="">
           <ManufacturingProcessList />
         </div>
-        <div className="xl:hidden block">
+        <div className="xl:hidden ">
           <Button variant="primary-button" className='w-full'>
             {t("home.hero.consultNowButton")}
           </Button>
