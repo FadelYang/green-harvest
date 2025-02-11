@@ -8,6 +8,7 @@ import { TFunction } from "i18next";
 import HamburgerIcon from "../atoms/HamburgerIcon";
 import XIcon from "../atoms/XIcon";
 import { useEffect, useState } from "react";
+import useScrollToSection from '../../hooks/useScrollToSection';
 
 type NavigationBarProps = {
   t: TFunction<"translation", undefined>;
@@ -21,15 +22,7 @@ const NavigationBar = (props: NavigationBarProps) => {
   const { t, isMobile, isSidebarOpen, sidebarToggle } = props;
   const [isVisible, setIsVisible] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
-  const navigate = useNavigate();
-
-  const scrollToSection = async (sectionId: string, url: string) => {
-    await navigate(url);
-    setTimeout(() => {
-      const section = document.getElementById(sectionId);
-      if (section) section.scrollIntoView({ behavior: "smooth" });
-    }, 500);
-  };
+  const { scrollToSection } = useScrollToSection()
 
   useEffect(() => {
     const handleScroll = () => {
