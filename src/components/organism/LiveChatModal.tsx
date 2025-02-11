@@ -55,6 +55,8 @@ const liveChatData = [
 const LiveChatModal = (props: TranslationProps) => {
   const [isLiveChatShow, setIsLiveChatShow] = useState(false);
   const [isSpesificChatShowed, setIsSpesificChatShowed] = useState(false);
+  const [isLiveChatButtonTextShowed, setIsLiveChatButtonTextShowed] =
+    useState(false);
   const [selectedSpesificChat, setSelectedSpesificChat] =
     useState<liveChatCardProps>({
       id: "0",
@@ -71,14 +73,28 @@ const LiveChatModal = (props: TranslationProps) => {
   return (
     <>
       <button
-        className="fixed xl:bottom-4 bottom-4 xl:right-20 right-4 z-50"
+        className="fixed xl:bottom-4 bottom-4 xl:right-20 right-4 z-50 px-6 py-4 border border-[#015F26] inline-block rounded-xl rounded-br-none bg-white"
         onClick={() => {
           setIsLiveChatShow(!isLiveChatShow);
           if (isSpesificChatShowed)
             setIsSpesificChatShowed(!isSpesificChatShowed);
         }}
+        onMouseEnter={() => {
+          setIsLiveChatButtonTextShowed(!isLiveChatButtonTextShowed);
+        }}
+        onMouseLeave={() => {
+          setIsLiveChatButtonTextShowed(!isLiveChatButtonTextShowed);
+        }}
       >
-        <div className="px-6 py-4 border border-[#015F26] inline-block rounded-xl rounded-br-none bg-white">
+        <div className="flex items-center gap-2">
+          {isLiveChatButtonTextShowed && (
+            <span
+              className="text-primary text-base leading-[26px] font-medium"
+              id="chat-with-marketing"
+            >
+              Chat With Marketing{" "}
+            </span>
+          )}
           <WhatsappIcon fill="white" stroke="#015F26" />
         </div>
       </button>
