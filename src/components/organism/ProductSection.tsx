@@ -19,9 +19,28 @@ import product3CloseResponsive from "/img/product-3-close-responsive.png";
 import Button from "../atoms/Button";
 import { useNavigate } from "react-router-dom";
 import { TranslationProps } from "../../types/types";
+import useImagePreloader from '../../hooks/useImagePreloader';
+
+const preloadImagesList = [
+  product1Open,
+  product1Close,
+  product1OpenResponsive,
+  product1CloseResponsive,
+
+  product2Open,
+  product2Close,
+  product2OpenResponsive,
+  product2CloseResponsive,
+
+  product3Open,
+  product3Close,
+  product3OpenResponsive,
+  product3CloseResponsive,
+];
 
 const ProductSection = (props: TranslationProps) => {
   const [activeProduct, setActiveProduct] = useState<number>(1);
+  const { imagesPreloaded } = useImagePreloader(preloadImagesList);
   const navigate = useNavigate();
   const { t } = props;
 
@@ -69,6 +88,10 @@ const ProductSection = (props: TranslationProps) => {
       },
     },
   ];
+
+  if (!imagesPreloaded) {
+    return null
+  }
 
   return (
     <>
