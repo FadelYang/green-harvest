@@ -14,7 +14,7 @@ const Sidebar = (props: SidebarProps) => {
   return (
     <>
       {isMobile && isSidebarOpen && (
-        <div className="fixed top-28 w-screen h-screen bg-white z-50 px-6 pt-10">
+        <div className="fixed top-20 w-screen h-screen bg-white z-50 px-6 pt-10">
           <div className="h-screen px-5 py-6 text-center bg-white">
             <div className="flex flex-col h-full">
               <ul className="flex flex-col text-base text-slate-800 gap-[52px]">
