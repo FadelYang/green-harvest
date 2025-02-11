@@ -83,7 +83,7 @@ const ProductSection = (props: TranslationProps) => {
               key={product.id}
               onMouseEnter={() => setActiveProduct(product.id)}
               onMouseLeave={() => setActiveProduct(1)}
-              className="transition duration-500"
+              className=""
             >
               {/* Product Image */}
               <div className="relative">
@@ -92,7 +92,7 @@ const ProductSection = (props: TranslationProps) => {
                     activeProduct === product.id ? product.open : product.close
                   }
                   alt={`Product ${product.id}`}
-                  className="transition-all duration-300 xl:block hidden"
+                  className="xl:block hidden"
                 />
                 <img
                   src={
