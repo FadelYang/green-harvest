@@ -21,7 +21,7 @@ const ManufacturingProcessCard = (props: ManufacturingProcessCardProps) => {
                 {id}
               </p>
             </button>
-            <p className="text-slate-800 xl:rotate-90 whitespace-nowrap font-medium text-xs">
+            <p className="text-slate-800 xl:rotate-90 whitespace-nowrap font-medium xl:text-base text-sm">
               {title}
             </p>
           </div>
