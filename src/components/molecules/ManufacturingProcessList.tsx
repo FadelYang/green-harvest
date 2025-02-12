@@ -11,64 +11,78 @@ import manufacturingProcessImage9 from "/img/manufacturing-process-9.png";
 
 import ManufacturingProcessCard from "../atoms/ManufacturingProcessCard";
 import { useTranslationContext } from "../../context/TranslationContext";
+import useImagePreloader from "../../hooks/useImagePreloader";
+
+const preloadImagesList = [
+  manufacturingProcessImage1,
+  manufacturingProcessImage2,
+  manufacturingProcessImage3,
+  manufacturingProcessImage4,
+  manufacturingProcessImage5,
+  manufacturingProcessImage6,
+  manufacturingProcessImage7,
+  manufacturingProcessImage8,
+  manufacturingProcessImage9,
+];
 
 const ManufacturingProcessList = () => {
   const [openDetail, setOpenDetail] = useState<number | null>(1);
   const { t } = useTranslationContext();
+  const { imagesPreloaded } = useImagePreloader(preloadImagesList);
 
   const manufacturingProcesses = [
     {
       id: 1,
       title: t("home.manufacturingProcess.1.title"),
-      description:t("home.manufacturingProcess.1.description"),
+      description: t("home.manufacturingProcess.1.description"),
       imageThumbnail: manufacturingProcessImage1,
     },
     {
       id: 2,
       title: t("home.manufacturingProcess.2.title"),
-      description:t("home.manufacturingProcess.2.description"),
+      description: t("home.manufacturingProcess.2.description"),
       imageThumbnail: manufacturingProcessImage2,
     },
     {
       id: 3,
       title: t("home.manufacturingProcess.3.title"),
-      description:t("home.manufacturingProcess.3.description"),
+      description: t("home.manufacturingProcess.3.description"),
       imageThumbnail: manufacturingProcessImage3,
     },
     {
       id: 4,
       title: t("home.manufacturingProcess.4.title"),
-      description:t("home.manufacturingProcess.4.description"),
+      description: t("home.manufacturingProcess.4.description"),
       imageThumbnail: manufacturingProcessImage4,
     },
     {
       id: 5,
       title: t("home.manufacturingProcess.5.title"),
-      description:t("home.manufacturingProcess.5.description"),
+      description: t("home.manufacturingProcess.5.description"),
       imageThumbnail: manufacturingProcessImage5,
     },
     {
       id: 6,
       title: t("home.manufacturingProcess.1.title"),
-      description:t("home.manufacturingProcess.1.description"),
+      description: t("home.manufacturingProcess.1.description"),
       imageThumbnail: manufacturingProcessImage6,
     },
     {
       id: 7,
       title: t("home.manufacturingProcess.7.title"),
-      description:t("home.manufacturingProcess.7.description"),
+      description: t("home.manufacturingProcess.7.description"),
       imageThumbnail: manufacturingProcessImage7,
     },
     {
       id: 8,
       title: t("home.manufacturingProcess.8.title"),
-      description:t("home.manufacturingProcess.8.description"),
+      description: t("home.manufacturingProcess.8.description"),
       imageThumbnail: manufacturingProcessImage8,
     },
     {
       id: 9,
       title: t("home.manufacturingProcess.9.title"),
-      description:t("home.manufacturingProcess.9.description"),
+      description: t("home.manufacturingProcess.9.description"),
       imageThumbnail: manufacturingProcessImage9,
     },
   ];
@@ -79,19 +93,21 @@ const ManufacturingProcessList = () => {
 
   return (
     <>
-      <div className="flex xl:flex-row flex-col">
-        {manufacturingProcesses.map((item) => (
-          <ManufacturingProcessCard
-            key={item.id}
-            imageThumbnail={item.imageThumbnail}
-            id={item.id}
-            title={item.title}
-            description={item.description}
-            openDetail={openDetail}
-            onClick={() => toggleDetail(item.id)}
-          />
-        ))}
-      </div>
+      {imagesPreloaded && (
+        <div className="flex xl:flex-row flex-col">
+          {manufacturingProcesses.map((item) => (
+            <ManufacturingProcessCard
+              key={item.id}
+              imageThumbnail={item.imageThumbnail}
+              id={item.id}
+              title={item.title}
+              description={item.description}
+              openDetail={openDetail}
+              onClick={() => toggleDetail(item.id)}
+            />
+          ))}
+        </div>
+      )}
     </>
   );
 };

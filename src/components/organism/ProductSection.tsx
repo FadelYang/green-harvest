@@ -19,7 +19,7 @@ import product3CloseResponsive from "/img/product-3-close-responsive.png";
 import Button from "../atoms/Button";
 import { useNavigate } from "react-router-dom";
 import { TranslationProps } from "../../types/types";
-import useImagePreloader from '../../hooks/useImagePreloader';
+import useImagePreloader from "../../hooks/useImagePreloader";
 
 const preloadImagesList = [
   product1Open,
@@ -90,7 +90,7 @@ const ProductSection = (props: TranslationProps) => {
   ];
 
   if (!imagesPreloaded) {
-    return null
+    return null;
   }
 
   return (
@@ -100,99 +100,102 @@ const ProductSection = (props: TranslationProps) => {
           {t("home.product.header")}
         </h1>
         {/* product image container */}
-        <div className="flex justify-center xl:flex-row flex-col gap-1 mx-auto">
-          {products.map((product) => (
-            <div
-              key={product.id}
-              onMouseEnter={() => setActiveProduct(product.id)}
-              onMouseLeave={() => setActiveProduct(1)}
-              className=""
-            >
-              {/* Product Image */}
-              <div className="relative">
-                <img
-                  src={
-                    activeProduct === product.id ? product.open : product.close
-                  }
-                  alt={`Product ${product.id}`}
-                  className="xl:block hidden"
-                />
-                <img
-                  src={
-                    activeProduct === product.id
-                      ? product.openResponsive
-                      : product.closeResponsive
-                  }
-                  alt={`Product ${product.id}`}
-                  className="xl:hidden block w-screen"
-                />
+        {imagesPreloaded && (
+          <div className="flex justify-center xl:flex-row flex-col gap-1 mx-auto">
+            {products.map((product) => (
+              <div
+                key={product.id}
+                onMouseEnter={() => setActiveProduct(product.id)}
+                className=""
+              >
+                {/* Product Image */}
+                <div className="relative">
+                  <img
+                    src={
+                      activeProduct === product.id
+                        ? product.open
+                        : product.close
+                    }
+                    alt={`Product ${product.id}`}
+                    className="xl:block hidden"
+                  />
+                  <img
+                    src={
+                      activeProduct === product.id
+                        ? product.openResponsive
+                        : product.closeResponsive
+                    }
+                    alt={`Product ${product.id}`}
+                    className="xl:hidden block w-screen"
+                  />
 
-                {/* Text overlay responsive */}
-                <div className="absolute inset-0 items-end justify-start text-start xl:hidden flex">
-                  <p className="text-white text-lg font-medium">
-                    {activeProduct === product.id ? (
-                      <div className="p-4 flex flex-col">
-                        <a
-                          className="text-2xl font-medium"
-                          onClick={() => {
-                            navigate(
-                              `/products/${product.openText.buttonHref}`
-                            );
-                            window.scrollTo(0, 0);
-                          }}
-                        >
-                          {product.openText.title}
-                        </a>
-                        <p className="text-[14px] text-slate-100 font-normal leading-6">
-                          {product.openText.description}
-                        </p>
-                      </div>
-                    ) : (
-                      <p className="p-4 text-2xl font-medium">
-                        {product.openText.title}
-                      </p>
-                    )}
-                  </p>
-                </div>
-
-                {/* Text Overlay */}
-                <div className="absolute inset-0 items-end justify-start text-start xl:flex hidden">
-                  <p className="text-white text-lg font-medium">
-                    {activeProduct === product.id ? (
-                      <div className="p-6 flex flex-col gap-2">
-                        <p className="text-2xl font-semibold">
-                          {product.openText.title}
-                        </p>
-                        <p className="text-base text-slate-100 font-normal">
-                          {product.openText.description}
-                        </p>
-                        <div className="flex gap-2">
-                          <Button
+                  {/* Text overlay responsive */}
+                  <div className="absolute inset-0 items-end justify-start text-start xl:hidden flex">
+                    <p className="text-white text-lg font-medium">
+                      {activeProduct === product.id ? (
+                        <div className="p-4 flex flex-col">
+                          <a
+                            className="text-2xl font-medium"
                             onClick={() => {
                               navigate(
                                 `/products/${product.openText.buttonHref}`
                               );
                               window.scrollTo(0, 0);
                             }}
-                            paddingSize="px-0 py-4"
-                            className="flex gap-3 font-medium text-base border-b border-white"
                           >
-                            {product.openText.buttonText}
-                            <img src={arrowUpRight} alt="" />
-                          </Button>
+                            {product.openText.title}
+                          </a>
+                          <p className="text-[14px] text-slate-100 font-normal leading-6">
+                            {product.openText.description}
+                          </p>
                         </div>
-                      </div>
-                    ) : (
-                      <p className="px-2 py-6 text-base font-semibold">
-                        {product.openText.title}
-                      </p>
-                    )}
-                  </p>
+                      ) : (
+                        <p className="p-4 text-2xl font-medium">
+                          {product.openText.title}
+                        </p>
+                      )}
+                    </p>
+                  </div>
+
+                  {/* Text Overlay */}
+                  <div className="absolute inset-0 items-end justify-start text-start xl:flex hidden">
+                    <p className="text-white text-lg font-medium">
+                      {activeProduct === product.id ? (
+                        <div className="p-6 flex flex-col gap-2">
+                          <p className="text-2xl font-semibold">
+                            {product.openText.title}
+                          </p>
+                          <p className="text-base text-slate-100 font-normal">
+                            {product.openText.description}
+                          </p>
+                          <div className="flex gap-2">
+                            <Button
+                              onClick={() => {
+                                navigate(
+                                  `/products/${product.openText.buttonHref}`
+                                );
+                                window.scrollTo(0, 0);
+                              }}
+                              paddingSize="px-0 py-4"
+                              className="flex gap-3 font-medium text-base border-b border-white"
+                            >
+                              {product.openText.buttonText}
+                              <img src={arrowUpRight} alt="" />
+                            </Button>
+                          </div>
+                        </div>
+                      ) : (
+                        <p className="px-2 py-6 text-base font-semibold">
+                          {product.openText.title}
+                        </p>
+                      )}
+                    </p>
+                  </div>
                 </div>
               </div>
-            </div>
-          ))}
-        </div>
+            ))}
+          </div>
+        )}
       </div>
     </>
   );
