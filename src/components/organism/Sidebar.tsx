@@ -5,17 +5,17 @@ import useScrollToSection from '../../hooks/useScrollToSection';
 
 type SidebarProps = {
   t: TFunction<"translation", undefined>;
-  isMobile: boolean;
+  isMobile?: boolean;
   isSidebarOpen: boolean;
 };
 
 const Sidebar = (props: SidebarProps) => {
-  const { isMobile, isSidebarOpen, t } = props;
+  const { isSidebarOpen, t } = props;
   const { scrollToSection } = useScrollToSection();
 
   return (
     <>
-      {isMobile && isSidebarOpen && (
+      {isSidebarOpen && (
         <div className="fixed top-20 w-screen h-screen bg-white z-50 px-6 pt-10">
           <div className="h-screen px-5 py-6 text-center bg-white">
             <div className="flex flex-col h-full">

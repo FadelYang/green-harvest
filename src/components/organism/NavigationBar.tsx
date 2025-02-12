@@ -12,14 +12,14 @@ import useScrollToSection from '../../hooks/useScrollToSection';
 
 type NavigationBarProps = {
   t: TFunction<"translation", undefined>;
-  isMobile: boolean;
+  isMobile?: boolean;
   isSidebarOpen: boolean;
   sidebarToggle: () => void;
 };
 
 const NavigationBar = (props: NavigationBarProps) => {
   const { handleChangeLanguage, currentLanguage } = useTranslationContext();
-  const { t, isMobile, isSidebarOpen, sidebarToggle } = props;
+  const { t, isSidebarOpen, sidebarToggle } = props;
   const [isVisible, setIsVisible] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
   const { scrollToSection } = useScrollToSection()
@@ -82,7 +82,7 @@ const NavigationBar = (props: NavigationBarProps) => {
         </div>
 
         {/* Left Content */}
-        <div className="hidden md:flex gap-6 items-center">
+        <div className="hidden xl:flex gap-6 items-center">
           <ul className="flex text-base text-slate-800 gap-6">
             <li>
               <Link to={"/service"}>{t("navbar.ourExpertise")}</Link>
@@ -108,12 +108,12 @@ const NavigationBar = (props: NavigationBarProps) => {
             </Button>
           </div>
         </div>
-        {isMobile && isSidebarOpen ? (
-          <div className="flex md:hidden" onClick={() => sidebarToggle()}>
+        {isSidebarOpen ? (
+          <div className="flex xl:hidden" onClick={() => sidebarToggle()}>
             <XIcon />
           </div>
         ) : (
-          <div className="flex md:hidden" onClick={() => sidebarToggle()}>
+          <div className="flex xl:hidden" onClick={() => sidebarToggle()}>
             <HamburgerIcon />
           </div>
         )}
