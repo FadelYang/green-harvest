@@ -35,7 +35,7 @@ const Footer = (props: FooterProps) => {
           <div className="flex flex-col xl:max-w-[415px]">
             <div className="flex xl:flex-row flex-col xl:justify-between xl:gap-0 gap-[74px]">
               <div>
-                <p className="font-semibold text-lg mb-6">Useful Link</p>
+                <p className="font-semibold text-lg mb-6">{t("footer.usefulLink.header")}</p>
                 <ul className="flex flex-col gap-4">
                   <li>
                     <a href="#">{t("footer.usefulLink.home")}</a>
@@ -49,13 +49,13 @@ const Footer = (props: FooterProps) => {
                 </ul>
               </div>
               <div>
-                <p className="font-semibold text-lg mb-6">Our Company</p>
+                <p className="font-semibold text-lg mb-6">{t("footer.ourCompany.header")}</p>
                 <ul className="flex flex-col gap-4">
                   <li>
                     <a href="#">{t("footer.ourCompany.about")}</a>
                   </li>
                   <li>
-                    <a href="#">{t("footer.ourCompany.about")}</a>
+                    <a href="#">{t("footer.ourCompany.ourExpertise")}</a>
                   </li>
                   <li>
                     <a href="#">{t("footer.ourCompany.contact")}</a>
@@ -83,12 +83,12 @@ const Footer = (props: FooterProps) => {
 
           {/* Third Column */}
           <div className="max-w-[400px] mb-6">
-            <p className="font-semibold text-lg mb-6">Contact Us</p>
-            <p>
-              Era Prima Warehouse and Industrial Complex Jl. Daan Mogot KM 21
-              No. 1 Block Q1 Kel, RT.001/RW.001, Poris Plawad, Cipondoh,
-              Tangerang City, Banten 15141
-            </p>
+            <p className="font-semibold text-lg mb-6">{t("footer.contactUs.header")}</p>
+            <div>
+              <p>{t("contact.address.indonesia.1")}</p>
+              <p>{t("contact.address.indonesia.2")}</p>
+              <p>{t("contact.address.indonesia.3")}</p>
+            </div>
 
             <div className="flex flex-col gap-3 mt-10">
               <div className="flex gap-2">
@@ -99,18 +99,16 @@ const Footer = (props: FooterProps) => {
                 <img src={whatsAppIcon} alt="" />
                 <div className="flex flex-col gap-3">
                   <div className="flex gap-2">
-                    <div>WA Food Supplement:</div>
-                    <div>+62 812-8045-4168</div>
+                    <p>{t("footer.contactUs.waFood")} +62 812-8045-4168</p>
                   </div>
-                  <div className="flex gap-2">
-                    <div>WA Food Supplement:</div>
-                    <div>+62 812-9865-9168</div>
+                  <div className="flex gap-2 xl:-mr-14">
+                    <p>{t("footer.contactUs.waCosmetic")} +62 812-9865-9168</p>
                   </div>
                 </div>
               </div>
               <div className="flex gap-2">
                 <img src={envelopIcon} alt="" />
-                <div>Email info@greenlifeharvest.com</div>
+                <div>E-mail info@greenlifeharvest.com</div>
               </div>
             </div>
             <div className="mt-6 xl:hidden block">
