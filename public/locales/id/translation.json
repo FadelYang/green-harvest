@@ -410,6 +410,7 @@
     }
   },
   "footer": {
+    "subscribe": "Langganan",
     "aboutHarvest": "Harvest Group adalah produsen MAKLON terkemuka di Indonesia dan Malaysia, yang berfokus pada beragam produk makanan kesehatan, suplemen nutrisi, dan produksi kosmetik & perawatan kulit.",
     "usefulLink": {
       "header": "Links",
@@ -418,12 +419,13 @@
       "insightHub": "Pusat Wawasan"
     },
     "ourCompany": {
+      "header": "Perusahaan Kami",
       "about": "Tentang Kami",
       "ourExpertise": "Keahlian Kami",
       "contact": "Kontak"
     },
     "contactUs": {
-      "header": "Contact Us",
+      "header": "Hubungi Kami",
       "waFood": "Suplemen Makanan WA:",
       "waCosmetic": "WA Kosmetik & Perawatan Kulit:",
       "email": "E-mail"
