@@ -35,7 +35,9 @@ const Footer = (props: FooterProps) => {
           <div className="flex flex-col xl:max-w-[415px]">
             <div className="flex xl:flex-row flex-col xl:justify-between xl:gap-0 gap-[74px]">
               <div>
-                <p className="font-semibold text-lg mb-6">{t("footer.usefulLink.header")}</p>
+                <p className="font-semibold text-lg mb-6">
+                  {t("footer.usefulLink.header")}
+                </p>
                 <ul className="flex flex-col gap-4">
                   <li>
                     <a href="#">{t("footer.usefulLink.home")}</a>
@@ -49,7 +51,9 @@ const Footer = (props: FooterProps) => {
                 </ul>
               </div>
               <div>
-                <p className="font-semibold text-lg mb-6">{t("footer.ourCompany.header")}</p>
+                <p className="font-semibold text-lg mb-6">
+                  {t("footer.ourCompany.header")}
+                </p>
                 <ul className="flex flex-col gap-4">
                   <li>
                     <a href="#">{t("footer.ourCompany.about")}</a>
@@ -75,7 +79,7 @@ const Footer = (props: FooterProps) => {
                   type="submit"
                   className="px-4 py-2 bg-green-600 text-white text-sm font-medium hover:bg-green-700"
                 >
-                  {t('footer.subscribe')}
+                  {t("footer.subscribe")}
                 </button>
               </div>
             </div>
@@ -83,7 +87,9 @@ const Footer = (props: FooterProps) => {
 
           {/* Third Column */}
           <div className="max-w-[400px] mb-6">
-            <p className="font-semibold text-lg mb-6">{t("footer.contactUs.header")}</p>
+            <p className="font-semibold text-lg mb-6">
+              {t("footer.contactUs.header")}
+            </p>
             <div>
               <p>{t("contact.address.indonesia.1")}</p>
               <p>{t("contact.address.indonesia.2")}</p>
@@ -127,7 +133,7 @@ const Footer = (props: FooterProps) => {
                       type="submit"
                       className="absolute right-0 top-1/2 transform -translate-y-1/2 mr-1 py-[10px] px-[15px] bg-green-600 rounded text-white text-sm font-medium hover:bg-green-700"
                     >
-                      Subscribe
+                      {t("footer.subscribe")}
                     </button>
                   </div>
                 </div>
