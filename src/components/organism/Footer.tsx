@@ -75,7 +75,7 @@ const Footer = (props: FooterProps) => {
                   type="submit"
                   className="px-4 py-2 bg-green-600 text-white text-sm font-medium hover:bg-green-700"
                 >
-                  Subscribe
+                  {t('footer.subscribe')}
                 </button>
               </div>
             </div>

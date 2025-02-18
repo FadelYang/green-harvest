@@ -103,46 +103,55 @@
       "1": {
         "id": "1",
         "title": "Konsep Produk",
+        "openTitle": "Konsep Produk",
         "description": "Konsultasikan dengan kami mengenai konsep produk yang ingin Anda buat sesuai kebutuhan Anda."
       },
       "2": {
         "id": "2",
         "title": "Menentukan Bahan & Formula",
+        "oepnTitle": "Menentukan Bahan & Formula",
         "description": "Diskusikan formula produk dan bahan baku yang Anda inginkan dengan tim ahli R&D kami."
       },
       "3": {
         "id": "3",
         "title": "Pembuatan Sampel",
+        "openTitle": "Pembuatan Sampel",
         "description": "Kami memproduksi sampel produk sesuai dengan konsep & formulasi terbaik yang anda inginkan."
       },
       "4": {
         "id": "4",
         "title": "Kesepakatan Harga",
+        "openTitle": "Kesepakatan Harga",
         "description": "Perjanjian kontrak kerjasama untuk pembuatan produk yang akan dibuat dan didistribusikan sesuai dengan prosedur yang memadai."
       },
       "5": {
         "id": "5",
         "title": "Memilih Kemasan",
+        "openTitle": "Memilih Kemasan",
         "description": "Diskusikan desain kemasan dengan tim desainer terbaik kami untuk mendukung merek & daya tarik pelanggan anda."
       },
       "6": {
         "id": "6",
-        "title": "Uji Stabilitas & Kompatibilitas",
+        "title": "Uji Stabilitas dan Kompatibilitas",
+        "openTitle": "Uji Stabilitas dan Kompatibilitas",
         "description": "Kami melakukan serangkaian pengujian untuk memastikan formula tidak akan berubah saat dimasukkan ke dalam kemasan produk Anda."
       },
       "7": {
         "id": "7",
-        "title": "Sertifikasi Lisensi Produk",
+        "title": "Pendaftaran Lisensi Produk",
+        "openTitle": "Pendaftaran Lisensi Produk",
         "description": "Tim kami akan membantu Anda memproses izin BPOM, HKI, dan HALAL untuk produk Anda hingga siap dipasarkan!"
       },
       "8": {
         "id": "8",
-        "title": "Manufaktur Produk",
+        "title": "Produksi & Manufaktur",
+        "openTitle": "Produksi & Manufaktur",
         "description": "Pilih kami sebagai mitra merek Anda. Kami menciptakan produk Anda dengan standar nasional dan internasional."
       },
       "9": {
         "id": "9",
         "title": "Pengiriman Produk",
+        "openTitle": "Pengiriman Produk",
         "description": "Kami akan mengirimkan produk Anda agar siap didistribusikan & dipasarkan tepat waktu."
       }
     },

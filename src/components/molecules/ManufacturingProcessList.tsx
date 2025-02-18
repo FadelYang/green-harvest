@@ -34,54 +34,63 @@ const ManufacturingProcessList = () => {
     {
       id: 1,
       title: t("home.manufacturingProcess.1.title"),
+      openTitle: t("home.manufacturingProcess.1.openTitle"),
       description: t("home.manufacturingProcess.1.description"),
       imageThumbnail: manufacturingProcessImage1,
     },
     {
       id: 2,
       title: t("home.manufacturingProcess.2.title"),
+      openTitle: t("home.manufacturingProcess.2.openTitle"),
       description: t("home.manufacturingProcess.2.description"),
       imageThumbnail: manufacturingProcessImage2,
     },
     {
       id: 3,
       title: t("home.manufacturingProcess.3.title"),
+      openTitle: t("home.manufacturingProcess.3.openTitle"),
       description: t("home.manufacturingProcess.3.description"),
       imageThumbnail: manufacturingProcessImage3,
     },
     {
       id: 4,
       title: t("home.manufacturingProcess.4.title"),
+      openTitle: t("home.manufacturingProcess.4.openTitle"),
       description: t("home.manufacturingProcess.4.description"),
       imageThumbnail: manufacturingProcessImage4,
     },
     {
       id: 5,
       title: t("home.manufacturingProcess.5.title"),
+      openTitle: t("home.manufacturingProcess.5.openTitle"),
       description: t("home.manufacturingProcess.5.description"),
       imageThumbnail: manufacturingProcessImage5,
     },
     {
       id: 6,
       title: t("home.manufacturingProcess.1.title"),
+      openTitle: t("home.manufacturingProcess.1.openTitle"),
       description: t("home.manufacturingProcess.1.description"),
       imageThumbnail: manufacturingProcessImage6,
     },
     {
       id: 7,
       title: t("home.manufacturingProcess.7.title"),
+      openTitle: t("home.manufacturingProcess.7.openTitle"),
       description: t("home.manufacturingProcess.7.description"),
       imageThumbnail: manufacturingProcessImage7,
     },
     {
       id: 8,
       title: t("home.manufacturingProcess.8.title"),
+      openTitle: t("home.manufacturingProcess.8.openTitle"),
       description: t("home.manufacturingProcess.8.description"),
       imageThumbnail: manufacturingProcessImage8,
     },
     {
       id: 9,
       title: t("home.manufacturingProcess.9.title"),
+      openTitle: t("home.manufacturingProcess.9.openTitle"),
       description: t("home.manufacturingProcess.9.description"),
       imageThumbnail: manufacturingProcessImage9,
     },
@@ -101,6 +110,7 @@ const ManufacturingProcessList = () => {
               imageThumbnail={item.imageThumbnail}
               id={item.id}
               title={item.title}
+              openTitle={item.openTitle}
               description={item.description}
               openDetail={openDetail}
               onClick={() => toggleDetail(item.id)}
