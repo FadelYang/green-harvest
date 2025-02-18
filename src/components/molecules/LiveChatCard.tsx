@@ -24,7 +24,7 @@ const LiveChatCard = (props: liveChatCardProps) => {
           <img
             src={avatar}
             alt={`${avatar}-name`}
-            className="min-w-9 min-h-9"
+            className="w-9 h-9 rounded-full"
           />
         </div>
         <div className="flex flex-col gap-1 flex-1">

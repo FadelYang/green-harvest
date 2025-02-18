@@ -4,7 +4,8 @@ import BaseModal from "../atoms/BaseModal";
 import CsAvatarPuji from "/img/cs-avatar-puji.png";
 import CsAvatarZahra from "/img/cs-avatar-zahra.png";
 import CsAvatarFajar from "/img/cs-avatar-fajar.png";
-import CsAvatarKarlina from "/img/cs-avatar-karlina.png";
+import CsAvatarWidya from "/img/cs-avatar-widya.webp";
+import CsAvatarAdelia from "/img/cs-avatar-adelia.webp";
 import CsAvatarKristal from "/img/cs-avatar-kristal.png";
 import MessageICon from "../atoms/MessageICon";
 import LiveChatCard, { liveChatCardProps } from "../molecules/LiveChatCard";
@@ -50,13 +51,22 @@ const LiveChatModal = (props: TranslationProps) => {
     },
     {
       id: "4",
-      avatar: CsAvatarKarlina,
-      name: "Karlina",
-      role: "Drink Marketing 1",
+      avatar: CsAvatarWidya,
+      name: "Widya",
+      role: "Marketing 1",
       division: "Food Supplement",
+      phoneNumber: "6285210882525"
     },
     {
       id: "5",
+      avatar: CsAvatarAdelia,
+      name: "Adelia",
+      role: "Marketing 2",
+      division: "Food Supplement",
+      phoneNumber: "6281366782525"
+    },
+    {
+      id: "6",
       avatar: CsAvatarKristal,
       name: "Kristal",
       role: "Drink Marketing 2",
