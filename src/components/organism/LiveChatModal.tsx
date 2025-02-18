@@ -69,7 +69,7 @@ const LiveChatModal = (props: TranslationProps) => {
       id: "6",
       avatar: CsAvatarKristal,
       name: "Kristal",
-      role: "Drink Marketing 2",
+      role: "Drink Marketing 1",
       division: "Food Supplement",
       phoneNumber: "6281315014168",
     },

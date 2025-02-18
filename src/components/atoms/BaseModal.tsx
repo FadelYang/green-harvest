@@ -1,9 +1,11 @@
 import { BaseModalProps } from "../../types/types";
+import DisableBodyScroll from './DisableBodyScroll';
 
 const BaseModal = (props: BaseModalProps) => {
   const { children } = props;
   return (
     <>
+      <DisableBodyScroll />
       <div className="fixed inset-0 z-40 bg-black opacity-50"></div>
       <div className="fixed inset-0 z-50 flex items-center justify-center xl:m-0 m-4">
         <div className={`bg-white rounded-lg shadow`}>{children}</div>
