@@ -10,17 +10,13 @@ const LiveChatDetailCard = (props: liveChatCardProps) => {
     name,
     role,
     division,
-    latestChat,
-    latestChatTime,
-    isLatestChatRead,
-    onClick,
   } = props;
 
   return (
     <>
       <div className="min-h-[539px] flex flex-col">
         <div key={id} className="flex gap-4 items-center p-4 ">
-          <div className="rotate-180 hover:cursor-pointer" onClick={onClick}>
+          <div className="rotate-180 hover:cursor-pointer">
             <Arrow hexColor="black" />
           </div>
           <div className="">
@@ -39,31 +35,9 @@ const LiveChatDetailCard = (props: liveChatCardProps) => {
                 </p>
               </div>
             </div>
-            {latestChat && (
-              <div className="overflow-hidden max-w-[262p]">
-                <p
-                  className={`${
-                    isLatestChatRead
-                      ? "text-slate-800 font-medium line-clamp-1"
-                      : "text-slate-500 line-clamp-1"
-                  } text-xs`}
-                ></p>
-              </div>
-            )}
           </div>
         </div>
         <div className="flex-1 overflow-auto bg-gray-50">
-          {latestChat && (
-            <div className="px-4 py-2 flex flex-col gap-1">
-              <div className="bg-white p-3 max-w-[256px] ml-2 rounded-md rounded-bl-none text-sm text-slate-800">
-                {latestChat}
-              </div>
-              <div className="flex gap-2 itens-center">
-                <img src={avatar} alt="" className="w-4" />
-                <p className="text-xs text-slate-500">{latestChatTime}</p>
-              </div>
-            </div>
-          )}
         </div>
         <div className="flex gap-2 mt-auto pt-3 items-center px-4 pb-4">
           <div className="p-[10px]">

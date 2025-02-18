@@ -1,7 +1,11 @@
 import { useState } from "react";
 import WhatsappIcon from "../atoms/WhatsappIcon";
 import BaseModal from "../atoms/BaseModal";
-import CsAvatar from "/img/cs-avatar.png";
+import CsAvatarPuji from "/img/cs-avatar-puji.png"
+import CsAvatarZahra from "/img/cs-avatar-zahra.png"
+import CsAvatarFajar from "/img/cs-avatar-fajar.png"
+import CsAvatarKarlina from "/img/cs-avatar-karlina.png"
+import CsAvatarKristal from "/img/cs-avatar-kristal.png"
 import MessageICon from "../atoms/MessageICon";
 import LiveChatCard, { liveChatCardProps } from "../molecules/LiveChatCard";
 import { TranslationProps } from "../../types/types";
@@ -22,35 +26,36 @@ const LiveChatModal = (props: TranslationProps) => {
   const liveChatData = [
     {
       id: "1",
-      avatar: CsAvatar,
+      avatar: CsAvatarPuji,
       name: "Puji",
       role: "Cosmetics Marketing 1",
       division: "Cosmetics Manufacturing",
+      phoneNumber: ""
     },
     {
       id: "2",
-      avatar: CsAvatar,
+      avatar: CsAvatarZahra,
       name: "Zahra",
       role: "Cosmetics Marketing 2",
       division: "Cosmetics Manufacturing",
     },
     {
       id: "3",
-      avatar: CsAvatar,
+      avatar: CsAvatarFajar,
       name: "Fajar",
       role: "Herbal Marketing 1",
       division: "Food Supplement",
     },
     {
       id: "4",
-      avatar: CsAvatar,
+      avatar: CsAvatarKarlina,
       name: "Karlina",
       role: "Drink Marketing 1",
       division: "Food Supplement",
     },
     {
       id: "5",
-      avatar: CsAvatar,
+      avatar: CsAvatarKristal,
       name: "Kristal",
       role: "Drink Marketing 2",
       division: "Food Supplement",
@@ -99,7 +104,7 @@ const LiveChatModal = (props: TranslationProps) => {
                       <img
                         src={item.avatar}
                         alt={`${item.name} avatar`}
-                        className="w-10 h-10 rounded-full border border-white"
+                        className="w-10 h-10 rounded-full"
                       />
                     </div>
                   ))}
