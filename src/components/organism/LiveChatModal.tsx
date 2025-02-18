@@ -1,11 +1,11 @@
 import { useState } from "react";
 import WhatsappIcon from "../atoms/WhatsappIcon";
 import BaseModal from "../atoms/BaseModal";
-import CsAvatarPuji from "/img/cs-avatar-puji.png"
-import CsAvatarZahra from "/img/cs-avatar-zahra.png"
-import CsAvatarFajar from "/img/cs-avatar-fajar.png"
-import CsAvatarKarlina from "/img/cs-avatar-karlina.png"
-import CsAvatarKristal from "/img/cs-avatar-kristal.png"
+import CsAvatarPuji from "/img/cs-avatar-puji.png";
+import CsAvatarZahra from "/img/cs-avatar-zahra.png";
+import CsAvatarFajar from "/img/cs-avatar-fajar.png";
+import CsAvatarKarlina from "/img/cs-avatar-karlina.png";
+import CsAvatarKristal from "/img/cs-avatar-kristal.png";
 import MessageICon from "../atoms/MessageICon";
 import LiveChatCard, { liveChatCardProps } from "../molecules/LiveChatCard";
 import { TranslationProps } from "../../types/types";
@@ -14,13 +14,13 @@ const LiveChatModal = (props: TranslationProps) => {
   const [isLiveChatShow, setIsLiveChatShow] = useState(false);
   const [isLiveChatButtonTextShowed, setIsLiveChatButtonTextShowed] =
     useState(false);
-    useState<liveChatCardProps>({
-      id: "0",
-      avatar: "",
-      name: "",
-      role: "",
-      division: "",
-    });
+  useState<liveChatCardProps>({
+    id: "0",
+    avatar: "",
+    name: "",
+    role: "",
+    division: "",
+  });
   const { t } = props;
 
   const liveChatData = [
@@ -30,7 +30,7 @@ const LiveChatModal = (props: TranslationProps) => {
       name: "Puji",
       role: "Cosmetics Marketing 1",
       division: "Cosmetics Manufacturing",
-      phoneNumber: ""
+      phoneNumber: "6281399382525",
     },
     {
       id: "2",
@@ -38,6 +38,7 @@ const LiveChatModal = (props: TranslationProps) => {
       name: "Zahra",
       role: "Cosmetics Marketing 2",
       division: "Cosmetics Manufacturing",
+      phoneNumber: "6281298659168",
     },
     {
       id: "3",
@@ -45,6 +46,7 @@ const LiveChatModal = (props: TranslationProps) => {
       name: "Fajar",
       role: "Herbal Marketing 1",
       division: "Food Supplement",
+      phoneNumber: "6281280454168",
     },
     {
       id: "4",
@@ -59,6 +61,7 @@ const LiveChatModal = (props: TranslationProps) => {
       name: "Kristal",
       role: "Drink Marketing 2",
       division: "Food Supplement",
+      phoneNumber: "6281315014168",
     },
   ];
 
@@ -153,12 +156,11 @@ const LiveChatModal = (props: TranslationProps) => {
             </div>
             <div>
               {liveChatData.map((item, index) => (
-                <div
+                <a
                   key={index}
                   className="hover:cursor-pointer"
-                  onClick={() => {
-                    setIsLiveChatShow(!isLiveChatShow);
-                  }}
+                  href={`https://wa.me/${item.phoneNumber}`}
+                  target="_blank"
                 >
                   <LiveChatCard
                     id={item.id}
@@ -167,7 +169,7 @@ const LiveChatModal = (props: TranslationProps) => {
                     role={item.role}
                     division={item.division}
                   />
-                </div>
+                </a>
               ))}
             </div>
           </div>
