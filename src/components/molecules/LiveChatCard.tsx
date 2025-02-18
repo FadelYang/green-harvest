@@ -6,10 +6,6 @@ export type liveChatCardProps = {
   name: string;
   role: string;
   division: string;
-  latestChat?: string;
-  latestChatTime?: string;
-  isLatestChatRead?: boolean;
-  onClick?: () => void;
 };
 
 const LiveChatCard = (props: liveChatCardProps) => {
@@ -19,9 +15,6 @@ const LiveChatCard = (props: liveChatCardProps) => {
     name,
     role,
     division,
-    latestChat,
-    latestChatTime,
-    isLatestChatRead,
   } = props;
 
   return (
@@ -43,44 +36,27 @@ const LiveChatCard = (props: liveChatCardProps) => {
               </p>
               <OnlineDotIcon />
             </div>
-            {latestChatTime && (
-              <p className="text-xs text-slate-500">{latestChatTime}</p>
-            )}
           </div>
-          {latestChat && (
-            <div className="overflow-hidden max-w-[262p]">
-              <p
-                className={`${
-                  isLatestChatRead
-                    ? "text-slate-800 font-medium line-clamp-1"
-                    : "text-slate-500 line-clamp-1"
-                } text-xs`}
-              >
-                {latestChat}
-              </p>
-            </div>
-          )}
         </div>
-        {!latestChat && (
-          <div className='mr-2'>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="9"
-              height="18"
-              viewBox="0 0 9 18"
-              fill="none"
-            >
-              <path
-                d="M0.910156 16.92L7.43016 10.4C8.20016 9.63002 8.20016 8.37002 7.43016 7.60002L0.910156 1.08002"
-                stroke="#64748B"
-                stroke-width="1.5"
-                stroke-miterlimit="10"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
-          </div>
-        )}
+
+        <div className="mr-2">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="9"
+            height="18"
+            viewBox="0 0 9 18"
+            fill="none"
+          >
+            <path
+              d="M0.910156 16.92L7.43016 10.4C8.20016 9.63002 8.20016 8.37002 7.43016 7.60002L0.910156 1.08002"
+              stroke="#64748B"
+              stroke-width="1.5"
+              stroke-miterlimit="10"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </div>
       </div>
     </>
   );

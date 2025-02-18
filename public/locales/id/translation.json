@@ -8,7 +8,12 @@
     "consultNow": "Konsultasi Sekarang!"
   },
   "liveChat": {
-    "header": "Pilih CS kami untuk mengobrol tentang kebutuhan produk Anda"
+    "header": "Pilih CS kami untuk mengobrol tentang kebutuhan produk Anda",
+    "chats": {
+      "cosmetic": "Halo, ada yang bisa dibantu mengenai maklon kosmetik?",
+      "food": ", ada yang bisa dibantu mengenai maklon kosmetik?",
+      "suplement": "ada yang bisa dibantu mengenai maklon kosmetik?"
+    }
   },
   "home": {
     "hero": {

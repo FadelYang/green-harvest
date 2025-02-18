@@ -5,70 +5,57 @@ import CsAvatar from "/img/cs-avatar.png";
 import MessageICon from "../atoms/MessageICon";
 import LiveChatCard, { liveChatCardProps } from "../molecules/LiveChatCard";
 import { TranslationProps } from "../../types/types";
-import LiveChatDetailCard from "../molecules/LiveChatDetailCard";
-
-const liveChatData = [
-  {
-    id: "1",
-    avatar: CsAvatar,
-    name: "Puji",
-    role: "Cosmetics Marketing 1",
-    division: "Cosmetics Manufacturing",
-    latestChat:
-      "Dorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
-    latestChatTime: "9.05",
-    isLatestChatRead: true,
-  },
-  {
-    id: "2",
-    avatar: CsAvatar,
-    name: "Zahra",
-    role: "Cosmetics Marketing 2",
-    division: "Cosmetics Manufacturing",
-    latestChat:
-      "Dorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
-    latestChatTime: "8.00",
-  },
-  {
-    id: "3",
-    avatar: CsAvatar,
-    name: "Fajar",
-    role: "Herbal Marketing 1",
-    division: "Food Supplement",
-  },
-  {
-    id: "4",
-    avatar: CsAvatar,
-    name: "Karlina",
-    role: "Drink Marketing 1",
-    division: "Food Supplement",
-  },
-  {
-    id: "5",
-    avatar: CsAvatar,
-    name: "Kristal",
-    role: "Drink Marketing 2",
-    division: "Food Supplement",
-  },
-];
 
 const LiveChatModal = (props: TranslationProps) => {
   const [isLiveChatShow, setIsLiveChatShow] = useState(false);
-  const [isSpesificChatShowed, setIsSpesificChatShowed] = useState(false);
   const [isLiveChatButtonTextShowed, setIsLiveChatButtonTextShowed] =
     useState(false);
-  const [selectedSpesificChat, setSelectedSpesificChat] =
     useState<liveChatCardProps>({
       id: "0",
       avatar: "",
       name: "",
       role: "",
       division: "",
-      latestChat: "",
-      isLatestChatRead: false,
-      latestChatTime: "",
     });
   const { t } = props;
+
+  const liveChatData = [
+    {
+      id: "1",
+      avatar: CsAvatar,
+      name: "Puji",
+      role: "Cosmetics Marketing 1",
+      division: "Cosmetics Manufacturing",
+    },
+    {
+      id: "2",
+      avatar: CsAvatar,
+      name: "Zahra",
+      role: "Cosmetics Marketing 2",
+      division: "Cosmetics Manufacturing",
+    },
+    {
+      id: "3",
+      avatar: CsAvatar,
+      name: "Fajar",
+      role: "Herbal Marketing 1",
+      division: "Food Supplement",
+    },
+    {
+      id: "4",
+      avatar: CsAvatar,
+      name: "Karlina",
+      role: "Drink Marketing 1",
+      division: "Food Supplement",
+    },
+    {
+      id: "5",
+      avatar: CsAvatar,
+      name: "Kristal",
+      role: "Drink Marketing 2",
+      division: "Food Supplement",
+    },
+  ];
 
   return (
     <>
@@ -76,8 +63,6 @@ const LiveChatModal = (props: TranslationProps) => {
         className="fixed xl:bottom-4 bottom-4 xl:right-20 right-4 z-50 px-6 py-4 border border-[#015F26] inline-block rounded-xl rounded-br-none bg-white"
         onClick={() => {
           setIsLiveChatShow(!isLiveChatShow);
-          if (isSpesificChatShowed)
-            setIsSpesificChatShowed(!isSpesificChatShowed);
         }}
         onMouseEnter={() => {
           setIsLiveChatButtonTextShowed(!isLiveChatButtonTextShowed);
@@ -101,7 +86,7 @@ const LiveChatModal = (props: TranslationProps) => {
 
       {isLiveChatShow && (
         <BaseModal>
-          <div className="p-4 max-w-[346px]">
+          <div className="p-4 max-w-[393px]">
             <div className="flex flex-col gap-[10px] justify-center items-center pb-4">
               <div className="flex items-center justify-between w-full">
                 <div className="flex flex-1 justify-center">
@@ -124,8 +109,6 @@ const LiveChatModal = (props: TranslationProps) => {
                   className="cursor-pointer -ml-5"
                   onClick={() => {
                     setIsLiveChatShow(!isLiveChatShow);
-                    if (isSpesificChatShowed)
-                      setIsSpesificChatShowed(!isSpesificChatShowed);
                   }}
                 >
                   <svg
@@ -169,8 +152,6 @@ const LiveChatModal = (props: TranslationProps) => {
                   key={index}
                   className="hover:cursor-pointer"
                   onClick={() => {
-                    setSelectedSpesificChat(item);
-                    setIsSpesificChatShowed(!isSpesificChatShowed);
                     setIsLiveChatShow(!isLiveChatShow);
                   }}
                 >
@@ -180,33 +161,10 @@ const LiveChatModal = (props: TranslationProps) => {
                     name={item.name}
                     role={item.role}
                     division={item.division}
-                    latestChat={item.latestChat}
-                    isLatestChatRead={item.isLatestChatRead}
-                    latestChatTime={item.latestChatTime}
                   />
                 </div>
               ))}
             </div>
-          </div>
-        </BaseModal>
-      )}
-
-      {isSpesificChatShowed && (
-        <BaseModal>
-          <div className="max-w-[346px]">
-            <LiveChatDetailCard
-              id={selectedSpesificChat.id}
-              avatar={selectedSpesificChat.avatar}
-              name={selectedSpesificChat.name}
-              role={selectedSpesificChat.role}
-              division={selectedSpesificChat.division}
-              latestChat={selectedSpesificChat.latestChat}
-              latestChatTime={selectedSpesificChat.latestChatTime}
-              onClick={() => {
-                setIsSpesificChatShowed(!isSpesificChatShowed);
-                setIsLiveChatShow(!isLiveChatShow);
-              }}
-            />
           </div>
         </BaseModal>
       )}

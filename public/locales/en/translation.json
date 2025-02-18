@@ -8,7 +8,12 @@
     "consultNow": "Consult Now!"
   },
   "liveChat": {
-    "header": "Select a customer representative to chat about your product needs"
+    "header": "Select a customer representative to chat about your product needs",
+    "chats": {
+      "cosmetic": "Hello, can I help you with cosmetic manufacturing?",
+      "food": "Hello, can I help you with food manufacturing?",
+      "suplement": "Hello, can I help you with suplement manufacturing?"
+    }
   },
   "home": {
     "hero": {
