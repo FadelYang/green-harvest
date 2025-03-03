@@ -68,9 +68,9 @@ const ManufacturingProcessList = () => {
     },
     {
       id: 6,
-      title: t("home.manufacturingProcess.1.title"),
-      openTitle: t("home.manufacturingProcess.1.openTitle"),
-      description: t("home.manufacturingProcess.1.description"),
+      title: t("home.manufacturingProcess.6.title"),
+      openTitle: t("home.manufacturingProcess.6.openTitle"),
+      description: t("home.manufacturingProcess.6.description"),
       imageThumbnail: manufacturingProcessImage6,
     },
     {
