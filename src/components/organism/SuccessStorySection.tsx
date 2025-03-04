@@ -2,7 +2,7 @@ import Button from "../atoms/Button";
 import arrowRight from "/img/arrowRight.svg";
 import Arrow from "../atoms/Arrow";
 import SuccessStoryArticleList from "../molecules/SuccessStoryArticleList";
-import { TranslationProps } from '../../types/types';
+import { TranslationProps } from "../../types/types";
 
 const SuccessStorySection = (props: TranslationProps) => {
   const { t } = props;
@@ -39,15 +39,20 @@ const SuccessStorySection = (props: TranslationProps) => {
           <SuccessStoryArticleList />
         </div>
         <div className="flex justify-center gap-4">
-          <div>
-            <Button variant="primary-button">{t('home.hero.consultNowButton')}</Button>
-          </div>
+          <a href="https://wa.me/6285210882525" target="_blank">
+            <div>
+              <Button variant="primary-button">
+                {t("home.hero.consultNowButton")}
+              </Button>
+            </div>
+          </a>
           <div>
             <Button
               paddingSize="px-6 py-4"
               className="flex gap-3 primary-text font-medium text-base border-b border-[#015F26]"
             >
-              {t('home.hero.viewMoreOurExpertiseButton')} <img src={arrowRight} alt="" />
+              {t("home.hero.viewMoreOurExpertiseButton")}{" "}
+              <img src={arrowRight} alt="" />
             </Button>
           </div>
         </div>

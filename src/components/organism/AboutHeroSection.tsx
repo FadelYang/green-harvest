@@ -15,8 +15,13 @@ const AboutHeroSection = (props: TranslationProps) => {
             <h1 className="text-slate-800 font-medium xl:text-[44px] text-[32px] max-w-[517px] leading-[42px] tracking-[-1.28px]">
               {t("aboutUs.hero.header")}
             </h1>
-            <div className='hidden xl:block'>
-              <Button variant="primary-button">{t("aboutUs.hero.consultNowButton")}</Button>
+
+            <div className="hidden xl:block">
+              <a href="https://wa.me/6285210882525" target="_blank">
+                <Button variant="primary-button">
+                  {t("aboutUs.hero.consultNowButton")}
+                </Button>
+              </a>
             </div>
           </div>
           <div>
@@ -27,13 +32,21 @@ const AboutHeroSection = (props: TranslationProps) => {
               />
             </h2>
           </div>
-          <div className='xl:hidden block'>
-              <Button variant="primary-button" className='w-full sm:w-auto'>{t("aboutUs.hero.consultNowButton")}</Button>
-            </div>
+          <div className="xl:hidden block">
+            <a href="https://wa.me/6285210882525" target="_blank">
+              <Button variant="primary-button" className="w-full sm:w-auto">
+                {t("aboutUs.hero.consultNowButton")}
+              </Button>
+            </a>
+          </div>
         </div>
-        <div className='flex'>
-          <img src={aboutHeroImage} alt="" className='sm:block hidden'/>
-          <img src={aboutHeroImageResponsive} alt="" className='block sm:hidden flex-grow'/>
+        <div className="flex">
+          <img src={aboutHeroImage} alt="" className="sm:block hidden" />
+          <img
+            src={aboutHeroImageResponsive}
+            alt=""
+            className="block sm:hidden flex-grow"
+          />
         </div>
       </div>
     </>

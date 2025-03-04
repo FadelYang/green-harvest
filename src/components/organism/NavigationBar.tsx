@@ -8,7 +8,7 @@ import { TFunction } from "i18next";
 import HamburgerIcon from "../atoms/HamburgerIcon";
 import XIcon from "../atoms/XIcon";
 import { useEffect, useState } from "react";
-import useScrollToSection from '../../hooks/useScrollToSection';
+import useScrollToSection from "../../hooks/useScrollToSection";
 
 type NavigationBarProps = {
   t: TFunction<"translation", undefined>;
@@ -22,7 +22,7 @@ const NavigationBar = (props: NavigationBarProps) => {
   const { t, isSidebarOpen, sidebarToggle } = props;
   const [isVisible, setIsVisible] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
-  const { scrollToSection } = useScrollToSection()
+  const { scrollToSection } = useScrollToSection();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -43,7 +43,9 @@ const NavigationBar = (props: NavigationBarProps) => {
   return (
     <div
       className={`pb-4 px-6 xl:px-24 py-6 sticky top-0 overflow-hidden bg-white z-40 ${
-        isVisible ? "translate-y-0 duration-300" : "-translate-y-full duration-300"
+        isVisible
+          ? "translate-y-0 duration-300"
+          : "-translate-y-full duration-300"
       }`}
     >
       <div className="flex justify-between items-center max-w-[1440px] mx-auto px-0 2xl:px-24">
@@ -103,9 +105,11 @@ const NavigationBar = (props: NavigationBarProps) => {
             </li>
           </ul>
           <div className="">
-            <Button variant="primary-button" className="py-4 px-6">
-              {t("navbar.consultNow")}
-            </Button>
+            <a href="https://wa.me/6285210882525" target="_blank">
+              <Button variant="primary-button" className="py-4 px-6">
+                {t("navbar.consultNow")}
+              </Button>
+            </a>
           </div>
         </div>
         {isSidebarOpen ? (

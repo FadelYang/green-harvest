@@ -25,9 +25,11 @@ const HeroSection = (props: TranslationProps) => {
             </h2>
             <div className="flex flex-col gap-4">
               <div className="z-10">
-                <Button variant="primary-button" className="w-full xl:w-auto">
-                  {t("home.hero.consultNowButton")}
-                </Button>
+                <a href="https://wa.me/6285210882525" target="_blank">
+                  <Button variant="primary-button" className="w-full xl:w-auto">
+                    {t("home.hero.consultNowButton")}
+                  </Button>
+                </a>
               </div>
               <div className="text-center block xl:hidden">
                 <Button
@@ -89,9 +91,11 @@ const HeroSection = (props: TranslationProps) => {
           </div>
           <div className="flex xl:flex-row flex-col justify-center gap-4">
             <div>
-              <Button variant="primary-button" className='w-full xl:w-auto'>
-                {t("home.hero.consultNowButton")}
-              </Button>
+              <a href="https://wa.me/6285210882525" target="_blank">
+                <Button variant="primary-button" className="w-full xl:w-auto">
+                  {t("home.hero.consultNowButton")}
+                </Button>
+              </a>
             </div>
             <div>
               <Button
@@ -99,7 +103,7 @@ const HeroSection = (props: TranslationProps) => {
                 className="flex gap-3 primary-text font-medium text-base border-b border-[#015F26] w-full xl:w-auto justify-center"
               >
                 {t("home.hero.viewMoreOurExpertiseButton")}{" "}
-                <img src={arrowRight} alt="" className='xl:block hidden'/>
+                <img src={arrowRight} alt="" className="xl:block hidden" />
               </Button>
             </div>
           </div>
