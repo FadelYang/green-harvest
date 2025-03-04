@@ -25,9 +25,11 @@ const LastBannerSection = (props: TranslationProps) => {
                 {t("home.lastBanner.subHeader")}
               </p>
               <div>
-                <Button className="bg-yellow-400 xl:w-auto w-full">
-                  {t("home.lastBanner.consultWithUsButton")}
-                </Button>
+                <a href="https://wa.me/6285210882525">
+                  <Button className="bg-yellow-400 xl:w-auto w-full">
+                    {t("home.lastBanner.consultWithUsButton")}
+                  </Button>
+                </a>
               </div>
             </div>
           </div>

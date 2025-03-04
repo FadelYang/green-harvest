@@ -7,6 +7,8 @@ import whatsAppIcon from "/img/whatsappIcon.svg";
 import envelopIcon from "/img/envelopIcon.svg";
 // import { useTranslationContext } from "../../context/TranslationContext";
 import { TFunction } from "i18next";
+import { Link } from "react-router-dom";
+import useScrollToSection from '../../hooks/useScrollToSection';
 
 type FooterProps = {
   t: TFunction<"translation", undefined>;
@@ -14,6 +16,7 @@ type FooterProps = {
 
 const Footer = (props: FooterProps) => {
   const { t } = props;
+  const { scrollToSection } = useScrollToSection();
 
   return (
     <div className="bg-black xl:py-[72px] -mb-6">
@@ -40,13 +43,15 @@ const Footer = (props: FooterProps) => {
                 </p>
                 <ul className="flex flex-col gap-4">
                   <li>
-                    <a href="#">{t("footer.usefulLink.home")}</a>
+                    <Link to="/">{t("footer.usefulLink.home")}</Link>
                   </li>
                   <li>
-                    <a href="#">{t("footer.usefulLink.valuedClients")}</a>
+                    {/* <Link to="#">{t("footer.usefulLink.valuedClients")}</Link> */}
                   </li>
                   <li>
-                    <a href="#">{t("footer.usefulLink.insightHub")}</a>
+                    <button onClick={() => scrollToSection("insight-hub", "/")}>
+                      {t("navbar.insightHub")}
+                    </button>
                   </li>
                 </ul>
               </div>
@@ -56,13 +61,15 @@ const Footer = (props: FooterProps) => {
                 </p>
                 <ul className="flex flex-col gap-4">
                   <li>
-                    <a href="#">{t("footer.ourCompany.about")}</a>
+                    <Link to="/about">{t("footer.ourCompany.about")}</Link>
                   </li>
                   <li>
-                    <a href="#">{t("footer.ourCompany.ourExpertise")}</a>
+                    <Link to="/service">
+                      {t("footer.ourCompany.ourExpertise")}
+                    </Link>
                   </li>
                   <li>
-                    <a href="#">{t("footer.ourCompany.contact")}</a>
+                    <Link to="/contact">{t("footer.ourCompany.contact")}</Link>
                   </li>
                 </ul>
               </div>

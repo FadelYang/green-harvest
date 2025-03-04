@@ -10,6 +10,7 @@ const insightHubArticleData = [
   {
     imageThumbnail: articleImage1,
     insightCategory: "ARTICLE",
+    href: "https://blog.greenlifeharvest.com/maklon-skincare-tangerang-solusi-praktis-membuat-produk-skincare-dan-kosmetik-berkualitas-di-harvest-group.html",
     title:
       "Maklon Skincare Tangerang, Solusi Praktis Membuat Produk Skincare dan Kosmetik Berkualitas di Harvest Group",
     description:
@@ -19,6 +20,7 @@ const insightHubArticleData = [
   {
     imageThumbnail: articleImage2,
     insightCategory: "ARTICLE",
+    href: "https://blog.greenlifeharvest.com/mengapa-memilih-pabrik-maklon-di-tangerang.html",
     title: "Mengapa Memilih Pabrik Maklon di Tangerang?",
     description:
       "Dalam dunia bisnis produk kecantikan dan kesehatan, banyak orang yang memiliki ide brilian tetapi terkendala oleh keterbatasan fasilitas dan biaya produksi. Di sinilah pabrik maklon memainkan peran penting, terutama bagi para pemilik merek yang ingin menciptakan produk berkualitas tanpa harus repot dengan urusan produksi. Harvest Group di Tangerang hadir sebagai solusi maklon terlengkap, dengan layanan yang mencakup produk skincare, kosmetik, minuman serbuk fiber, kolagen, hingga whey protein.",
@@ -27,6 +29,7 @@ const insightHubArticleData = [
   {
     imageThumbnail: articleImage3,
     insightCategory: "ARTICLE",
+    href: "https://blog.greenlifeharvest.com/mengapa-jasa-maklon-menjadi-solusi-terbaik-untuk-bisnis-produk-kesehatan-dan-kecantikan-anda.html",
     title:
       "Mengapa Jasa Maklon Menjadi Solusi Terbaik untuk Bisnis Produk Kesehatan dan Kecantikan Anda?",
     description:
@@ -40,22 +43,25 @@ const InsightHubSection = (props: TranslationProps) => {
 
   return (
     <>
-      <div
-        className="flex flex-col xl:pt-36 pt-[72px] xl:gap-9 gap-6"
-      >
+      <div className="flex flex-col xl:pt-36 pt-[72px] xl:gap-9 gap-6">
         <div>
           <div className="xl:px-24 px-6 flex justify-between items-center max-w-[1444px] mx-auto">
-            <h1 className="text-slate-800 xl:text-[40px] text-2xl font-medium xl:leading-[48px] leading-[34px]" id="insight-hub">
+            <h1
+              className="text-slate-800 xl:text-[40px] text-2xl font-medium xl:leading-[48px] leading-[34px]"
+              id="insight-hub"
+            >
               {t("home.insightHub.header")}
             </h1>
             <div className="xl:block hidden">
-              <Button
-                paddingSize="px-6 py-4"
-                className="flex gap-3 primary-text font-medium text-base border-b border-[#015F26]"
-              >
-                {t("home.insightHub.viewMoreArticleButton")}
-                <img src={arrowRight} alt="" className="-rotate-45" />
-              </Button>
+              <a href="https://blog.greenlifeharvest.com/">
+                <Button
+                  paddingSize="px-6 py-4"
+                  className="flex gap-3 primary-text font-medium text-base border-b border-[#015F26]"
+                >
+                  {t("home.insightHub.viewMoreArticleButton")}
+                  <img src={arrowRight} alt="" className="-rotate-45" />
+                </Button>
+              </a>
             </div>
           </div>
         </div>
@@ -65,6 +71,7 @@ const InsightHubSection = (props: TranslationProps) => {
             {insightHubArticleData.map((item, index) => (
               <ArticleCard
                 key={index}
+                href={item.href}
                 thumbnailImage={item.imageThumbnail}
                 createdAt={item.createdAt}
                 title={item.title}
@@ -75,13 +82,15 @@ const InsightHubSection = (props: TranslationProps) => {
           </div>
         </div>
         <div className="xl:hidden block px-6">
-          <Button
-            paddingSize="px-6 py-4"
-            className="flex gap-3 primary-text font-medium text-base border-b border-[#015F26] w-full justify-center"
-          >
-            {t("home.insightHub.viewMoreArticleButton")}
-            <img src={arrowRight} alt="" className="-rotate-45" />
-          </Button>
+          <a href="https://blog.greenlifeharvest.com/">
+            <Button
+              paddingSize="px-6 py-4"
+              className="flex gap-3 primary-text font-medium text-base border-b border-[#015F26] w-full justify-center"
+            >
+              {t("home.insightHub.viewMoreArticleButton")}
+              <img src={arrowRight} alt="" className="-rotate-45" />
+            </Button>
+          </a>
         </div>
       </div>
     </>

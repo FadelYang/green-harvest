@@ -1,16 +1,17 @@
-import { Trans } from 'react-i18next';
+import { Trans } from "react-i18next";
 import Button from "../atoms/Button";
 import arrowRight from "/img/arrowRight.svg";
 import video from "/video/video.mp4";
-import { TranslationProps } from '../../types/types';
-import { useVideoAutoPlayback } from '../../hooks/useVideoAutoPlayback';
+import { TranslationProps } from "../../types/types";
+import { useVideoAutoPlayback } from "../../hooks/useVideoAutoPlayback";
+import { Link } from "react-router-dom";
 
 const VideoSection = (props: TranslationProps) => {
   const { t } = props;
   const [containerRef, videoRef] = useVideoAutoPlayback({
     root: null,
-    rootMargin: '0px',
-    threshold: 0.1
+    rootMargin: "0px",
+    threshold: 0.1,
   });
 
   return (
@@ -29,16 +30,22 @@ const VideoSection = (props: TranslationProps) => {
                 />
               </p>
               <div className="flex justify-start self-start w-full px-6">
-                <Button
-                  paddingSize="px-6 py-4"
-                  className="flex gap-3 primary-text font-medium text-base border-b border-[#015F26] xl:justify-start justify-center w-full xl:w-auto"
-                >
-                  {t('home.video.exploreOurProfileButton')} <img src={arrowRight} alt="" />
-                </Button>
+                <Link to={"/about"}>
+                  <Button
+                    paddingSize="px-6 py-4"
+                    className="flex gap-3 primary-text font-medium text-base border-b border-[#015F26] xl:justify-start justify-center w-full xl:w-auto"
+                  >
+                    {t("home.video.exploreOurProfileButton")}{" "}
+                    <img src={arrowRight} alt="" />
+                  </Button>
+                </Link>
               </div>
             </div>
           </div>
-          <div className="w-full h-full xl:pr-24 xl:px-0 px-6 z-30" ref={containerRef}>
+          <div
+            className="w-full h-full xl:pr-24 xl:px-0 px-6 z-30"
+            ref={containerRef}
+          >
             <video width="100%" ref={videoRef}>
               <source src={video} type="video/mp4" />
             </video>
