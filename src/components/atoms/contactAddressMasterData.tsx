@@ -21,6 +21,7 @@ type Image = {
 
 type CountryAddress = {
   name: string;
+  mapHref: string;
   flag: string;
   isFactory: boolean;
   fullAddress: string[];
@@ -36,6 +37,7 @@ const useAddresses = (props: TranslationProps) => {
   const addresses: Record<string, CountryAddress> = {
     indonesia: {
       name: "Indonesia",
+      mapHref: "https://www.google.com/maps/place/JASA+MAKLON+SUPLEMEN+HERBAL+-+PT.+INDO+GREENLIFE+HARVEST+(HARVEST+GROUP+INDONESIA)/@-6.1658141,106.6671929,17z/data=!4m10!1m2!2m1!1sindo+greenlife+harvest+kosmetik!3m6!1s0x2e69f8f14ebe81fd:0xe7c1029f1aa7acdd!8m2!3d-6.1669494!4d106.6700206!15sCh9pbmRvIGdyZWVubGlmZSBoYXJ2ZXN0IGtvc21ldGlrkgEZZm9vZF9tYW51ZmFjdHVyaW5nX3N1cHBseeABAA!16s%2Fg%2F11f4qch_st?entry=ttu&g_ep=EgoyMDI1MDMwMy4wIKXMDSoASAFQAw%3D%3D",
       flag: indonesiaFlag,
       isFactory: false,
       fullAddress: [
@@ -53,6 +55,7 @@ const useAddresses = (props: TranslationProps) => {
     },
     malaysia: {
       name: "Malaysia",
+      mapHref: "https://www.google.com/maps/place/JASA+MAKLON+SUPLEMEN+HERBAL+-+PT.+INDO+GREENLIFE+HARVEST+(HARVEST+GROUP+INDONESIA)/@-6.1658141,106.6671929,17z/data=!4m10!1m2!2m1!1sindo+greenlife+harvest+kosmetik!3m6!1s0x2e69f8f14ebe81fd:0xe7c1029f1aa7acdd!8m2!3d-6.1669494!4d106.6700206!15sCh9pbmRvIGdyZWVubGlmZSBoYXJ2ZXN0IGtvc21ldGlrkgEZZm9vZF9tYW51ZmFjdHVyaW5nX3N1cHBseeABAA!16s%2Fg%2F11f4qch_st?entry=ttu&g_ep=EgoyMDI1MDMwMy4wIKXMDSoASAFQAw%3D%3D",
       flag: malaysiaFlag,
       isFactory: true,
       fullAddress: [

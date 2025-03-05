@@ -53,7 +53,7 @@ const InsightHubSection = (props: TranslationProps) => {
               {t("home.insightHub.header")}
             </h1>
             <div className="xl:block hidden">
-              <a href="https://blog.greenlifeharvest.com/">
+              <a href="https://blog.greenlifeharvest.com/" target='_blank'>
                 <Button
                   paddingSize="px-6 py-4"
                   className="flex gap-3 primary-text font-medium text-base border-b border-[#015F26]"
@@ -82,7 +82,7 @@ const InsightHubSection = (props: TranslationProps) => {
           </div>
         </div>
         <div className="xl:hidden block px-6">
-          <a href="https://blog.greenlifeharvest.com/">
+          <a href="https://blog.greenlifeharvest.com/" target='_blank'>
             <Button
               paddingSize="px-6 py-4"
               className="flex gap-3 primary-text font-medium text-base border-b border-[#015F26] w-full justify-center"

@@ -22,7 +22,7 @@ const ContactHeaderSection = (props: TranslationProps) => {
             </div>
           </div>
           <div className="flex xl:flex-row flex-col gap-4">
-            <a href="https://wa.me/6285210882525">
+            <a href="https://wa.me/6285210882525" target='_blank'>
               <Button variant="primary-button">
                 {t("contact.hero.contactUsButton")}
               </Button>
