@@ -10,8 +10,7 @@ const QnaSection = (props: TranslationProps) => {
       <div className="xl:py-36 py-[72px] flex xl:flex-row flex-col xl:gap-10 gap-6 max-w-[1444px] mx-auto justify-between">
         <div className="flex flex-col xl:gap-10 gap-6">
           <h1 className="text-[#1E293B] font-medium xl:text-[40px] xl:leading-[56px] text-2xl xl:pl-24 xl:px-0 px-6">
-            Frequently Asked <br className='xl:block hidden'/>
-            Question
+            {t("home.qna.header")}
           </h1>
           <div className='xl:block hidden'>
             <img src={qnaImage} alt="" />

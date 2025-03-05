@@ -63,7 +63,7 @@ const ProductAvailableSection = (props: TranslationProps) => {
     <>
       <div className="xl:px-24 px-6 xl:py-36 py-[72px] flex flex-col xl:gap-[72px] gap-6 max-w-[1444px] mx-auto">
         <h1 className="text-center xl:text-[40px] text-2xl font-medium xl:leading-[50px] leading-[34px]">
-          Tailored Products Available at Harvest Group
+          {t("home.productAvailable.header")}
         </h1>
         <div className="xl:flex hidden gap-[75px]">
           <div className="flex flex-col gap-4">

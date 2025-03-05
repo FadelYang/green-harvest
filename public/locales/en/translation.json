@@ -223,6 +223,7 @@
       "viewMoreArticleButton": "View More Articles"
     },
     "qna": {
+      "header": "Frequently Asked Question",
       "1": {
         "id": 1,
         "question": "What is the minimum order (MOQ) at Harvest Group",
@@ -355,43 +356,43 @@
     },
     "drink": {
       "hero": {
-        "header": "Produk Minuman Bubuk Private Label Maklon Bersertifikat BPOM",
-        "subHeader": "Mitra Anda dalam Pembuatan Minuman Serbuk. Sebagai produsen minuman terkemuka di Indonesia, kami memiliki spesialisasi dalam memproduksi berbagai macam produk minuman serbuk premium, termasuk protein shake, pengganti makanan, dan minuman kolagen. Luncurkan merek Anda dengan percaya diri, kami memastikan produk Anda memenuhi standar BPOM dan Halal MUI—semuanya dengan merek Anda sendiri.",
-        "bookAConsultationButton": "Booking Konsultasi"
+        "header": "Private Label Powder Drink Product Maklon BPOM Certified",
+        "subHeader": "Your Partner in Powder Drink Manufacturing. As Indonesia’s leading beverage maklon, we specialize in producing a wide range of premium powder drink products, including protein shakes, meal replacements, and collagen drinks. Launch your brand with confidence, ensuring your products meet BPOM and Halal MUI standards—customized under your label from start to finish.",
+        "bookAConsultationButton": "Book A Consultation"
       },
       "categoryId": 2,
       "categoryName": "Drink",
-      "listSectionHeading": "Produk Minuman Powder Apa Saja Yang Dapat Di Maklonkan Di Harvest Group?",
+      "listSectionHeading": "Which Powder Drink Products Can Be Makloned At Harvest Group?",
       "products": {
         "1": {
           "productId": 4,
-          "productName": "Minuman Kolagen",
-          "productDescription": "Minuman kolagen dengan antioksidan mengencangkan kulit, mengurangi kerutan, dan meregenerasi sel kulit."
+          "productName": "Collagen Drink",
+          "productDescription": "Collagen drinks with antioxidants tighten skin, reduce wrinkles, and regenerate skin cells."
         },
         "2": {
           "productId": 5,
-          "productName": "Minuman Pengganti Makanan",
-          "productDescription": "Minuman pengganti makanan diet seperti Added Oat, Fiber, Malt, Soy Protein Isolate, dll."
+          "productName": "Meal Replacement",
+          "productDescription": "Diet meal replacement drinks like Added Oat, Fiber, Malt, Soy Protein Isolate, etc."
         },
         "3": {
           "productId": 6,
-          "productName": "Susu Bubuk Kolostrum",
-          "productDescription": "Susu bubuk kolostrum rasa almond: anti penuaan, melangsingkan, dan meningkatkan kekebalan tubuh."
+          "productName": "Colostrum Milk Powder",
+          "productDescription": "Colostrum milk powder with almond flavor: anti-aging, slimming, and boosts immunity."
         },
         "4": {
           "productId": 7,
-          "productName": "Suplemen Kebugaran",
-          "productDescription": "Minuman suplemen kebugaran Maklon seperti protein whey dan susu untuk atlet dan olahraga untuk memaksimalkan pertumbuhan otot."
+          "productName": "Fitness Supplement",
+          "productDescription": "Maklon fitness supplement drinks like whey protein and milk for athletes and workouts to maximize muscle growth."
         },
         "5": {
           "productId": 8,
-          "productName": "Minuman Fiber",
-          "productDescription": "Campuran minuman kaya serat dengan ekstrak buah alami untuk meningkatkan penurunan berat badan, kesehatan pencernaan, dan masalah kesehatan secara keseluruhan."
+          "productName": "Fiber Drink",
+          "productDescription": "A fiber-rich drink blend with natural fruit extracts for promoting weight loss, digestive health, and overall health concern."
         },
         "6": {
           "productId": 9,
-          "productName": "Stamina Dewasa",
-          "productDescription": "Minuman Stamina dewasa antara lain Stamina Drink dan Coffee Stamina terbuat dari ekstrak herbal alami yang efektif meningkatkan stamina pria."
+          "productName": "Adult Stamina",
+          "productDescription": "Adult Stamina drinks, including Stamina Drink and Coffee Stamina, are made from natural herbal extracts to effectively boost men's stamina."
         }
       }
     },
@@ -407,18 +408,18 @@
       "products": {
         "1": {
           "productId": 10,
-          "productName": "Internal Medicine Liquid",
-          "productDescription": "Herbal manufacturing such as Propolis, Stamina Honey, Fertility, Slimming, Stomach Honey, Children's Honey, Tolak Angin, Date Palm Extract and other products."
+          "productName": "Decorative",
+          "productDescription": "Decorative manufacturing services such as perfume, lip gloss, lip balm, lip cream, and various other decorative manufacturing services."
         },
         "2": {
           "productId": 11,
-          "productName": "External Medicine Liquid",
-          "productDescription": "Herbal manufacturing such as Propolis, Stamina Honey, Fertility, Slimming, Stomach Honey, Children's Honey, Tolak Angin, Date Palm Extract and other products."
+          "productName": "Face Care",
+          "productDescription": "Maklon Facecare such as Facial cleanser, moisturizer, essence & serum, face mask, gel mask, toner cleanser, anti-acne serum, day cream, night cream, sun screen gel & cream, anti-aging serum."
         },
         "3": {
           "productId": 12,
-          "productName": "Capsule Containing Extract Product.",
-          "productDescription": "Maklon products Spirulina Capsules, ASI boosters, Collagen Capsules, Ginger Extract Capsules, Binahong Extract Capsules, Ginseng Extract Capsules, Turmeric Extract Capsules etc."
+          "productName": "Body Care.",
+          "productDescription": "Maklon Body care such as personal care, body moisturizer, body cleanser, body lotion, body serum, peeling spray, body wash, body mask, body scrub, body lotion, deodorant spray."
         }
       }
     }
