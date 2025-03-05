@@ -8,7 +8,7 @@ import envelopIcon from "/img/envelopIcon.svg";
 // import { useTranslationContext } from "../../context/TranslationContext";
 import { TFunction } from "i18next";
 import { Link } from "react-router-dom";
-import useScrollToSection from '../../hooks/useScrollToSection';
+import useScrollToSection from "../../hooks/useScrollToSection";
 
 type FooterProps = {
   t: TFunction<"translation", undefined>;
@@ -23,17 +23,20 @@ const Footer = (props: FooterProps) => {
       <div className=" text-white xl:px-24 p-6 mx-auto max-w-[1444px]">
         <div className="flex xl:flex-row flex-col xl:gap-24 gap-[74px]">
           {/* First column */}
-          <div className="max-w-[212px] flex flex-col justify-between h-full gap-7">
-            <img src={footerLogo} alt="" className="w-min-[212px]" />
-            <p className="xl:block hidden text-[16px]">
-              {t("footer.aboutHarvest")}
-            </p>
-            <div className="flex gap-2">
-              <img src={instagramIcon} alt="" />
-              <img src={twitterIcon} alt="" />
-              <img src={facebookIcon} alt="" />
+          <div className='flex md:justify-start justify-center'>
+            <div className="max-w-[212px] flex flex-col justify-between h-full gap-7">
+              <img src={footerLogo} alt="" className="w-min-[212px]" />
+              <p className="xl:block hidden text-[16px]">
+                {t("footer.aboutHarvest")}
+              </p>
+              <div className="flex gap-2 md:justify-start justify-center">
+                <img src={instagramIcon} alt="" />
+                <img src={twitterIcon} alt="" />
+                <img src={facebookIcon} alt="" />
+              </div>
             </div>
           </div>
+
           {/* Second Coulnm */}
           <div className="flex flex-col xl:max-w-[415px]">
             <div className="flex xl:flex-row flex-col xl:justify-between xl:gap-0 gap-[74px]">
