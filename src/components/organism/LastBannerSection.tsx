@@ -25,7 +25,7 @@ const LastBannerSection = (props: TranslationProps) => {
                 {t("home.lastBanner.subHeader")}
               </p>
               <div>
-                <a href="https://wa.me/6285210882525" target='_blank'>
+                <a href="https://tanya.web.id/harvest-maklon-discussion" target='_blank'>
                   <Button className="bg-yellow-400 xl:w-auto w-full">
                     {t("home.lastBanner.consultWithUsButton")}
                   </Button>

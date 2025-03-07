@@ -140,7 +140,7 @@ const FeatureSection = (props: TranslationProps) => {
             </div>
           </div>
           <div className="flex justify-center px-6 xl:px-0">
-            <a href="https://wa.me/6285210882525" target="_blank">
+            <a href="https://tanya.web.id/harvest-maklon-discussion" target="_blank">
               <Button variant="primary-button" className="w-full xl:w-auto">
                 {t("home.feature.consultNowButton")}
               </Button>

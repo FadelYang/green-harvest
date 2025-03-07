@@ -18,7 +18,7 @@ const ManufacturingProcessSection = (props: TranslationProps) => {
             </p>
           </div>
           <div className="xl:block hidden">
-            <a href="https://wa.me/6285210882525" target="_blank">
+            <a href="https://tanya.web.id/harvest-maklon-discussion" target="_blank">
               <Button variant="primary-button">
                 {t("home.hero.consultNowButton")}
               </Button>
@@ -29,7 +29,7 @@ const ManufacturingProcessSection = (props: TranslationProps) => {
           <ManufacturingProcessList />
         </div>
         <div className="xl:hidden ">
-          <a href="https://wa.me/6285210882525" target="_blank">
+          <a href="https://tanya.web.id/harvest-maklon-discussion" target="_blank">
             <Button variant="primary-button" className="w-full">
               {t("home.hero.consultNowButton")}
             </Button>

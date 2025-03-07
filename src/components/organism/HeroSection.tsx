@@ -26,7 +26,7 @@ const HeroSection = (props: TranslationProps) => {
             </h2>
             <div className="flex flex-col gap-4">
               <div className="z-10">
-                <a href="https://wa.me/6285210882525" target="_blank">
+                <a href="https://tanya.web.id/harvest-maklon-discussion" target="_blank">
                   <Button variant="primary-button" className="w-full xl:w-auto">
                     {t("home.hero.consultNowButton")}
                   </Button>
@@ -96,7 +96,7 @@ const HeroSection = (props: TranslationProps) => {
           </div>
           <div className="flex xl:flex-row flex-col justify-center gap-4">
             <div>
-              <a href="https://wa.me/6285210882525" target="_blank">
+              <a href="https://tanya.web.id/harvest-maklon-discussion" target="_blank">
                 <Button variant="primary-button" className="w-full xl:w-auto">
                   {t("home.hero.consultNowButton")}
                 </Button>

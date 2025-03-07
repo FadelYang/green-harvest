@@ -40,7 +40,7 @@ const SuccessStorySection = (props: TranslationProps) => {
           <SuccessStoryArticleList />
         </div>
         <div className="flex justify-center gap-4">
-          <a href="https://wa.me/6285210882525" target="_blank">
+          <a href="https://tanya.web.id/harvest-maklon-discussion" target="_blank">
             <div>
               <Button variant="primary-button">
                 {t("home.hero.consultNowButton")}

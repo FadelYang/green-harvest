@@ -17,7 +17,7 @@ const AboutHeroSection = (props: TranslationProps) => {
             </h1>
 
             <div className="hidden xl:block">
-              <a href="https://wa.me/6285210882525" target="_blank">
+              <a href="https://tanya.web.id/harvest-maklon-discussion" target="_blank">
                 <Button variant="primary-button">
                   {t("aboutUs.hero.consultNowButton")}
                 </Button>
@@ -33,7 +33,7 @@ const AboutHeroSection = (props: TranslationProps) => {
             </h2>
           </div>
           <div className="xl:hidden block">
-            <a href="https://wa.me/6285210882525" target="_blank">
+            <a href="https://tanya.web.id/harvest-maklon-discussion" target="_blank">
               <Button variant="primary-button" className="w-full sm:w-auto">
                 {t("aboutUs.hero.consultNowButton")}
               </Button>

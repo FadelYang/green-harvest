@@ -105,7 +105,7 @@ const NavigationBar = (props: NavigationBarProps) => {
             </li>
           </ul>
           <div className="">
-            <a href="https://wa.me/6285210882525" target="_blank">
+            <a href="https://tanya.web.id/harvest-maklon-discussion" target="_blank">
               <Button variant="primary-button" className="py-4 px-6">
                 {t("navbar.consultNow")}
               </Button>

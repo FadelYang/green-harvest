@@ -20,7 +20,9 @@ const ServiceHeroSection = (props: TranslationProps) => {
           </h2>
         </div>
         <div className="px-24 z-10 xl:block hidden">
-          <Button variant="primary-button"> {t("service.hero.getFreeConsultationButton")}</Button>
+          <a href="https://tanya.web.id/harvest-maklon-discussion" target='_blank'>
+            <Button variant="primary-button"> {t("service.hero.getFreeConsultationButton")}</Button>
+          </a>
         </div>
         <div className="flex md:gap-3 gap-5 xl:-mt-16 overflow-hidden">
           <img src={serviceHeroImage1} alt="" className='md:w-full w-[255px] md:ml:0 -ml-14'/>
