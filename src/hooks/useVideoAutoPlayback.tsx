@@ -1,27 +1,34 @@
 import { useRef, useEffect } from "react";
+import Hls from "hls.js";
 
-export const useVideoAutoPlayback = (options: any) => {
-  const containerRef = useRef(null);
-  const videoRef = useRef(null);
-
-  const cb = (entries: any) => {
-    const [entry] = entries;
-
-    // @ts-ignore: Object is possibly 'null'.
-    if (entry.isIntersecting) videoRef.current.play();
-    // @ts-ignore: Object is possibly 'null'.
-    else videoRef.current.pause();
-  };
+export const useVideoAutoPlayback = (videoSrc: string, options: IntersectionObserverInit) => {
+  const containerRef = useRef<HTMLDivElement | null>(null);
+  const videoRef = useRef<HTMLVideoElement | null>(null);
 
   useEffect(() => {
-    const observer = new IntersectionObserver(cb, options);
+    const observer = new IntersectionObserver(([entry]) => {
+      if (videoRef.current) {
+        if (entry.isIntersecting) videoRef.current.play();
+        else videoRef.current.pause();
+      }
+    }, options);
 
     if (containerRef.current) observer.observe(containerRef.current);
 
     return () => {
-      if (containerRef.current) observer.unobserve(containerRef.current);
+      if (containerRef.current) observer.disconnect();
     };
-  }, [containerRef, videoRef]);
+  }, [options]);
 
-  return [containerRef, videoRef]
+  useEffect(() => {
+    if (videoRef.current && Hls.isSupported()) {
+      const hls = new Hls();
+      hls.loadSource(videoSrc);
+      hls.attachMedia(videoRef.current);
+    } else if (videoRef.current?.canPlayType("application/vnd.apple.mpegurl")) {
+      videoRef.current.src = videoSrc;
+    }
+  }, [videoSrc]);
+
+  return [containerRef, videoRef] as const;
 };

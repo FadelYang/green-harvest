@@ -1,14 +1,14 @@
 import { Trans } from "react-i18next";
 import Button from "../atoms/Button";
 import arrowRight from "/img/arrowRight.svg";
-import video from "/video/video.mp4";
 import { TranslationProps } from "../../types/types";
 import { useVideoAutoPlayback } from "../../hooks/useVideoAutoPlayback";
 import { Link } from "react-router-dom";
 
 const VideoSection = (props: TranslationProps) => {
   const { t } = props;
-  const [containerRef, videoRef] = useVideoAutoPlayback({
+  const videoSrc = "/video/output.m3u8";
+  const [containerRef, videoRef] = useVideoAutoPlayback(videoSrc, {
     root: null,
     rootMargin: "0px",
     threshold: 0.1,
@@ -46,8 +46,8 @@ const VideoSection = (props: TranslationProps) => {
             className="w-full h-full xl:pr-24 xl:px-0 px-6 z-30"
             ref={containerRef}
           >
-            <video width="100%" ref={videoRef}>
-              <source src={video} type="video/mp4" />
+            <video width="100%" ref={videoRef} preload="none">
+              <source type="video/mp4" />
             </video>
           </div>
           <div className="relative">
