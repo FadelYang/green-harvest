@@ -25,10 +25,10 @@ const ServiceHeroSection = (props: TranslationProps) => {
           </a>
         </div>
         <div className="flex md:gap-3 gap-5 xl:-mt-16 overflow-hidden">
-          <img src={serviceHeroImage1} alt="" className='md:w-full w-[255px] md:ml:0 -ml-14'/>
-          <img src={serviceHeroImage2} alt="" className='md:w-full w-[227px]'/>
-          <img src={serviceHeroImage3} alt="" className='xl:block hidden'/>
-          <img src={serviceHeroImage4} alt="" className='xl:block hidden'/>
+          <img loading='lazy' src={serviceHeroImage1} alt="" className='md:w-full w-[255px] md:ml:0 -ml-14'/>
+          <img loading='lazy' src={serviceHeroImage2} alt="" className='md:w-full w-[227px]'/>
+          <img loading='lazy' src={serviceHeroImage3} alt="" className='xl:block hidden'/>
+          <img loading='lazy' src={serviceHeroImage4} alt="" className='xl:block hidden'/>
         </div>
       </div>
     </>

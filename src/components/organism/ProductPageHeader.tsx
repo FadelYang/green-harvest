@@ -33,7 +33,7 @@ const ProductPageHeader = (props: ProductDetailPageProps) => {
                   </a>
                 </div>
                 <div className="">
-                  <img src={data.heroImage} alt="Hero" className='xl:w-auto xl:h-auto w-full h-[400px] object-cover'/>
+                  <img src={data.heroImage} alt="Hero" className='xl:w-auto xl:h-auto w-full h-[400px] object-cover' loading='lazy'/>
                 </div>
               </div>
             </div>

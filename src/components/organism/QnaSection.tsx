@@ -13,7 +13,7 @@ const QnaSection = (props: TranslationProps) => {
             {t("home.qna.header")}
           </h1>
           <div className='xl:block hidden'>
-            <img src={qnaImage} alt="" />
+            <img src={qnaImage} alt="" loading='lazy'/>
             <div className="bg-yellow-500 w-[336px] h-[100px] z-10 opacity-80 -mt-14"></div>
           </div>
         </div>

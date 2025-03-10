@@ -14,7 +14,7 @@ const galleryImages = [
 ];
 
 const GalleryImageContainer = ({ img }: { img: string }) => {
-  return <img src={img} alt="" className="w-20 xl:w-40" />;
+  return <img src={img} alt="" className="w-20 xl:w-40" loading='lazy'/>;
 };
 
 const AboutOurGallery = (props: TranslationProps) => {
@@ -76,7 +76,7 @@ const AboutOurGallery = (props: TranslationProps) => {
                 />
               </svg>
             </div>
-            <img src={selectedImage} alt="" />
+            <img src={selectedImage} alt="" loading='lazy'/>
           </div>
         </BaseModal>
       )}

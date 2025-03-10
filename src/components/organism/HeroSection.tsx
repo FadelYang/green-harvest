@@ -39,7 +39,7 @@ const HeroSection = (props: TranslationProps) => {
                     className="flex gap-3 primary-text font-medium text-base border-b border-[#015F26] w-full xl:w-auto justify-center"
                   >
                     {t("home.hero.exploreOurExpertiseButton")}{" "}
-                    <img src={arrowRight} alt="" />
+                    <img src={arrowRight} alt="" loading='lazy'/>
                   </Button>
                 </Link>
               </div>

@@ -59,7 +59,7 @@ const InsightHubSection = (props: TranslationProps) => {
                   className="flex gap-3 primary-text font-medium text-base border-b border-[#015F26]"
                 >
                   {t("home.insightHub.viewMoreArticleButton")}
-                  <img src={arrowRight} alt="" className="-rotate-45" />
+                  <img src={arrowRight} alt="" className="-rotate-45" loading='lazy'/>
                 </Button>
               </a>
             </div>

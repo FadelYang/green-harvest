@@ -32,17 +32,20 @@ const ContactHeaderSection = (props: TranslationProps) => {
               src={contactHeroImage1}
               alt=""
               className="xl:max-w-[856px] min-w-[775px] xl:block hidden"
+              loading='lazy'
             />
             <img
               src={contactHeroImage1Responsive}
               alt=""
               className="xl:hidden block"
+              loading='lazy'
             />
-            <img src={contactHeroImage2} alt="" className="xl:block hidden" />
+            <img src={contactHeroImage2} alt="" className="xl:block hidden" loading='lazy'/>
             <img
               src={contactHeroImage2Responsive}
               alt=""
               className="xl:hidden block"
+              loading='lazy'
             />
           </div>
         </div>

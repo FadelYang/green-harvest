@@ -127,6 +127,7 @@ const ProductSection = (props: TranslationProps) => {
                     }
                     alt={`Product ${product.id}`}
                     className="xl:hidden block w-screen"
+                    loading='lazy'
                   />
 
                   {/* Text overlay responsive */}

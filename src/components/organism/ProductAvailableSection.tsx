@@ -91,7 +91,7 @@ const ProductAvailableSection = (props: TranslationProps) => {
                 }`}
               >
                 <div>
-                  <img src={item.image} alt="" />
+                  <img src={item.image} alt="" loading='lazy'/>
                 </div>
                 <div className="flex flex-col gap-2 p-6">
                   <p className="text-slate-800 text-[32px] font-semibold">

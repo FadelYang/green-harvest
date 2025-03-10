@@ -25,7 +25,7 @@ const AboutOurStorySection = (props: TranslationProps) => {
             <h1 className="text-slate-800 text-2xl font-medium">
               {t("aboutUs.ourStory.header")}
             </h1>
-            <img src={aboutOurStoryImage1} alt="" />
+            <img src={aboutOurStoryImage1} alt="" loading="lazy" />
           </div>
           <p className="text-slate-500 text-[16px] leading-[26px]">
             Our manufacturing facility
@@ -51,40 +51,56 @@ const AboutOurStorySection = (props: TranslationProps) => {
               src={aboutOurStoryImage2}
               alt=""
               className="max-w-full xl:max-w-[430px] 2xl:max-w-[472px] sm:block hidden"
+              loading="lazy"
             />
             <img
               src={aboutOurStoryImage2Responsive}
               alt=""
               className="max-w-full sm:hidden block flex-grow"
+              loading="lazy"
             />
             <img
               src={aboutOurStoryImage3}
               alt=""
               className="max-w-full xl:max-w-[260px] 2xl:max-w-[300px] sm:block hidden"
+              loading="lazy"
             />
             <img
               src={aboutOurStoryImage3Responsive}
               alt=""
               className="max-w-full sm:hidden block flex-grow"
+              loading="lazy"
             />
           </div>
         </div>
       </div>
       <div className="flex xl:flex-row flex-col gap-4 xl:px-24 px-6 max-w-[1444px] mx-auto xl:pb-36 pb-[72px]">
         <div>
-          <img src={aboutOurStoryImage4} alt="" className="xl:block hidden" />
+          <img
+            src={aboutOurStoryImage4}
+            alt=""
+            className="xl:block hidden"
+            loading="lazy"
+          />
           <img
             src={aboutOurStoryImage4Responsive}
             alt=""
             className="xl:hidden block w-full"
+            loading="lazy"
           />
         </div>
         <div className="flex flex-col gap-4">
-          <img src={aboutOurStoryImage5} alt="" className="xl:block hidden" />
+          <img
+            src={aboutOurStoryImage5}
+            alt=""
+            className="xl:block hidden"
+            loading="lazy"
+          />
           <img
             src={aboutOurStoryImage5Responsive}
             alt=""
             className="xl:hidden block"
+            loading="lazy"
           />
           <div className="max-w-[614px] flex flex-col gap-5">
             <article className="flex flex-col gap-4">
@@ -115,6 +131,7 @@ const AboutOurStorySection = (props: TranslationProps) => {
                 src={aboutOurStoryImage6}
                 alt=""
                 className="max-w-full xl:max-w-[442px] 2xl:max-w-[472px] xl:block hidden"
+                loading="lazy"
               />
               <img
                 src={aboutOurStoryImage6Responsive}
@@ -125,11 +142,13 @@ const AboutOurStorySection = (props: TranslationProps) => {
                 src={aboutOurStoryImage7}
                 alt=""
                 className="max-w-full xl:max-w-[272px] 2xl:max-w-[300px] xl:block hidden"
+                loading="lazy"
               />
               <img
                 src={aboutOurStoryImage7Responsive}
                 alt=""
                 className="xl:hidden block flex-grow"
+                loading="lazy"
               />
             </div>
           </div>

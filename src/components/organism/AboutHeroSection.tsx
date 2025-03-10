@@ -41,11 +41,12 @@ const AboutHeroSection = (props: TranslationProps) => {
           </div>
         </div>
         <div className="flex">
-          <img src={aboutHeroImage} alt="" className="sm:block hidden" />
+          <img src={aboutHeroImage} alt="" className="sm:block hidden" loading='lazy'/>
           <img
             src={aboutHeroImageResponsive}
             alt=""
             className="block sm:hidden flex-grow"
+            loading='lazy'
           />
         </div>
       </div>

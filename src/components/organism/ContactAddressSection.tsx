@@ -15,7 +15,7 @@ const ContactAddressSection = (props: TranslationProps) => {
             className="flex gap-3 primary-text xl:justify-start justify-center font-medium text-base border-b border-[#015F26]"
           >
             {t("contact.hero.viewOurLocationOnMaps")}
-            <img src={arrowRight} alt="" className="-rotate-45" />
+            <img src={arrowRight} alt="" className="-rotate-45" loading='lazy'/>
           </Button>
         </a>
         <div className='flex flex-col gap-36'>

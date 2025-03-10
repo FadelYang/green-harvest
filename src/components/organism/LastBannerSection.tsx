@@ -15,6 +15,7 @@ const LastBannerSection = (props: TranslationProps) => {
                 src={lastBannerImage}
                 alt=""
                 className="z-10 xl:w-[1160px]"
+                loading='lazy'
               />
             </div>
             <div className="flex flex-col xl:gap-8 gap-4">

@@ -64,6 +64,7 @@ const FeatureSection = (props: TranslationProps) => {
                       alt=""
                       key={index}
                       className="sm:w-full w-2/3"
+                      loading='lazy'
                     />
                   ))}
                 </div>
