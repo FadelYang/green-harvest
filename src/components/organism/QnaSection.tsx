@@ -1,6 +1,6 @@
 import { TranslationProps } from "../../types/types";
 import QnaList from "../molecules/QnaList";
-import qnaImage from "/img/qna-image.png";
+import qnaImage from "/img/qna-image.webp";
 
 const QnaSection = (props: TranslationProps) => {
   const { t } = props;

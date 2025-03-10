@@ -1,20 +1,20 @@
 import { useState } from "react";
 import arrowUpRight from "/img/arrowUpright.svg";
 
-import product1Open from "/img/product-1-open.png";
-import product1Close from "/img/product-1-close.png";
-import product1OpenResponsive from "/img/product-1-open-responsive.png";
-import product1CloseResponsive from "/img/product-1-close-responsive.png";
+import product1Open from "/img/product-1-open.webp";
+import product1Close from "/img/product-1-close.webp";
+import product1OpenResponsive from "/img/product-1-open-responsive.webp";
+import product1CloseResponsive from "/img/product-1-close-responsive.webp";
 
-import product2Open from "/img/product-2-open.png";
-import product2Close from "/img/product-2-close.png";
-import product2OpenResponsive from "/img/product-2-open-responsive.png";
-import product2CloseResponsive from "/img/product-2-close-responsive.png";
+import product2Open from "/img/product-2-open.webp";
+import product2Close from "/img/product-2-close.webp";
+import product2OpenResponsive from "/img/product-2-open-responsive.webp";
+import product2CloseResponsive from "/img/product-2-close-responsive.webp";
 
-import product3Open from "/img/product-3-open.png";
-import product3OpenResponsive from "/img/product-3-open-responsive.png";
-import product3Close from "/img/product-3-close.png";
-import product3CloseResponsive from "/img/product-3-close-responsive.png";
+import product3Open from "/img/product-3-open.webp";
+import product3OpenResponsive from "/img/product-3-open-responsive.webp";
+import product3Close from "/img/product-3-close.webp";
+import product3CloseResponsive from "/img/product-3-close-responsive.webp";
 
 import Button from "../atoms/Button";
 import { useNavigate } from "react-router-dom";

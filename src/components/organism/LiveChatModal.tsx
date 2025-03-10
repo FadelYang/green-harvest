@@ -1,12 +1,12 @@
 import { useState } from "react";
 import WhatsappIcon from "../atoms/WhatsappIcon";
 import BaseModal from "../atoms/BaseModal";
-import CsAvatarPuji from "/img/cs-avatar-puji.png";
-import CsAvatarZahra from "/img/cs-avatar-zahra.png";
-import CsAvatarFajar from "/img/cs-avatar-fajar.png";
+import CsAvatarPuji from "/img/cs-avatar-puji.webp";
+import CsAvatarZahra from "/img/cs-avatar-zahra.webp";
+import CsAvatarFajar from "/img/cs-avatar-fajar.webp";
 import CsAvatarWidya from "/img/cs-avatar-widya.webp";
 import CsAvatarAdelia from "/img/cs-avatar-adelia.webp";
-import CsAvatarKristal from "/img/cs-avatar-kristal.png";
+import CsAvatarKristal from "/img/cs-avatar-kristal.webp";
 import MessageICon from "../atoms/MessageICon";
 import LiveChatCard, { liveChatCardProps } from "../molecules/LiveChatCard";
 import { TranslationProps } from "../../types/types";

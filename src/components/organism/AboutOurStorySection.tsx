@@ -1,18 +1,18 @@
 import { TranslationProps } from "../../types/types";
-import aboutOurStoryImage1 from "/img/about-our-story-image-1.png";
-import aboutOurStoryImage2 from "/img/about-our-story-image-2.png";
-import aboutOurStoryImage3 from "/img/about-our-story-image-3.png";
-import aboutOurStoryImage4 from "/img/about-our-story-image-4.png";
-import aboutOurStoryImage5 from "/img/about-our-story-image-5.png";
-import aboutOurStoryImage6 from "/img/about-our-story-image-6.png";
-import aboutOurStoryImage7 from "/img/about-our-story-image-7.png";
+import aboutOurStoryImage1 from "/img/about-our-story-image-1.webp";
+import aboutOurStoryImage2 from "/img/about-our-story-image-2.webp";
+import aboutOurStoryImage3 from "/img/about-our-story-image-3.webp";
+import aboutOurStoryImage4 from "/img/about-our-story-image-4.webp";
+import aboutOurStoryImage5 from "/img/about-our-story-image-5.webp";
+import aboutOurStoryImage6 from "/img/about-our-story-image-6.webp";
+import aboutOurStoryImage7 from "/img/about-our-story-image-7.webp";
 
-import aboutOurStoryImage2Responsive from "/img/about-our-story-image-2-responsive.png";
-import aboutOurStoryImage3Responsive from "/img/about-our-story-image-3-responsive.png";
-import aboutOurStoryImage4Responsive from "/img/about-our-story-image-4-responsive.png";
-import aboutOurStoryImage5Responsive from "/img/about-our-story-image-5-responsive.png";
-import aboutOurStoryImage6Responsive from "/img/about-our-story-image-6-responsive.png";
-import aboutOurStoryImage7Responsive from "/img/about-our-story-image-7-responsive.png";
+import aboutOurStoryImage2Responsive from "/img/about-our-story-image-2-responsive.webp";
+import aboutOurStoryImage3Responsive from "/img/about-our-story-image-3-responsive.webp";
+import aboutOurStoryImage4Responsive from "/img/about-our-story-image-4-responsive.webp";
+import aboutOurStoryImage5Responsive from "/img/about-our-story-image-5-responsive.webp";
+import aboutOurStoryImage6Responsive from "/img/about-our-story-image-6-responsive.webp";
+import aboutOurStoryImage7Responsive from "/img/about-our-story-image-7-responsive.webp";
 
 const AboutOurStorySection = (props: TranslationProps) => {
   const { t } = props;

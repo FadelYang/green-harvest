@@ -1,4 +1,4 @@
-import footerLogo from "/img/footer-logo.png";
+import footerLogo from "/img/footer-logo.webp";
 import instagramIcon from "/img/instagramIcon.svg";
 import twitterIcon from "/img/twitterIcon.svg";
 import facebookIcon from "/img/facebookIcon.svg";

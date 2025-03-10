@@ -1,7 +1,7 @@
 import { useTranslationContext } from '../../context/TranslationContext';
 import SuccessStoryArticleCard from "../atoms/SuccessStoryArticleCard";
-import successStoryImage1 from "/img/success-story-1.png";
-import successStoryImage2 from "/img/success-story-2.png";
+import successStoryImage1 from "/img/success-story-1.webp";
+import successStoryImage2 from "/img/success-story-2.webp";
 
 const SuccessStoryArticleList = () => {
   const { t } = useTranslationContext()

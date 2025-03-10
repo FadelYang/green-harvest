@@ -1,11 +1,11 @@
 import { useState } from "react";
 import Button from "../atoms/Button";
-import productAvailable1 from "/img/product-available-1.png";
-import productAvailable2 from "/img/product-available-2.png";
-import productAvailable3 from "/img/product-available-3.png";
-import productAvailable4 from "/img/product-available-4.png";
-import productAvailable5 from "/img/product-available-5.png";
-import productAvailable6 from "/img/product-available-6.png";
+import productAvailable1 from "/img/product-available-1.webp";
+import productAvailable2 from "/img/product-available-2.webp";
+import productAvailable3 from "/img/product-available-3.webp";
+import productAvailable4 from "/img/product-available-4.webp";
+import productAvailable5 from "/img/product-available-5.webp";
+import productAvailable6 from "/img/product-available-6.webp";
 import { TranslationProps } from "../../types/types";
 import ChevronDownIcon from "../atoms/ChevronDownIcon";
 

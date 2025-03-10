@@ -1,4 +1,4 @@
-import navBarLogo from "/img/navbar-logo.png";
+import navBarLogo from "/img/navbar-logo.webp";
 import englishFlag from "/img/english-flag.svg";
 import indonesiaFlag from "/img/indonesia-flag.svg";
 import Button from "../atoms/Button";

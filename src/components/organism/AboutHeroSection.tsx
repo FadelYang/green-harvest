@@ -1,8 +1,8 @@
 import { Trans } from "react-i18next";
 import { TranslationProps } from "../../types/types";
 import Button from "../atoms/Button";
-import aboutHeroImage from "/img/about-hero-image.png";
-import aboutHeroImageResponsive from "/img/about-hero-image-responsive.png";
+import aboutHeroImage from "/img/about-hero-image.webp";
+import aboutHeroImageResponsive from "/img/about-hero-image-responsive.webp";
 
 const AboutHeroSection = (props: TranslationProps) => {
   const { t } = props;

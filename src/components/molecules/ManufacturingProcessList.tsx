@@ -1,13 +1,13 @@
 import { useState } from "react";
-import manufacturingProcessImage1 from "/img/manufacturing-process-1.png";
-import manufacturingProcessImage2 from "/img/manufacturing-process-2.png";
-import manufacturingProcessImage3 from "/img/manufacturing-process-3.png";
-import manufacturingProcessImage4 from "/img/manufacturing-process-4.png";
-import manufacturingProcessImage5 from "/img/manufacturing-process-5.png";
-import manufacturingProcessImage6 from "/img/manufacturing-process-6.png";
-import manufacturingProcessImage7 from "/img/manufacturing-process-7.png";
-import manufacturingProcessImage8 from "/img/manufacturing-process-8.png";
-import manufacturingProcessImage9 from "/img/manufacturing-process-9.png";
+import manufacturingProcessImage1 from "/img/manufacturing-process-1.webp";
+import manufacturingProcessImage2 from "/img/manufacturing-process-2.webp";
+import manufacturingProcessImage3 from "/img/manufacturing-process-3.webp";
+import manufacturingProcessImage4 from "/img/manufacturing-process-4.webp";
+import manufacturingProcessImage5 from "/img/manufacturing-process-5.webp";
+import manufacturingProcessImage6 from "/img/manufacturing-process-6.webp";
+import manufacturingProcessImage7 from "/img/manufacturing-process-7.webp";
+import manufacturingProcessImage8 from "/img/manufacturing-process-8.webp";
+import manufacturingProcessImage9 from "/img/manufacturing-process-9.webp";
 
 import ManufacturingProcessCard from "../atoms/ManufacturingProcessCard";
 import { useTranslationContext } from "../../context/TranslationContext";

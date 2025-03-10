@@ -1,8 +1,8 @@
 import Button from "../atoms/Button";
-import contactHeroImage1 from "/img/contact-hero-1.png";
-import contactHeroImage2 from "/img/contact-hero-2.png";
-import contactHeroImage1Responsive from "/img/contact-hero-image-1-responsive.png";
-import contactHeroImage2Responsive from "/img/contact-hero-image-2-responsive.png";
+import contactHeroImage1 from "/img/contact-hero-1.webp";
+import contactHeroImage2 from "/img/contact-hero-2.webp";
+import contactHeroImage1Responsive from "/img/contact-hero-image-1-responsive.webp";
+import contactHeroImage2Responsive from "/img/contact-hero-image-2-responsive.webp";
 import { TranslationProps } from "../../types/types";
 
 const ContactHeaderSection = (props: TranslationProps) => {

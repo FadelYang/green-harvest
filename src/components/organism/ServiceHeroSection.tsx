@@ -1,7 +1,7 @@
-import serviceHeroImage1 from "/img/service-hero-1.png";
-import serviceHeroImage2 from "/img/service-hero-2.png";
-import serviceHeroImage3 from "/img/service-hero-3.png";
-import serviceHeroImage4 from "/img/service-hero-4.png";
+import serviceHeroImage1 from "/img/service-hero-1.webp";
+import serviceHeroImage2 from "/img/service-hero-2.webp";
+import serviceHeroImage3 from "/img/service-hero-3.webp";
+import serviceHeroImage4 from "/img/service-hero-4.webp";
 import Button from "../atoms/Button";
 import { TranslationProps } from "../../types/types";
 

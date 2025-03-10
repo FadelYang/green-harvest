@@ -1,9 +1,9 @@
 import { useState } from "react";
 import { TranslationProps } from "../../types/types";
-import ourGalleryImage1 from "/img/our-gallery-image-1.png";
-import ourGalleryImage2 from "/img/our-gallery-image-2.png";
-import ourGalleryImage3 from "/img/our-gallery-image-3.png";
-import ourGalleryImage4 from "/img/our-gallery-image-4.png";
+import ourGalleryImage1 from "/img/our-gallery-image-1.webp";
+import ourGalleryImage2 from "/img/our-gallery-image-2.webp";
+import ourGalleryImage3 from "/img/our-gallery-image-3.webp";
+import ourGalleryImage4 from "/img/our-gallery-image-4.webp";
 import BaseModal from "../atoms/BaseModal";
 
 const galleryImages = [

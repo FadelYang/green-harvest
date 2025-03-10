@@ -1,7 +1,7 @@
 import indonesiaFlag from "/img/indonesia-flag.svg";
 import malaysiaFlag from "/img/malaysia-flag.svg";
-import indonesiaContactImage1 from "/img/indonesia-contact-image-2.png";
-import malaysiaContactImage1 from "/img/malaysia-contact-image.png";
+import indonesiaContactImage1 from "/img/indonesia-contact-image-2.webp";
+import malaysiaContactImage1 from "/img/malaysia-contact-image.webp";
 import { TranslationProps } from '../../types/types';
 
 type WhatsappContact = {

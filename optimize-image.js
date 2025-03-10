@@ -4,8 +4,8 @@ import imageminMozjpeg from "imagemin-mozjpeg";
 import imageminPngquant from "imagemin-pngquant";
 
 (async () => {
-  await imagemin(["public../assets/img/*.{jpg,png}"], {
-    destination: "public../assets/img/optimized",
+  await imagemin(["public/img/*.{jpg,png}"], {
+    destination: "public/img/optimized",
     plugins: [
       imageminWebp({ quality: 75 }), // Convert to WebP
       imageminMozjpeg({ quality: 75 }), // Optimize JPEGs

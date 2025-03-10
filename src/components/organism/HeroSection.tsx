@@ -3,8 +3,8 @@ import HeaderSection from "../atoms/HeaderSection";
 import HeroExpertiseItemCard from "../molecules/HeroExpertiseItemCard";
 import HeroMaklonExpertiseCardList from "../molecules/HeroMaklonExpertiseCardList";
 import arrowRight from "/img/arrowRight.svg";
-import heroImage from "/img/hero-image.png";
-import heroImageResponsive from "/img/hero-image-responsive.png";
+import heroImage from "/img/hero-image.webp";
+import heroImageResponsive from "/img/hero-image-responsive.webp";
 import { TranslationProps } from "../../types/types";
 import { Link } from "react-router-dom";
 

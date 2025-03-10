@@ -1,6 +1,6 @@
 import { TranslationProps } from "../../types/types";
 import Button from "../atoms/Button";
-import lastBannerImage from "/img/last-banner-image.png";
+import lastBannerImage from "/img/last-banner-image.webp";
 
 const LastBannerSection = (props: TranslationProps) => {
   const { t } = props;

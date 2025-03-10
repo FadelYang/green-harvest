@@ -1,7 +1,7 @@
 import arrowRight from "/img/arrowRight.svg";
 import Button from "../atoms/Button";
-import contactHeroImage1 from "/img/contact-hero-1.png";
-import contactHeroImage2 from "/img/contact-hero-2.png";
+import contactHeroImage1 from "/img/contact-hero-1.webp";
+import contactHeroImage2 from "/img/contact-hero-2.webp";
 
 const ContactHeroSection = () => {
   return (

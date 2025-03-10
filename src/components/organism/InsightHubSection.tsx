@@ -1,9 +1,9 @@
 import Button from "../atoms/Button";
 import ArticleCard from "../molecules/ArticleCard";
 import arrowRight from "/img/arrowRight.svg";
-import articleImage1 from "/img/article-image-1.png";
-import articleImage2 from "/img/article-image-2.png";
-import articleImage3 from "/img/article-image-3.png";
+import articleImage1 from "/img/article-image-1.webp";
+import articleImage2 from "/img/article-image-2.webp";
+import articleImage3 from "/img/article-image-3.webp";
 import { TranslationProps } from "../../types/types";
 
 const insightHubArticleData = [
