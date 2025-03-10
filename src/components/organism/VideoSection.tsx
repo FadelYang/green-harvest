@@ -4,15 +4,24 @@ import arrowRight from "/img/arrowRight.svg";
 import { TranslationProps } from "../../types/types";
 import { useVideoAutoPlayback } from "../../hooks/useVideoAutoPlayback";
 import { Link } from "react-router-dom";
+import { useEffect, useRef } from 'react';
 
 const VideoSection = (props: TranslationProps) => {
   const { t } = props;
-  const videoSrc = "/video/output.m3u8";
+  const videoSrc = "/video/index.m3u8";
   const [containerRef, videoRef] = useVideoAutoPlayback(videoSrc, {
     root: null,
     rootMargin: "0px",
     threshold: 0.1,
   });
+  const hiddenButtonRef = useRef<HTMLButtonElement | null>(null);
+
+  useEffect(() => {
+    // Automatically "click" the hidden button when the page loads
+    if (hiddenButtonRef.current) {
+      hiddenButtonRef.current.click();
+    }
+  }, []);
 
   return (
     <>
@@ -46,8 +55,8 @@ const VideoSection = (props: TranslationProps) => {
             className="w-full h-full xl:pr-24 xl:px-0 px-6 z-30"
             ref={containerRef}
           >
-            <video width="100%" ref={videoRef} preload="none">
-              <source type="video/mp4" />
+            <video width="100%" ref={videoRef} preload='auto' muted={true} controls>
+            <source type="application/x-mpegURL" />
             </video>
           </div>
           <div className="relative">
