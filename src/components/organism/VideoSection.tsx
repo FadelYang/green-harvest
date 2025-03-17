@@ -4,11 +4,11 @@ import arrowRight from "/img/arrowRight.svg";
 import { TranslationProps } from "../../types/types";
 import { useVideoAutoPlayback } from "../../hooks/useVideoAutoPlayback";
 import { Link } from "react-router-dom";
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef } from "react";
 
 const VideoSection = (props: TranslationProps) => {
   const { t } = props;
-  const videoSrc = "/video/index.m3u8";
+  const videoSrc = "/video/master.m3u8";
   const [containerRef, videoRef] = useVideoAutoPlayback(videoSrc, {
     root: null,
     rootMargin: "0px",
@@ -51,14 +51,21 @@ const VideoSection = (props: TranslationProps) => {
               </div>
             </div>
           </div>
-          <div
-            className="w-full h-full xl:pr-24 xl:px-0 px-6 z-30"
-            ref={containerRef}
-          >
-            <video width="100%" ref={videoRef} preload='auto' muted={true} controls>
-            <source type="application/x-mpegURL" />
-            </video>
+          <div className='flex justify-center'>
+            <div
+              className="flex justify-center items-center w-[345px] xl:w-full h-[217px] xl:h-full bg-black xl:pr-24 xl:px-0 px-6 z-30"
+              ref={containerRef}
+            >
+              <video
+                width="100%"
+                ref={videoRef}
+                preload="auto"
+                muted
+                controls
+              />
+            </div>
           </div>
+
           <div className="relative">
             <div className="absolute right-0 xl:-mt-24 -mt-16 z-10 xl:w-[524px] w-[150px] xl:h-[100px] h-[42px] bg-yellow-500 opacity-80"></div>
           </div>
