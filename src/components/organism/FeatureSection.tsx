@@ -10,8 +10,6 @@ import isoqarRegisteredCertificationLogo from "/img/isoqar-registered-certificat
 import tsi22000CertificationLogo from "/img/tsi-22000-certification.webp";
 import tsi9001CertificationLogo from "/img/tsi-9001-certification.webp";
 import featureExperience1 from "/img/feature-experience-1.webp";
-import featureExperience1Responsive from "/img/feature-experience-1-responsive.webp";
-import featureExperience2Responsive from "/img/feature-experience-2-responsive.webp";
 import featureExperience2 from "/img/feature-experience-2.webp";
 import featureExperience3 from "/img/feature-experience-3.webp";
 import Button from "../atoms/Button";
@@ -81,24 +79,24 @@ const FeatureSection = (props: TranslationProps) => {
                 <img
                   src={featureExperience1}
                   alt=""
-                  className="xl:block hidden"
+                  className="xl:block hidden w-[365px] h-[364px] object-cover"
                 />
                 <img
-                  src={featureExperience1Responsive}
+                  src={featureExperience1}
                   alt=""
-                  className="xl:hidden block"
+                  className="xl:hidden block w-[254px] h-[187px] object-cover"
                 />
                 <div className="ps-24 xl:ps-48 pr-6 xl:pr-0 xl:-mt-56 -mt-28">
                   <img
                     src={featureExperience2}
                     alt=""
-                    className="xl:block hidden"
+                    className="xl:block hidden w-[313px] h-[314px] object-cover"
                   />
                   <div className="flex justify-end">
                     <img
-                      src={featureExperience2Responsive}
+                      src={featureExperience2}
                       alt=""
-                      className="xl:hidden block min-w-[219px] min-h-[166px]"
+                      className="xl:hidden block w-[219px] h-[166px] object-cover"
                     />
                   </div>
                 </div>
@@ -132,7 +130,7 @@ const FeatureSection = (props: TranslationProps) => {
                   </div>
                 </div>
                 <div className="px-6">
-                  <img src={featureExperience3} alt="" className="xl:pr-12" />
+                  <img src={featureExperience3} alt="" className="xl:pr-12 md:w-[609px] md:h-[400px] w-[545px] h-[242px] object-cover" />
                 </div>
               </div>
               <div className="relative">
