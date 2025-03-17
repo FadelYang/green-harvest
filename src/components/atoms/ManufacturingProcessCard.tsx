@@ -55,7 +55,7 @@ const ManufacturingProcessCard = (props: ManufacturingProcessCardProps) => {
             <img
               src={imageThumbnail}
               alt=""
-              className="object-cover w-[360px] xl:h-full h-[192px]"
+              className="object-cover w-full  xl:h-full h-[192px]"
             />
           </div>
         </div>
