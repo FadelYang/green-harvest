@@ -1,41 +1,18 @@
 import { useState } from "react";
 import arrowUpRight from "/img/arrowUpright.svg";
 
-import product1Open from "/img/product-1-open.webp";
-import product1Close from "/img/product-1-close.webp";
-import product1OpenResponsive from "/img/product-1-open-responsive.webp";
-import product1CloseResponsive from "/img/product-1-close-responsive.webp";
-
-import product2Open from "/img/product-2-open.webp";
-import product2Close from "/img/product-2-close.webp";
-import product2OpenResponsive from "/img/product-2-open-responsive.webp";
-import product2CloseResponsive from "/img/product-2-close-responsive.webp";
-
-import product3Open from "/img/product-3-open.webp";
-import product3OpenResponsive from "/img/product-3-open-responsive.webp";
-import product3Close from "/img/product-3-close.webp";
-import product3CloseResponsive from "/img/product-3-close-responsive.webp";
-
+import mealReplacement from "/img/meal-replacement.webp";
+import boxPangan from "/img/box-pangan.webp";
+import boxKosmetik from "/img/box-kosmetik.webp";
 import Button from "../atoms/Button";
 import { useNavigate } from "react-router-dom";
 import { TranslationProps } from "../../types/types";
 import useImagePreloader from "../../hooks/useImagePreloader";
 
 const preloadImagesList = [
-  product1Open,
-  product1Close,
-  product1OpenResponsive,
-  product1CloseResponsive,
-
-  product2Open,
-  product2Close,
-  product2OpenResponsive,
-  product2CloseResponsive,
-
-  product3Open,
-  product3Close,
-  product3OpenResponsive,
-  product3CloseResponsive,
+  mealReplacement,
+  boxPangan,
+  boxKosmetik
 ];
 
 const ProductSection = (props: TranslationProps) => {
@@ -47,10 +24,8 @@ const ProductSection = (props: TranslationProps) => {
   const products = [
     {
       id: 1,
-      open: product1Open,
-      openResponsive: product1OpenResponsive,
-      close: product1Close,
-      closeResponsive: product1CloseResponsive,
+      img: mealReplacement,
+      bgColor: "bg-[#bbf7d0]",
       closeText: t("home.product.1.closeText"),
       openText: {
         title: t("home.product.1.openText.title"),
@@ -61,10 +36,8 @@ const ProductSection = (props: TranslationProps) => {
     },
     {
       id: 2,
-      open: product2Open,
-      openResponsive: product2OpenResponsive,
-      close: product2Close,
-      closeResponsive: product2CloseResponsive,
+      img: boxPangan,
+      bgColor: "bg-[#7dd3fc]",
       closeText: t("home.product.2.closeText"),
       openText: {
         title: t("home.product.2.openText.title"),
@@ -75,10 +48,8 @@ const ProductSection = (props: TranslationProps) => {
     },
     {
       id: 3,
-      open: product3Open,
-      openResponsive: product3OpenResponsive,
-      close: product3Close,
-      closeResponsive: product3CloseResponsive,
+      img: boxKosmetik,
+      bgColor: "bg-[#fef08a]",
       closeText: t("home.product.3.closeText"),
       openText: {
         title: t("home.product.3.openText.title"),
@@ -110,25 +81,32 @@ const ProductSection = (props: TranslationProps) => {
               >
                 {/* Product Image */}
                 <div className="relative">
-                  <img
-                    src={
+                  <div
+                    className={`${product.bgColor} ${
                       activeProduct === product.id
-                        ? product.open
-                        : product.close
-                    }
-                    alt={`Product ${product.id}`}
-                    className="xl:block hidden"
-                  />
-                  <img
-                    src={
-                      activeProduct === product.id
-                        ? product.openResponsive
-                        : product.closeResponsive
-                    }
-                    alt={`Product ${product.id}`}
-                    className="xl:hidden block w-screen"
-                    loading='lazy'
-                  />
+                        ? "xl:w-[940px] xl:h-[540px] w-[345px] h-[220px]"
+                        : "xl:w-[136px] xl:h-[540px] w-[345px] h-[145px]"
+                    }`}
+                  >
+                    <div className="flex justify-center items-center h-full">
+                      <img
+                        src={product.img}
+                        alt={`Product ${product.id}`}
+                        className={`${
+                          activeProduct === product.id
+                            ? "xl:w-[650px] xl:h-[500px] w-[200px] h-[200px]"
+                            : "xl:w-[400px] xl:h-[300px] w-[150px] h-[150px]"
+                        } object-cover`}
+                      />
+                    </div>
+                    <div
+                      className={`absolute bottom-0 left-0 w-full ${
+                        activeProduct
+                          ? "h-5/6 bg-gradient-to-t from-neutral-800 to-transparent"
+                          : "h-full bg-black opacity-70"
+                      }`}
+                    ></div>
+                  </div>
 
                   {/* Text overlay responsive */}
                   <div className="absolute inset-0 items-end justify-start text-start xl:hidden flex">
