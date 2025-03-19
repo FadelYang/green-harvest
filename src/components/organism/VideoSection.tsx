@@ -53,7 +53,7 @@ const VideoSection = (props: TranslationProps) => {
           </div>
           <div className='flex justify-center'>
             <div
-              className="flex justify-center items-center w-[345px] xl:w-full h-[217px] xl:h-full bg-black xl:pr-24 xl:px-0 px-6 z-30"
+              className="flex justify-center items-center w-[345px] md:bg-transparent bg-black  md:w-full h-[217px] md:h-full xl:pr-24 xl:px-0 px-6 z-30"
               ref={containerRef}
             >
               <video
