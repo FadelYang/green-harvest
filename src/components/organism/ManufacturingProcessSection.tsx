@@ -18,18 +18,22 @@ const ManufacturingProcessSection = (props: TranslationProps) => {
             </p>
           </div>
           <div className="xl:block hidden">
-            <Button variant="primary-button">
-              {t("home.hero.consultNowButton")}
-            </Button>
+            <a href="https://tanya.web.id/harvest-maklon-discussion" target="_blank">
+              <Button variant="primary-button">
+                {t("home.hero.consultNowButton")}
+              </Button>
+            </a>
           </div>
         </div>
         <div className="">
           <ManufacturingProcessList />
         </div>
         <div className="xl:hidden ">
-          <Button variant="primary-button" className='w-full'>
-            {t("home.hero.consultNowButton")}
-          </Button>
+          <a href="https://tanya.web.id/harvest-maklon-discussion" target="_blank">
+            <Button variant="primary-button" className="w-full">
+              {t("home.hero.consultNowButton")}
+            </Button>
+          </a>
         </div>
       </div>
     </>

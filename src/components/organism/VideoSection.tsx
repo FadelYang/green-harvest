@@ -1,17 +1,27 @@
-import { Trans } from 'react-i18next';
+import { Trans } from "react-i18next";
 import Button from "../atoms/Button";
 import arrowRight from "/img/arrowRight.svg";
-import video from "/video/video.mp4";
-import { TranslationProps } from '../../types/types';
-import { useVideoAutoPlayback } from '../../hooks/useVideoAutoPlayback';
+import { TranslationProps } from "../../types/types";
+import { useVideoAutoPlayback } from "../../hooks/useVideoAutoPlayback";
+import { Link } from "react-router-dom";
+import { useEffect, useRef } from "react";
 
 const VideoSection = (props: TranslationProps) => {
   const { t } = props;
-  const [containerRef, videoRef] = useVideoAutoPlayback({
+  const videoSrc = "/video/master.m3u8";
+  const [containerRef, videoRef] = useVideoAutoPlayback(videoSrc, {
     root: null,
-    rootMargin: '0px',
-    threshold: 0.1
+    rootMargin: "0px",
+    threshold: 0.1,
   });
+  const hiddenButtonRef = useRef<HTMLButtonElement | null>(null);
+
+  useEffect(() => {
+    // Automatically "click" the hidden button when the page loads
+    if (hiddenButtonRef.current) {
+      hiddenButtonRef.current.click();
+    }
+  }, []);
 
   return (
     <>
@@ -29,20 +39,33 @@ const VideoSection = (props: TranslationProps) => {
                 />
               </p>
               <div className="flex justify-start self-start w-full px-6">
-                <Button
-                  paddingSize="px-6 py-4"
-                  className="flex gap-3 primary-text font-medium text-base border-b border-[#015F26] xl:justify-start justify-center w-full xl:w-auto"
-                >
-                  {t('home.video.exploreOurProfileButton')} <img src={arrowRight} alt="" />
-                </Button>
+                <Link to={"/about"}>
+                  <Button
+                    paddingSize="px-6 py-4"
+                    className="flex gap-3 primary-text font-medium text-base border-b border-[#015F26] xl:justify-start justify-center w-full xl:w-auto"
+                  >
+                    {t("home.video.exploreOurProfileButton")}{" "}
+                    <img src={arrowRight} alt="" />
+                  </Button>
+                </Link>
               </div>
             </div>
           </div>
-          <div className="w-full h-full xl:pr-24 xl:px-0 px-6 z-30" ref={containerRef}>
-            <video width="100%" ref={videoRef}>
-              <source src={video} type="video/mp4" />
-            </video>
+          <div className='flex justify-center'>
+            <div
+              className="flex justify-center items-center w-[345px] xl:w-full h-[217px] xl:h-full bg-black xl:pr-24 xl:px-0 px-6 z-30"
+              ref={containerRef}
+            >
+              <video
+                width="100%"
+                ref={videoRef}
+                preload="auto"
+                muted
+                controls
+              />
+            </div>
           </div>
+
           <div className="relative">
             <div className="absolute right-0 xl:-mt-24 -mt-16 z-10 xl:w-[524px] w-[150px] xl:h-[100px] h-[42px] bg-yellow-500 opacity-80"></div>
           </div>

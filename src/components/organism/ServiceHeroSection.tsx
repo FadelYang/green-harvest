@@ -1,7 +1,7 @@
-import serviceHeroImage1 from "/img/service-hero-1.png";
-import serviceHeroImage2 from "/img/service-hero-2.png";
-import serviceHeroImage3 from "/img/service-hero-3.png";
-import serviceHeroImage4 from "/img/service-hero-4.png";
+import serviceHeroImage1 from "/img/service-hero-1.webp";
+import serviceHeroImage2 from "/img/service-hero-2.webp";
+import serviceHeroImage3 from "/img/service-hero-3.webp";
+import serviceHeroImage4 from "/img/service-hero-4.webp";
 import Button from "../atoms/Button";
 import { TranslationProps } from "../../types/types";
 
@@ -20,13 +20,15 @@ const ServiceHeroSection = (props: TranslationProps) => {
           </h2>
         </div>
         <div className="px-24 z-10 xl:block hidden">
-          <Button variant="primary-button"> {t("service.hero.getFreeConsultationButton")}</Button>
+          <a href="https://tanya.web.id/harvest-maklon-discussion" target='_blank'>
+            <Button variant="primary-button"> {t("service.hero.getFreeConsultationButton")}</Button>
+          </a>
         </div>
         <div className="flex md:gap-3 gap-5 xl:-mt-16 overflow-hidden">
-          <img src={serviceHeroImage1} alt="" className='md:w-full w-[255px] md:ml:0 -ml-14'/>
-          <img src={serviceHeroImage2} alt="" className='md:w-full w-[227px]'/>
-          <img src={serviceHeroImage3} alt="" className='xl:block hidden'/>
-          <img src={serviceHeroImage4} alt="" className='xl:block hidden'/>
+          <img loading='lazy' src={serviceHeroImage1} alt="" className='md:w-full w-[255px] md:ml:0 -ml-14'/>
+          <img loading='lazy' src={serviceHeroImage2} alt="" className='md:w-full w-[227px]'/>
+          <img loading='lazy' src={serviceHeroImage3} alt="" className='xl:block hidden'/>
+          <img loading='lazy' src={serviceHeroImage4} alt="" className='xl:block hidden'/>
         </div>
       </div>
     </>

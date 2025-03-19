@@ -1,19 +1,17 @@
 import HeaderSection from "../atoms/HeaderSection";
-import badanPonCertificationLogo from "/img/badan-pom-certification.png";
-import cpkbCertificationLogo from "/img/cpkb-certification.png";
-import cpotbCertificationLogo from "/img/cpotb-certification.png";
-import cppobCertificationLogo from "/img/cppob-certification.png";
-import halalCertificationLogo from "/img/halal-certification.png";
-import isoqarGmpCertificationLogo from "/img/isoqar-gmp-certification.png";
-import isoqarHaccpCertificationLogo from "/img/isoqar-haccp-certification.png";
-import isoqarRegisteredCertificationLogo from "/img/isoqar-registered-certification.png";
-import tsi22000CertificationLogo from "/img/tsi-22000-certification.png";
-import tsi9001CertificationLogo from "/img/tsi-9001-certification.png";
-import featureExperience1 from "/img/feature-experience-1.png";
-import featureExperience1Responsive from "/img/feature-experience-1-responsive.png";
-import featureExperience2Responsive from "/img/feature-experience-2-responsive.png";
-import featureExperience2 from "/img/feature-experience-2.png";
-import featureExperience3 from "/img/feature-experience-3.png";
+import badanPonCertificationLogo from "/img/badan-pom-certification.webp";
+import cpkbCertificationLogo from "/img/cpkb-certification.webp";
+import cpotbCertificationLogo from "/img/cpotb-certification.webp";
+import cppobCertificationLogo from "/img/cppob-certification.webp";
+import halalCertificationLogo from "/img/halal-certification.webp";
+import isoqarGmpCertificationLogo from "/img/isoqar-gmp-certification.webp";
+import isoqarHaccpCertificationLogo from "/img/isoqar-haccp-certification.webp";
+import isoqarRegisteredCertificationLogo from "/img/isoqar-registered-certification.webp";
+import tsi22000CertificationLogo from "/img/tsi-22000-certification.webp";
+import tsi9001CertificationLogo from "/img/tsi-9001-certification.webp";
+import featureExperience1 from "/img/feature-experience-1.webp";
+import featureExperience2 from "/img/feature-experience-2.webp";
+import featureExperience3 from "/img/feature-experience-3.webp";
 import Button from "../atoms/Button";
 import { Trans } from "react-i18next";
 import { TranslationProps } from "../../types/types";
@@ -59,7 +57,13 @@ const FeatureSection = (props: TranslationProps) => {
               <div className="flex xl:justify-center justify-start">
                 <div className="grid grid-cols-4 xl:grid-cols-5 xl:min-w-[675px] xl:gap-5 gap-1">
                   {certificationLogos.map((certificationLogo, index) => (
-                    <img src={certificationLogo} alt="" key={index} className='sm:w-full w-2/3'/>
+                    <img
+                      src={certificationLogo}
+                      alt=""
+                      key={index}
+                      className="sm:w-full w-2/3"
+                      loading='lazy'
+                    />
                   ))}
                 </div>
               </div>
@@ -75,24 +79,24 @@ const FeatureSection = (props: TranslationProps) => {
                 <img
                   src={featureExperience1}
                   alt=""
-                  className="xl:block hidden"
+                  className="xl:block hidden w-[365px] h-[364px] object-cover"
                 />
                 <img
-                  src={featureExperience1Responsive}
+                  src={featureExperience1}
                   alt=""
-                  className="xl:hidden block"
+                  className="xl:hidden block w-[254px] h-[187px] object-cover"
                 />
                 <div className="ps-24 xl:ps-48 pr-6 xl:pr-0 xl:-mt-56 -mt-28">
                   <img
                     src={featureExperience2}
                     alt=""
-                    className="xl:block hidden"
+                    className="xl:block hidden w-[313px] h-[314px] object-cover"
                   />
                   <div className="flex justify-end">
                     <img
-                      src={featureExperience2Responsive}
+                      src={featureExperience2}
                       alt=""
-                      className="xl:hidden block min-w-[219px] min-h-[166px]"
+                      className="xl:hidden block w-[219px] h-[166px] object-cover"
                     />
                   </div>
                 </div>
@@ -126,7 +130,7 @@ const FeatureSection = (props: TranslationProps) => {
                   </div>
                 </div>
                 <div className="px-6">
-                  <img src={featureExperience3} alt="" className="xl:pr-12" />
+                  <img src={featureExperience3} alt="" className="xl:pr-12 md:w-[609px] md:h-[400px] w-[545px] h-[242px] object-cover" />
                 </div>
               </div>
               <div className="relative">
@@ -135,9 +139,11 @@ const FeatureSection = (props: TranslationProps) => {
             </div>
           </div>
           <div className="flex justify-center px-6 xl:px-0">
-            <Button variant="primary-button" className='w-full xl:w-auto'>
-              {t("home.feature.consultNowButton")}
-            </Button>
+            <a href="https://tanya.web.id/harvest-maklon-discussion" target="_blank">
+              <Button variant="primary-button" className="w-full xl:w-auto">
+                {t("home.feature.consultNowButton")}
+              </Button>
+            </a>
           </div>
         </div>
       </div>

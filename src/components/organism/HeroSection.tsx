@@ -3,9 +3,10 @@ import HeaderSection from "../atoms/HeaderSection";
 import HeroExpertiseItemCard from "../molecules/HeroExpertiseItemCard";
 import HeroMaklonExpertiseCardList from "../molecules/HeroMaklonExpertiseCardList";
 import arrowRight from "/img/arrowRight.svg";
-import heroImage from "/img/hero-image.png";
-import heroImageResponsive from "/img/hero-image-responsive.png";
+import heroImage from "/img/hero-image.webp";
+import heroImageResponsive from "/img/hero-image-responsive.webp";
 import { TranslationProps } from "../../types/types";
+import { Link } from "react-router-dom";
 
 const HeroSection = (props: TranslationProps) => {
   const { t } = props;
@@ -25,29 +26,35 @@ const HeroSection = (props: TranslationProps) => {
             </h2>
             <div className="flex flex-col gap-4">
               <div className="z-10">
-                <Button variant="primary-button" className="w-full xl:w-auto">
-                  {t("home.hero.consultNowButton")}
-                </Button>
+                <a href="https://tanya.web.id/harvest-maklon-discussion" target="_blank">
+                  <Button variant="primary-button" className="w-full xl:w-auto">
+                    {t("home.hero.consultNowButton")}
+                  </Button>
+                </a>
               </div>
               <div className="text-center block xl:hidden">
-                <Button
-                  paddingSize="px-2 py-4"
-                  className="flex gap-3 primary-text font-medium text-base border-b border-[#015F26] w-full xl:w-auto justify-center"
-                >
-                  {t("home.hero.exploreOurExpertiseButton")}{" "}
-                  <img src={arrowRight} alt="" />
-                </Button>
+                <Link to={"/service"}>
+                  <Button
+                    paddingSize="px-2 py-4"
+                    className="flex gap-3 primary-text font-medium text-base border-b border-[#015F26] w-full xl:w-auto justify-center"
+                  >
+                    {t("home.hero.exploreOurExpertiseButton")}{" "}
+                    <img src={arrowRight} alt="" loading='lazy'/>
+                  </Button>
+                </Link>
               </div>
             </div>
           </div>
           <div className="flex-col gap-5 items-center hidden xl:flex">
-            <Button
-              paddingSize="px-2 py-4"
-              className="flex gap-3 primary-text font-medium text-base border-b border-[#015F26]"
-            >
-              {t("home.hero.exploreOurExpertiseButton")}{" "}
-              <img src={arrowRight} alt="" />
-            </Button>
+            <Link to={"/service"}>
+              <Button
+                paddingSize="px-2 py-4"
+                className="flex gap-3 primary-text font-medium text-base border-b border-[#015F26]"
+              >
+                {t("home.hero.exploreOurExpertiseButton")}{" "}
+                <img src={arrowRight} alt="" />
+              </Button>
+            </Link>
             <div className="z-10">
               <HeroExpertiseItemCard className="" />
             </div>
@@ -89,18 +96,22 @@ const HeroSection = (props: TranslationProps) => {
           </div>
           <div className="flex xl:flex-row flex-col justify-center gap-4">
             <div>
-              <Button variant="primary-button" className='w-full xl:w-auto'>
-                {t("home.hero.consultNowButton")}
-              </Button>
+              <a href="https://tanya.web.id/harvest-maklon-discussion" target="_blank">
+                <Button variant="primary-button" className="w-full xl:w-auto">
+                  {t("home.hero.consultNowButton")}
+                </Button>
+              </a>
             </div>
             <div>
-              <Button
-                paddingSize="px-6 py-4"
-                className="flex gap-3 primary-text font-medium text-base border-b border-[#015F26] w-full xl:w-auto justify-center"
-              >
-                {t("home.hero.viewMoreOurExpertiseButton")}{" "}
-                <img src={arrowRight} alt="" className='xl:block hidden'/>
-              </Button>
+              <Link to={"/service"}>
+                <Button
+                  paddingSize="px-6 py-4"
+                  className="flex gap-3 primary-text font-medium text-base border-b border-[#015F26] w-full xl:w-auto justify-center"
+                >
+                  {t("home.hero.viewMoreOurExpertiseButton")}{" "}
+                  <img src={arrowRight} alt="" className="xl:block hidden" />
+                </Button>
+              </Link>
             </div>
           </div>
         </div>

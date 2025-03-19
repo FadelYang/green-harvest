@@ -1,4 +1,4 @@
-import footerLogo from "/img/footer-logo.png";
+import footerLogo from "/img/footer-logo.webp";
 import instagramIcon from "/img/instagramIcon.svg";
 import twitterIcon from "/img/twitterIcon.svg";
 import facebookIcon from "/img/facebookIcon.svg";
@@ -7,6 +7,8 @@ import whatsAppIcon from "/img/whatsappIcon.svg";
 import envelopIcon from "/img/envelopIcon.svg";
 // import { useTranslationContext } from "../../context/TranslationContext";
 import { TFunction } from "i18next";
+import { Link } from "react-router-dom";
+import useScrollToSection from "../../hooks/useScrollToSection";
 
 type FooterProps = {
   t: TFunction<"translation", undefined>;
@@ -14,23 +16,27 @@ type FooterProps = {
 
 const Footer = (props: FooterProps) => {
   const { t } = props;
+  const { scrollToSection } = useScrollToSection();
 
   return (
     <div className="bg-black xl:py-[72px] -mb-6">
       <div className=" text-white xl:px-24 p-6 mx-auto max-w-[1444px]">
         <div className="flex xl:flex-row flex-col xl:gap-24 gap-[74px]">
           {/* First column */}
-          <div className="max-w-[212px] flex flex-col justify-between h-full gap-7">
-            <img src={footerLogo} alt="" className="w-min-[212px]" />
-            <p className="xl:block hidden text-[16px]">
-              {t("footer.aboutHarvest")}
-            </p>
-            <div className="flex gap-2">
-              <img src={instagramIcon} alt="" />
-              <img src={twitterIcon} alt="" />
-              <img src={facebookIcon} alt="" />
+          <div className='flex md:justify-start justify-center'>
+            <div className="max-w-[212px] flex flex-col justify-between h-full gap-7">
+              <img src={footerLogo} alt="" className="w-min-[212px]" />
+              <p className="xl:block hidden text-[16px]">
+                {t("footer.aboutHarvest")}
+              </p>
+              <div className="flex gap-2 md:justify-start justify-center">
+                <img src={instagramIcon} alt="" />
+                <img src={twitterIcon} alt="" />
+                <img src={facebookIcon} alt="" />
+              </div>
             </div>
           </div>
+
           {/* Second Coulnm */}
           <div className="flex flex-col xl:max-w-[415px]">
             <div className="flex xl:flex-row flex-col xl:justify-between xl:gap-0 gap-[74px]">
@@ -40,13 +46,15 @@ const Footer = (props: FooterProps) => {
                 </p>
                 <ul className="flex flex-col gap-4">
                   <li>
-                    <a href="#">{t("footer.usefulLink.home")}</a>
+                    <Link to="/">{t("footer.usefulLink.home")}</Link>
                   </li>
                   <li>
-                    <a href="#">{t("footer.usefulLink.valuedClients")}</a>
+                    {/* <Link to="#">{t("footer.usefulLink.valuedClients")}</Link> */}
                   </li>
                   <li>
-                    <a href="#">{t("footer.usefulLink.insightHub")}</a>
+                    <button onClick={() => scrollToSection("insight-hub", "/")}>
+                      {t("navbar.insightHub")}
+                    </button>
                   </li>
                 </ul>
               </div>
@@ -56,13 +64,15 @@ const Footer = (props: FooterProps) => {
                 </p>
                 <ul className="flex flex-col gap-4">
                   <li>
-                    <a href="#">{t("footer.ourCompany.about")}</a>
+                    <Link to="/about">{t("footer.ourCompany.about")}</Link>
                   </li>
                   <li>
-                    <a href="#">{t("footer.ourCompany.ourExpertise")}</a>
+                    <Link to="/service">
+                      {t("footer.ourCompany.ourExpertise")}
+                    </Link>
                   </li>
                   <li>
-                    <a href="#">{t("footer.ourCompany.contact")}</a>
+                    <Link to="/contact">{t("footer.ourCompany.contact")}</Link>
                   </li>
                 </ul>
               </div>

@@ -119,8 +119,8 @@
       },
       "3": {
         "id": "3",
-        "title": "Pembuatan Sampel",
-        "openTitle": "Pembuatan Sampel",
+        "title": "Persiapan Sampel",
+        "openTitle": "Persiapan Sampel",
         "description": "Kami memproduksi sampel produk sesuai dengan konsep & formulasi terbaik yang anda inginkan."
       },
       "4": {
@@ -223,6 +223,7 @@
       "viewMoreArticleButton": "Lihat Artikel Lainnya"
     },
     "qna": {
+      "header": "Yang Sering Ditanyakan",
       "1": {
         "id": 1,
         "question": "Berapa minimum order (MOQ) di Harvest Group",
@@ -355,43 +356,43 @@
     },
     "drink": {
       "hero": {
-        "header": "Private Label Powder Drink Product Maklon BPOM Certified",
-        "subHeader": "Your Partner in Powder Drink Manufacturing. As Indonesia’s leading beverage maklon, we specialize in producing a wide range of premium powder drink products, including protein shakes, meal replacements, and collagen drinks. Launch your brand with confidence, ensuring your products meet BPOM and Halal MUI standards—customized under your label from start to finish.",
-        "bookAConsultationButton": "Book A Consultation"
+        "header": "Produk Minuman Bubuk Private Label Maklon Bersertifikat BPOM",
+        "subHeader": "Mitra Anda dalam Pembuatan Minuman Serbuk. Sebagai produsen minuman terkemuka di Indonesia, kami memiliki spesialisasi dalam memproduksi berbagai macam produk minuman serbuk premium, termasuk protein shake, pengganti makanan, dan minuman kolagen. Luncurkan merek Anda dengan percaya diri, kami memastikan produk Anda memenuhi standar BPOM dan Halal MUI—semuanya dengan merek Anda sendiri.",
+        "bookAConsultationButton": "Booking Konsultasi"
       },
       "categoryId": 2,
       "categoryName": "Drink",
-      "listSectionHeading": "Which Powder Drink Products Can Be Makloned At Harvest Group?",
+      "listSectionHeading": "Produk Minuman Powder Apa Saja Yang Dapat Di Maklonkan Di Harvest Group?",
       "products": {
         "1": {
           "productId": 4,
-          "productName": "Collagen Drink",
-          "productDescription": "Collagen drinks with antioxidants tighten skin, reduce wrinkles, and regenerate skin cells."
+          "productName": "Minuman Kolagen",
+          "productDescription": "Minuman kolagen dengan antioksidan mengencangkan kulit, mengurangi kerutan, dan meregenerasi sel kulit."
         },
         "2": {
           "productId": 5,
-          "productName": "Meal Replacement",
-          "productDescription": "Diet meal replacement drinks like Added Oat, Fiber, Malt, Soy Protein Isolate, etc."
+          "productName": "Minuman Pengganti Makanan",
+          "productDescription": "Minuman pengganti makanan diet seperti Added Oat, Fiber, Malt, Soy Protein Isolate, dll."
         },
         "3": {
           "productId": 6,
-          "productName": "Colostrum Milk Powder",
-          "productDescription": "Colostrum milk powder with almond flavor: anti-aging, slimming, and boosts immunity."
+          "productName": "Susu Bubuk Kolostrum",
+          "productDescription": "Susu bubuk kolostrum rasa almond: anti penuaan, melangsingkan, dan meningkatkan kekebalan tubuh."
         },
         "4": {
           "productId": 7,
-          "productName": "Fitness Supplement",
-          "productDescription": "Maklon fitness supplement drinks like whey protein and milk for athletes and workouts to maximize muscle growth."
+          "productName": "Suplemen Kebugaran",
+          "productDescription": "Minuman suplemen kebugaran Maklon seperti protein whey dan susu untuk atlet dan olahraga untuk memaksimalkan pertumbuhan otot."
         },
         "5": {
           "productId": 8,
-          "productName": "Fiber Drink",
-          "productDescription": "A fiber-rich drink blend with natural fruit extracts for promoting weight loss, digestive health, and overall health concern."
+          "productName": "Minuman Fiber",
+          "productDescription": "Campuran minuman kaya serat dengan ekstrak buah alami untuk meningkatkan penurunan berat badan, kesehatan pencernaan, dan masalah kesehatan secara keseluruhan."
         },
         "6": {
           "productId": 9,
-          "productName": "Adult Stamina",
-          "productDescription": "Adult Stamina drinks, including Stamina Drink and Coffee Stamina, are made from natural herbal extracts to effectively boost men's stamina."
+          "productName": "Stamina Dewasa",
+          "productDescription": "Minuman Stamina dewasa antara lain Stamina Drink dan Coffee Stamina terbuat dari ekstrak herbal alami yang efektif meningkatkan stamina pria."
         }
       }
     },

@@ -1,7 +1,7 @@
 import indonesiaFlag from "/img/indonesia-flag.svg";
 import malaysiaFlag from "/img/malaysia-flag.svg";
-import indonesiaContactImage1 from "/img/indonesia-contact-image.png";
-import malaysiaContactImage1 from "/img/malaysia-contact-image.png";
+import indonesiaContactImage1 from "/img/indonesia-contact-image-2.webp";
+import malaysiaContactImage1 from "/img/malaysia-contact-image.webp";
 import { TranslationProps } from '../../types/types';
 
 type WhatsappContact = {
@@ -21,6 +21,7 @@ type Image = {
 
 type CountryAddress = {
   name: string;
+  mapHref: string;
   flag: string;
   isFactory: boolean;
   fullAddress: string[];
@@ -36,6 +37,7 @@ const useAddresses = (props: TranslationProps) => {
   const addresses: Record<string, CountryAddress> = {
     indonesia: {
       name: "Indonesia",
+      mapHref: "https://maps.app.goo.gl/9vyszBvcPFM41tmT9",
       flag: indonesiaFlag,
       isFactory: false,
       fullAddress: [
@@ -53,6 +55,7 @@ const useAddresses = (props: TranslationProps) => {
     },
     malaysia: {
       name: "Malaysia",
+      mapHref: "https://maps.app.goo.gl/9vyszBvcPFM41tmT9",
       flag: malaysiaFlag,
       isFactory: true,
       fullAddress: [

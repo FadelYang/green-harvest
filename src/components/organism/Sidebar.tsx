@@ -42,12 +42,14 @@ const Sidebar = (props: SidebarProps) => {
                     <Link to="/contact">{t("navbar.contact")}</Link>
                   </li>
                   <div className="">
-                    <Button
-                      variant="primary-button"
-                      className="py-4 px-6 w-full"
-                    >
-                      {t("navbar.consultNow")}
-                    </Button>
+                    <a href="https://tanya.web.id/harvest-maklon-discussion" target="_blank">
+                      <Button
+                        variant="primary-button"
+                        className="py-4 px-6 w-full"
+                      >
+                        {t("navbar.consultNow")}
+                      </Button>
+                    </a>
                   </div>
                 </ul>
               </div>

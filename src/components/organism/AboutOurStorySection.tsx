@@ -1,18 +1,18 @@
 import { TranslationProps } from "../../types/types";
-import aboutOurStoryImage1 from "/img/about-our-story-image-1.png";
-import aboutOurStoryImage2 from "/img/about-our-story-image-2.png";
-import aboutOurStoryImage3 from "/img/about-our-story-image-3.png";
-import aboutOurStoryImage4 from "/img/about-our-story-image-4.png";
-import aboutOurStoryImage5 from "/img/about-our-story-image-5.png";
-import aboutOurStoryImage6 from "/img/about-our-story-image-6.png";
-import aboutOurStoryImage7 from "/img/about-our-story-image-7.png";
+import aboutOurStoryImage1 from "/img/about-our-story-image-1.webp";
+import aboutOurStoryImage2 from "/img/about-our-story-image-2.webp";
+import aboutOurStoryImage3 from "/img/about-our-story-image-3.webp";
+import aboutOurStoryImage4 from "/img/about-our-story-image-4.webp";
+import aboutOurStoryImage5 from "/img/about-our-story-image-5.webp";
+import aboutOurStoryImage6 from "/img/about-our-story-image-6.webp";
+import aboutOurStoryImage7 from "/img/about-our-story-image-7.webp";
 
-import aboutOurStoryImage2Responsive from "/img/about-our-story-image-2-responsive.png";
-import aboutOurStoryImage3Responsive from "/img/about-our-story-image-3-responsive.png";
-import aboutOurStoryImage4Responsive from "/img/about-our-story-image-4-responsive.png";
-import aboutOurStoryImage5Responsive from "/img/about-our-story-image-5-responsive.png";
-import aboutOurStoryImage6Responsive from "/img/about-our-story-image-6-responsive.png";
-import aboutOurStoryImage7Responsive from "/img/about-our-story-image-7-responsive.png";
+import aboutOurStoryImage2Responsive from "/img/about-our-story-image-2-responsive.webp";
+import aboutOurStoryImage3Responsive from "/img/about-our-story-image-3-responsive.webp";
+import aboutOurStoryImage4Responsive from "/img/about-our-story-image-4-responsive.webp";
+import aboutOurStoryImage5Responsive from "/img/about-our-story-image-5-responsive.webp";
+import aboutOurStoryImage6Responsive from "/img/about-our-story-image-6-responsive.webp";
+import aboutOurStoryImage7Responsive from "/img/about-our-story-image-7-responsive.webp";
 
 const AboutOurStorySection = (props: TranslationProps) => {
   const { t } = props;
@@ -25,7 +25,7 @@ const AboutOurStorySection = (props: TranslationProps) => {
             <h1 className="text-slate-800 text-2xl font-medium">
               {t("aboutUs.ourStory.header")}
             </h1>
-            <img src={aboutOurStoryImage1} alt="" />
+            <img src={aboutOurStoryImage1} alt="" loading="lazy" />
           </div>
           <p className="text-slate-500 text-[16px] leading-[26px]">
             Our manufacturing facility
@@ -51,40 +51,56 @@ const AboutOurStorySection = (props: TranslationProps) => {
               src={aboutOurStoryImage2}
               alt=""
               className="max-w-full xl:max-w-[430px] 2xl:max-w-[472px] sm:block hidden"
+              loading="lazy"
             />
             <img
               src={aboutOurStoryImage2Responsive}
               alt=""
               className="max-w-full sm:hidden block flex-grow"
+              loading="lazy"
             />
             <img
               src={aboutOurStoryImage3}
               alt=""
               className="max-w-full xl:max-w-[260px] 2xl:max-w-[300px] sm:block hidden"
+              loading="lazy"
             />
             <img
               src={aboutOurStoryImage3Responsive}
               alt=""
               className="max-w-full sm:hidden block flex-grow"
+              loading="lazy"
             />
           </div>
         </div>
       </div>
       <div className="flex xl:flex-row flex-col gap-4 xl:px-24 px-6 max-w-[1444px] mx-auto xl:pb-36 pb-[72px]">
         <div>
-          <img src={aboutOurStoryImage4} alt="" className="xl:block hidden" />
+          <img
+            src={aboutOurStoryImage4}
+            alt=""
+            className="xl:block hidden"
+            loading="lazy"
+          />
           <img
             src={aboutOurStoryImage4Responsive}
             alt=""
             className="xl:hidden block w-full"
+            loading="lazy"
           />
         </div>
         <div className="flex flex-col gap-4">
-          <img src={aboutOurStoryImage5} alt="" className="xl:block hidden" />
+          <img
+            src={aboutOurStoryImage5}
+            alt=""
+            className="xl:block hidden"
+            loading="lazy"
+          />
           <img
             src={aboutOurStoryImage5Responsive}
             alt=""
             className="xl:hidden block"
+            loading="lazy"
           />
           <div className="max-w-[614px] flex flex-col gap-5">
             <article className="flex flex-col gap-4">
@@ -115,6 +131,7 @@ const AboutOurStorySection = (props: TranslationProps) => {
                 src={aboutOurStoryImage6}
                 alt=""
                 className="max-w-full xl:max-w-[442px] 2xl:max-w-[472px] xl:block hidden"
+                loading="lazy"
               />
               <img
                 src={aboutOurStoryImage6Responsive}
@@ -125,11 +142,13 @@ const AboutOurStorySection = (props: TranslationProps) => {
                 src={aboutOurStoryImage7}
                 alt=""
                 className="max-w-full xl:max-w-[272px] 2xl:max-w-[300px] xl:block hidden"
+                loading="lazy"
               />
               <img
                 src={aboutOurStoryImage7Responsive}
                 alt=""
                 className="xl:hidden block flex-grow"
+                loading="lazy"
               />
             </div>
           </div>

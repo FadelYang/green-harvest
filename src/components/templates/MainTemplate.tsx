@@ -37,7 +37,7 @@ const MainTemplate = (props: MainTemplateProps) => {
 
   return (
     // temporary like this
-    <div className="flex flex-col min-h-screen">
+    <div className="flex flex-col min-h-screen max-w-full overflow-hidden">
       {/* Navigation Bar */}
       <NavigationBar
         t={t}

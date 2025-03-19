@@ -1,6 +1,6 @@
 import { TranslationProps } from "../../types/types";
 import Button from "../atoms/Button";
-import lastBannerImage from "/img/last-banner-image.png";
+import lastBannerImage from "/img/last-banner-image.webp";
 
 const LastBannerSection = (props: TranslationProps) => {
   const { t } = props;
@@ -15,6 +15,7 @@ const LastBannerSection = (props: TranslationProps) => {
                 src={lastBannerImage}
                 alt=""
                 className="z-10 xl:w-[1160px]"
+                loading='lazy'
               />
             </div>
             <div className="flex flex-col xl:gap-8 gap-4">
@@ -25,9 +26,11 @@ const LastBannerSection = (props: TranslationProps) => {
                 {t("home.lastBanner.subHeader")}
               </p>
               <div>
-                <Button className="bg-yellow-400 xl:w-auto w-full">
-                  {t("home.lastBanner.consultWithUsButton")}
-                </Button>
+                <a href="https://tanya.web.id/harvest-maklon-discussion" target='_blank'>
+                  <Button className="bg-yellow-400 xl:w-auto w-full">
+                    {t("home.lastBanner.consultWithUsButton")}
+                  </Button>
+                </a>
               </div>
             </div>
           </div>

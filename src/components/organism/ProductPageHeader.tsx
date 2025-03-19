@@ -28,10 +28,12 @@ const ProductPageHeader = (props: ProductDetailPageProps) => {
                   </h2>
                 </div>
                 <div>
-                  <Button variant="primary-button" className='xl:w-auto w-full'>{t('product.herbal.hero.bookAConsultationButton')}</Button>
+                  <a href="https://tanya.web.id/harvest-maklon-discussion" target='_blank'>
+                    <Button variant="primary-button" className='xl:w-auto w-full'>{t('product.herbal.hero.bookAConsultationButton')}</Button>
+                  </a>
                 </div>
                 <div className="">
-                  <img src={data.heroImage} alt="Hero" className='xl:w-auto xl:h-auto w-full h-[400px] object-cover'/>
+                  <img src={data.heroImage} alt="Hero" className='xl:w-auto xl:h-auto w-full h-[400px] object-cover' loading='lazy'/>
                 </div>
               </div>
             </div>

@@ -2,7 +2,8 @@ import Button from "../atoms/Button";
 import arrowRight from "/img/arrowRight.svg";
 import Arrow from "../atoms/Arrow";
 import SuccessStoryArticleList from "../molecules/SuccessStoryArticleList";
-import { TranslationProps } from '../../types/types';
+import { TranslationProps } from "../../types/types";
+import { Link } from "react-router-dom";
 
 const SuccessStorySection = (props: TranslationProps) => {
   const { t } = props;
@@ -39,16 +40,23 @@ const SuccessStorySection = (props: TranslationProps) => {
           <SuccessStoryArticleList />
         </div>
         <div className="flex justify-center gap-4">
+          <a href="https://tanya.web.id/harvest-maklon-discussion" target="_blank">
+            <div>
+              <Button variant="primary-button">
+                {t("home.hero.consultNowButton")}
+              </Button>
+            </div>
+          </a>
           <div>
-            <Button variant="primary-button">{t('home.hero.consultNowButton')}</Button>
-          </div>
-          <div>
-            <Button
-              paddingSize="px-6 py-4"
-              className="flex gap-3 primary-text font-medium text-base border-b border-[#015F26]"
-            >
-              {t('home.hero.viewMoreOurExpertiseButton')} <img src={arrowRight} alt="" />
-            </Button>
+            <Link to="/service">
+              <Button
+                paddingSize="px-6 py-4"
+                className="flex gap-3 primary-text font-medium text-base border-b border-[#015F26]"
+              >
+                {t("home.hero.viewMoreOurExpertiseButton")}{" "}
+                <img src={arrowRight} alt="" />
+              </Button>
+            </Link>
           </div>
         </div>
       </div>

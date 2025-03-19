@@ -95,9 +95,13 @@ const ContactMapSectionTemplate = (props: ContactMapSectionTemplateProps) => {
             </div>
           </div>
         </div>
-        <div>
-          <a href="#">
-            <img src={countryData?.image.imageUrl} alt="" className='xl:h-auto h-[312px] xl:object-none object-cover'/>
+        <div className="overflow-hidden flex items-center justify-center">
+          <a>
+            <img
+              src={countryData?.image.imageUrl}
+              alt=""
+              className="w-[345px] h-[312px] xl:w-[593px] xl:h-[489px] object-cover"
+            />
           </a>
         </div>
       </div>

@@ -1,11 +1,11 @@
 import { useState } from "react";
 import Button from "../atoms/Button";
-import productAvailable1 from "/img/product-available-1.png";
-import productAvailable2 from "/img/product-available-2.png";
-import productAvailable3 from "/img/product-available-3.png";
-import productAvailable4 from "/img/product-available-4.png";
-import productAvailable5 from "/img/product-available-5.png";
-import productAvailable6 from "/img/product-available-6.png";
+import productAvailable1 from "/img/product-available-1.webp";
+import mealReplacement from "/img/meal-replacement.webp";
+import boxKosmetik from "/img/box-kosmetik.webp";
+import productAvailable4 from "/img/product-available-4.webp";
+import productAvailable5 from "/img/product-available-5.webp";
+import productAvailable6 from "/img/product-available-6.webp";
 import { TranslationProps } from "../../types/types";
 import ChevronDownIcon from "../atoms/ChevronDownIcon";
 
@@ -27,14 +27,16 @@ const ProductAvailableSection = (props: TranslationProps) => {
       buttonText: t("home.productAvailable.products.2.buttonText"),
       title: t("home.productAvailable.products.2.title"),
       description: t("home.productAvailable.products.2.description"),
-      image: productAvailable2,
+      image: mealReplacement,
+      bgColor: "bg-[#d7d9d9]",
     },
     {
       id: 3,
       buttonText: t("home.productAvailable.products.3.buttonText"),
       title: t("home.productAvailable.products.3.title"),
       description: t("home.productAvailable.products.3.description"),
-      image: productAvailable3,
+      image: boxKosmetik,
+      bgColor: "bg-[#d98300]"
     },
     {
       id: 4,
@@ -63,7 +65,7 @@ const ProductAvailableSection = (props: TranslationProps) => {
     <>
       <div className="xl:px-24 px-6 xl:py-36 py-[72px] flex flex-col xl:gap-[72px] gap-6 max-w-[1444px] mx-auto">
         <h1 className="text-center xl:text-[40px] text-2xl font-medium xl:leading-[50px] leading-[34px]">
-          Tailored Products Available at Harvest Group
+          {t("home.productAvailable.header")}
         </h1>
         <div className="xl:flex hidden gap-[75px]">
           <div className="flex flex-col gap-4">
@@ -90,9 +92,20 @@ const ProductAvailableSection = (props: TranslationProps) => {
                   activeProduct === item.id ? "block " : "hidden"
                 }`}
               >
-                <div>
-                  <img src={item.image} alt="" />
+                <div
+                  className={`w-[848px] h-[452px] flex justify-center relative ${item?.bgColor}`}
+                >
+                  <img
+                    src={item.image}
+                    alt=""
+                    className={`${
+                      item.bgColor
+                        ? "w-[550px] h-[452px]"
+                        : "w-[848px] h-[452px]"
+                    } object-cover`}
+                  />
                 </div>
+
                 <div className="flex flex-col gap-2 p-6">
                   <p className="text-slate-800 text-[32px] font-semibold">
                     {item.title}
@@ -157,8 +170,12 @@ const ProductAvailableSection = (props: TranslationProps) => {
                   activeProduct === item.id ? "block " : "hidden"
                 }`}
               >
-                <div className=''>
-                  <img src={item.image} alt="" className='h-[345px] w-full object-cover'/>
+                <div className={`${item.bgColor ? item.bgColor : ''} flex justify-center`}>
+                  <img
+                    src={item.image}
+                    alt=""
+                    className="h-[345px] w-full object-cover"
+                  />
                 </div>
                 <div className="flex flex-col gap-2 p-6">
                   <p className="text-slate-800 text-[20px] font-semibold">
