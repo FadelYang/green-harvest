@@ -9,6 +9,7 @@ import envelopIcon from "/img/envelopIcon.svg";
 import { TFunction } from "i18next";
 import { Link } from "react-router-dom";
 import useScrollToSection from "../../hooks/useScrollToSection";
+import { useEffect } from 'react';
 
 type FooterProps = {
   t: TFunction<"translation", undefined>;
@@ -18,8 +19,16 @@ const Footer = (props: FooterProps) => {
   const { t } = props;
   const { scrollToSection } = useScrollToSection();
 
+  useEffect(() => {
+    const subscribeForm = document.getElementsByClassName("subscribeEmail");
+
+    for (let i = 0; i < subscribeForm.length; i++) {
+      (subscribeForm[i] as HTMLElement).style.visibility = "hidden";
+    }
+  }, []);
+
   return (
-    <div className="bg-black xl:py-[72px] -mb-6">
+    <div className="bg-black xl:py-[72px]">
       <div className=" text-white xl:px-24 p-6 mx-auto max-w-[1444px]">
         <div className="flex xl:flex-row flex-col xl:gap-24 gap-[74px]">
           {/* First column */}
@@ -77,7 +86,7 @@ const Footer = (props: FooterProps) => {
                 </ul>
               </div>
             </div>
-            <div className="mt-auto xl:block hidden">
+            <div className="mt-auto xl:block hidden subscribeEmail">
               <div className="flex border rounded-md shadow-sm w-full max-w-md overflow-hidden bg-white p-2">
                 <span className="flex items-center px-3 text-gray-600">@</span>
                 <input
@@ -127,7 +136,7 @@ const Footer = (props: FooterProps) => {
                 <div>E-mail info@greenlifeharvest.com</div>
               </div>
             </div>
-            <div className="mt-6 xl:hidden block">
+            <div className="mt-6 xl:hidden block subscribeEmail">
               <div className="flex border rounded-md shadow-sm w-full md:max-w-md lg:max-w-lg overflow-hidden bg-white">
                 <div className="flex-grow flex items-center p-2">
                   <span className="flex items-center px-3 text-gray-600 text-[30px]">
