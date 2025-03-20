@@ -3,7 +3,7 @@ import NavigationBar from "../organism/NavigationBar";
 import Footer from "../organism/Footer";
 import { TFunction } from "i18next";
 import Sidebar from "../organism/Sidebar";
-import LiveChatModal from "../organism/LiveChatModal";
+import LiveChatModal from '../organism/LiveChatModal';
 
 type MainTemplateProps = {
   t: TFunction<"translation", undefined>;
@@ -37,7 +37,7 @@ const MainTemplate = (props: MainTemplateProps) => {
 
   return (
     // temporary like this
-    <div className="flex flex-col min-h-screen">
+    <div className="flex flex-col min-h-screen max-w-full overflow-hidden">
       {/* Navigation Bar */}
       <NavigationBar
         t={t}
@@ -46,14 +46,14 @@ const MainTemplate = (props: MainTemplateProps) => {
         sidebarToggle={sidebarToggle}
       />
 
-      <LiveChatModal t={t} />
+      <LiveChatModal t={t}/>
 
       <Sidebar t={t} isMobile={isMobile} isSidebarOpen={isSidebarOpen} />
 
-      {/* Main Content should grow to push footer down */}
+      {/* Main Content */}
       <main className="flex-grow">{children}</main>
 
-      {/* Footer stays at the bottom */}
+      {/* Footer */}
       <Footer t={t} />
     </div>
   );
