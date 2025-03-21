@@ -32,7 +32,7 @@ const HeroSection = (props: TranslationProps) => {
                   </Button>
                 </a>
               </div>
-              <div className="text-center block xl:hidden">
+              <div className="text-center block xl:hidden z-20">
                 <Link to={"/service"}>
                   <Button
                     paddingSize="px-2 py-4"
