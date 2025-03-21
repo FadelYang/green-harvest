@@ -1,17 +1,15 @@
-import { useRef, useEffect } from "react";
+import { useRef, useEffect, useState } from "react";
 import Hls from "hls.js";
 
 export const useVideoAutoPlayback = (videoSrc: string, options: IntersectionObserverInit) => {
   const containerRef = useRef<HTMLDivElement | null>(null);
   const videoRef = useRef<HTMLVideoElement | null>(null);
   const hlsRef = useRef<Hls | null>(null);
+  const [isVideoVisible, setIsVideoVisible] = useState(false); // Track visibility
 
   useEffect(() => {
     const observer = new IntersectionObserver(([entry]) => {
-      if (videoRef.current) {
-        if (entry.isIntersecting) videoRef.current.play();
-        else videoRef.current.pause();
-      }
+      setIsVideoVisible(entry.isIntersecting); // Update visibility state
     }, options);
 
     if (containerRef.current) observer.observe(containerRef.current);
@@ -22,23 +20,22 @@ export const useVideoAutoPlayback = (videoSrc: string, options: IntersectionObse
   }, [options]);
 
   useEffect(() => {
-    if (!videoRef.current) return;
+    if (!videoRef.current || !isVideoVisible) return; // Don't load until visible
 
     if (Hls.isSupported()) {
       const hls = new Hls({
-        autoStartLoad: true, 
-        capLevelToPlayerSize: false, 
+        autoStartLoad: true,
+        capLevelToPlayerSize: false,
       });
 
       hlsRef.current = hls;
-
       hls.loadSource(videoSrc);
       hls.attachMedia(videoRef.current);
 
       hls.on(Hls.Events.MANIFEST_PARSED, () => {
         hls.startLevel = -1;
       });
-      
+
       hls.on(Hls.Events.LEVEL_SWITCHED, (_, data) => {
         console.log("Current Quality:", hls.levels[data.level].height + "p");
       });
@@ -52,7 +49,7 @@ export const useVideoAutoPlayback = (videoSrc: string, options: IntersectionObse
         hlsRef.current = null;
       }
     };
-  }, [videoSrc]);
+  }, [videoSrc, isVideoVisible]); // Load video only when it's visible
 
   return [containerRef, videoRef] as const;
 };

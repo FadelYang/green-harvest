@@ -59,7 +59,7 @@ const VideoSection = (props: TranslationProps) => {
               <video
                 width="100%"
                 ref={videoRef}
-                preload="auto"
+                preload="none"
                 muted
                 controls
               />
