@@ -10,7 +10,7 @@ const ContactHeroSection = () => {
         <div className="flex flex-col gap-8">
           <div className="flex gap-8">
             <h1 className="text-slate-800 text-[44px] font-medium leading-[54px] tracking-[-1.76px]">
-              Reach Out to Harvest Group – Supporting Your Needs with Excellence
+              Reach Out to Harvest Group Indonesia – Supporting Your Needs with Excellence
             </h1>
             <div className="flex items-end text-slate-500 text-lg font-medium leading-7">
               Empowering Your Brand from Concept to Market

@@ -52,11 +52,11 @@
     },
     "feature": {
       "header": "MENGAPA MEMILIH KAMI?",
-      "subHeader": "Mengapa Bermitra Dengan Green Life Harvest?",
+      "subHeader": "Mengapa Bermitra Dengan Harvest Group Indonesia?",
       "consultNowButton": "Konsultasi Sekarang!",
       "legalCompletness": {
         "title": "Kelengkapan Sertifikat",
-        "description": "Green Life Harvest telah memberikan sertifikasi terkemuka untuk memastikan kualitas kami sesuai dengan visi Anda. Sertifikasi kami meliputi <black>BPOM, Halal, ISO 22000, ISO 22716, ISO 9001, HAACP, CPOTB, CPKB, CPPOB</black>, dan <black>Sertifikasi GMP</black>"
+        "description": "Harvest Group Indonesia telah memberikan sertifikasi terkemuka untuk memastikan kualitas kami sesuai dengan visi Anda. Sertifikasi kami meliputi <black>BPOM, Halal, ISO 22000, ISO 22716, ISO 9001, HAACP, CPOTB, CPKB, CPPOB</black>, dan <black>Sertifikasi GMP</black>"
       },
       "experience": {
         "title": "Pengalaman 20 Tahun",
@@ -68,7 +68,7 @@
       }
     },
     "product": {
-      "header": "Kategori Maklon Produk Greenlife Harvest Group",
+      "header": "Kategori Maklon Produk Harvest Group Indonesia",
       "1": {
         "closeText": "Maklon Herbal / Kapsul",
         "openText": {
@@ -99,7 +99,7 @@
     },
     "video": {
       "header": "Kami berkomitmen untuk menjadi mitra terbaik untuk pertumbuhan brand Anda.",
-      "subHeader": "<bold>Greenlife Harvest Group</bold> adalah produsen label swasta terkemuka yang mengkhususkan diri pada produk herbal, suplemen, dan kosmetik sejak tahun 2004. Dipercaya oleh ratusan merek, produk kami menjangkau lebih dari 50 negara di seluruh dunia.",
+      "subHeader": "<bold>Harvest Group Indonesia</bold> adalah produsen label swasta terkemuka yang mengkhususkan diri pada produk herbal, suplemen, dan kosmetik sejak tahun 2004. Dipercaya oleh ratusan merek, produk kami menjangkau lebih dari 50 negara di seluruh dunia.",
       "exploreOurProfileButton": "Lihat Profil Kami"
     },
     "manufacturingProcess": {
@@ -178,7 +178,7 @@
       }
     },
     "productAvailable": {
-      "header": "Produk Khusus Tersedia di Harvest Group",
+      "header": "Produk Khusus Tersedia di Harvest Group Indonesia",
       "products": {
         "1": {
           "id": 1,
@@ -226,8 +226,8 @@
       "header": "Yang Sering Ditanyakan",
       "1": {
         "id": 1,
-        "question": "Berapa minimum order (MOQ) di Harvest Group",
-        "answer": "MOQ & minimum order di Harvest Group cukup rendah. Anda dapat membuat Produk Minuman Kesehatan Maklon, herbal, suplemen atau kosmetik/skincare secara legal sesuai keinginan & permintaan Anda."
+        "question": "Berapa minimum order (MOQ) di Harvest Group Indonesia",
+        "answer": "MOQ & minimum order di Harvest Group Indonesia cukup rendah. Anda dapat membuat Produk Minuman Kesehatan Maklon, herbal, suplemen atau kosmetik/skincare secara legal sesuai keinginan & permintaan Anda."
       },
       "2": {
         "id": 2,
@@ -236,7 +236,7 @@
       },
       "3": {
         "id": 3,
-        "question": "Dimana alamat Harvest Group?",
+        "question": "Dimana alamat Harvest Group Indonesia?",
         "answer": "Kami mempunyai 4 produsen & pabrik yang berlokasi dalam 1 area yaitu: \n\n Kompleks Gudang dan Industri Era Prima, Jl. Daan Mogot KM 21 No. 1 Blok Q1 Kel, RT.001/RW.001, Poris Plawad, Cipondoh, Kota Tangerang, Banten 15141."
       },
       "4": {
@@ -246,12 +246,12 @@
       },
       "5": {
         "id": 5,
-        "question": "Bisakah Harvest Group membuat produk persis seperti produk yang sudah ada?",
+        "question": "Bisakah Harvest Group Indonesia membuat produk persis seperti produk yang sudah ada?",
         "answer": "Tentu saja bisa. Tim Ahli Riset & Pengembangan kami telah berpengalaman membuat ribuan produk dengan berbagai macam formulasi. Kami bahkan akan merancang formula yang unik untuk setiap produk, sehingga memiliki karakteristik yang kuat dan mencari karakteristik suatu produk."
       },
       "6": {
         "id": 6,
-        "question": "Berapa lama perkiraan waktu produksi di Maklon Harvest Group?",
+        "question": "Berapa lama perkiraan waktu produksi di Maklon Harvest Group Indonesia?",
         "answer": "Proses Produksi Maklon pertama berbeda-beda pada setiap Divisi Maklon, namun untuk PO atau Repeat Order ke-2, proses produksinya hanya memakan waktu 2-3 minggu setelah konfirmasi pesanan."
       }
     },
@@ -271,7 +271,7 @@
   "aboutUs": {
     "hero": {
       "header": "Anda Pemilik Mereknya, Kami Melakukan Selebihnya",
-      "subHeader": "<bold>Greenlife Harvest</bold> Group adalah produsen label swasta terkemuka yang mengkhususkan diri pada produk herbal, suplemen, dan kosmetik sejak tahun 2004. Dipercaya oleh ratusan merek, produk kami menjangkau lebih dari 50 negara di seluruh dunia.",
+      "subHeader": "<bold>Harvest Group Indonesia</bold> Group adalah produsen label swasta terkemuka yang mengkhususkan diri pada produk herbal, suplemen, dan kosmetik sejak tahun 2004. Dipercaya oleh ratusan merek, produk kami menjangkau lebih dari 50 negara di seluruh dunia.",
       "consultNowButton": "Konsultasi Sekarang!"
     },
     "ourStory": {
@@ -279,9 +279,9 @@
       "story1": {
         "title": "Dua dekade menciptakan produk berkualitas untuk ratusan merek",
         "body": {
-          "1": "Didirikan pada tahun 2004, Harvest Group berdiri sebagai MAKLON utama pabrikan di Indonesia dan Malaysia, yang mengkhususkan diri pada rangkaian produk makanan kesehatan, suplemen nutrisi, dan penawaran terbaru kami dalam produksi kosmetik dan perawatan kulit.",
-          "2": "Di PT IndoGreenlife Harvest, kami lebih dari sekedar produsen kontrak. Komitmen kami dimulai dengan mencari bahan baku berkualitas tinggi dan memanfaatkan teknologi canggih untuk menghasilkan produk yang efektif dan aman yang disesuaikan untuk memenuhi kebutuhan klien kami.. Dengan delapan fasilitas manufaktur yang berlokasi strategis di Indonesia dan Malaysia, kami mematuhi standar kualitas yang ketat, termasuk sertifikasi GMP, HACCP, dan Halal, didukung oleh sistem manajemen kualitas komprehensif yang selaras dengan standar ISO internasional.",
-          "3": "Sejak mulai beroperasi di Indonesia pada tahun 2018, kami telah berkembang pesat, mendapatkan kepercayaan dari banyak pengusaha yang telah bermitra dengan Harvest Group dan Indo Greenlife Harvest. Hingga saat ini, kami telah memproduksi lebih dari 6.000 produk merek MAKLON, mengekspor ke lebih dari 50 negara di seluruh dunia."
+          "1": "Didirikan pada tahun 2004, Harvest Group Indonia berdiri sebagai MAKLON utama pabrikan di Indonesia dan Malaysia, yang mengkhususkan diri pada rangkaian produk makanan kesehatan, suplemen nutrisi, dan penawaran terbaru kami dalam produksi kosmetik dan perawatan kulit.",
+          "2": "Di PT Indo Greenlife Harvest, kami lebih dari sekedar produsen kontrak. Komitmen kami dimulai dengan mencari bahan baku berkualitas tinggi dan memanfaatkan teknologi canggih untuk menghasilkan produk yang efektif dan aman yang disesuaikan untuk memenuhi kebutuhan klien kami.. Dengan delapan fasilitas manufaktur yang berlokasi strategis di Indonesia dan Malaysia, kami mematuhi standar kualitas yang ketat, termasuk sertifikasi GMP, HACCP, dan Halal, didukung oleh sistem manajemen kualitas komprehensif yang selaras dengan standar ISO internasional.",
+          "3": "Sejak mulai beroperasi di Indonesia pada tahun 2018, kami telah berkembang pesat, mendapatkan kepercayaan dari banyak pengusaha yang telah bermitra dengan Harvest Group Indonesia dan Indo Harvest Group Indonesia. Hingga saat ini, kami telah memproduksi lebih dari 6.000 produk merek MAKLON, mengekspor ke lebih dari 50 negara di seluruh dunia."
         }
       },
       "story2": {
@@ -294,9 +294,9 @@
         }
       },
       "story3": {
-        "title": "Bermitra dengan Harvest Group",
+        "title": "Bermitra dengan Harvest Group Indonesia",
         "body": {
-          "1": "Ciptakan merek produk kesehatan Anda bersama kami dan mulailah perjalanan pertumbuhan dan kesuksesan bersama. Percayakan Harvest Group sebagai mitra terpercaya Anda untuk produk kesehatan dan kecantikan."
+          "1": "Ciptakan merek produk kesehatan Anda bersama kami dan mulailah perjalanan pertumbuhan dan kesuksesan bersama. Percayakan Harvest Group Indonesia sebagai mitra terpercaya Anda untuk produk kesehatan dan kecantikan."
         }
       }
     },
@@ -304,7 +304,7 @@
   },
   "contact": {
     "hero": {
-      "header": "Jangkau Harvest Group – Merealisasikan Kebutuhan Anda dengan Mutu Tinggi",
+      "header": "Jangkau Harvest Group Indonesia – Merealisasikan Kebutuhan Anda dengan Mutu Tinggi",
       "subHeader": "Membangun Merek Anda dari Konsep ke Pasar",
       "contactUsButton": "Hubungi kami",
       "viewOurLocationOnMaps": "Lihat Lokasi Kami di Peta"
@@ -320,9 +320,9 @@
       "malaysia": {
         "email": "E-mail",
         "website": "Situs web",
-        "1": "Greenlife Harvest Marketing (M) Sdn Bhd (788643-U)",
-        "2": "Greenlife Harvest (M) Sdn Bhd (790012-P)",
-        "3": "Greenlife Harvest BioTech (M) Sdn Bhd (924532-D)"
+        "1": "Harvest Group Indonesia Marketing (M) Sdn Bhd (788643-U)",
+        "2": "Harvest Group Indonesia (M) Sdn Bhd (790012-P)",
+        "3": "Harvest Group Indonesia BioTech (M) Sdn Bhd (924532-D)"
       }
     }
   },
@@ -335,7 +335,7 @@
       },
       "categoryId": "1",
       "categoryName": "Herbal",
-      "listSectionHeading": "Produk Herbal Apa Saja Yang Dapat Dimaklonkan Di Harvest Group?",
+      "listSectionHeading": "Produk Herbal Apa Saja Yang Dapat Dimaklonkan Di Harvest Group Indonesia?",
       "products": [
         {
           "productId": 1,
@@ -362,7 +362,7 @@
       },
       "categoryId": 2,
       "categoryName": "Drink",
-      "listSectionHeading": "Produk Minuman Powder Apa Saja Yang Dapat Di Maklonkan Di Harvest Group?",
+      "listSectionHeading": "Produk Minuman Powder Apa Saja Yang Dapat Di Maklonkan Di Harvest Group Indonesia?",
       "products": {
         "1": {
           "productId": 4,
@@ -404,7 +404,7 @@
       },
       "categoryId": 3,
       "categoryName": "cosmetic",
-      "listSectionHeading": "Produk Kosmetik Apa Saja Yang Dapat Dimaklonkan Di Harvest Group?",
+      "listSectionHeading": "Produk Kosmetik Apa Saja Yang Dapat Dimaklonkan Di Harvest Group Indonesia?",
       "products": {
         "1": {
           "productId": 10,
@@ -426,7 +426,7 @@
   },
   "footer": {
     "subscribe": "Langganan",
-    "aboutHarvest": "Harvest Group adalah produsen MAKLON terkemuka di Indonesia dan Malaysia, yang berfokus pada beragam produk makanan kesehatan, suplemen nutrisi, dan produksi kosmetik & perawatan kulit.",
+    "aboutHarvest": "Harvest Group Indo adalah produsen MAKLON terkemuka di Indonesia dan Malaysia, yang berfokus pada beragam produk makanan kesehatan, suplemen nutrisi, dan produksi kosmetik & perawatan kulit.",
     "usefulLink": {
       "header": "Links",
       "home": "Beranda",
