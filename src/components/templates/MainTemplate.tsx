@@ -53,7 +53,7 @@ const MainTemplate = (props: MainTemplateProps) => {
       <Sidebar t={t} isMobile={isMobile} isSidebarOpen={isSidebarOpen} />
 
       {/* Main Content */}
-      <main className="flex-grow">{children}</main>
+      <main className="flex-grow pt-20 md:pt-24">{children}</main>
 
       {/* Footer */}
       <Footer t={t} />
